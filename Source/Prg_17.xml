@@ -31,9 +31,9 @@
           <RoutePath val="Login"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="63982" date="26/06/2018" time="17:46:22"/>
+          <LastModified _date="736878" _time="54854" date="03/07/2018" time="15:14:14"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -401,29 +401,21 @@
                   <WithValue val="13"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="20">
+                <RaiseEvent FlowIsn="25">
                   <Event>
                     <EventType val="I"/>
-                    <InternalEventID val="594"/>
+                    <InternalEventID val="13"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="12"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                  </Arguments>
-                  <Condition Exp="11"/>
+                  <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
@@ -525,6 +517,44 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="8" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <RaiseEvent FlowIsn="20">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="12"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="11" _last_test_id="12" id="1">
@@ -534,7 +564,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Login"/>
-              <WindowType id="358" val="1"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control PDOD="128" _test_id="11" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
