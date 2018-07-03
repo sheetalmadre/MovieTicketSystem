@@ -4,8 +4,9 @@
   <_Project>
     <ProjectName val="MovieTicketSystem"/>
     <VCProjectID val="0"/>
-    <VCActive val="N"/>
+    <VCActive val="Y"/>
     <WorkOffline val="N"/>
+    <VCProjectName val="."/>
     <SourceDirectory val="Source"/>
     <ExportsDirectory val="Exports"/>
     <GUID val="{4EA86F84-B325-4E0C-A15E-30DAAD452269}"/>
