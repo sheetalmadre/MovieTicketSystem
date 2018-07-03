@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736871" _time="44701" date="26/06/2018" time="12:25:01"/>
+          <LastModified _date="736878" _time="56969" date="03/07/2018" time="15:49:29"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -213,7 +213,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -432,9 +431,9 @@
                 <Y id="22" val="28"/>
                 <Width id="23" val="65"/>
                 <Height id="24" val="22"/>
-                <Data FieldID="4" id="43"/>
+                <Data FieldID="2" Parent="32768" id="43"/>
                 <ControlName id="46" val="Button10"/>
-                <Format id="82" valUnicode="Login"/>
+                <Format Exp="5" id="82"/>
                 <Arguments id="126">
                   <Arguments>
                     <Argument>
@@ -484,6 +483,10 @@
           </Expression>
           <Expression id="4">
             <ExpSyntax val="'Login'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="IF({32768,3}='TRUE'LOG,'Logout','Login')"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
