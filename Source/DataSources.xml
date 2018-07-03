@@ -1,0 +1,1721 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="14000.00"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="12"/>
+
+  <LastIsnFolder val="0"/>
+
+  <Folders/>
+
+</Header>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject Comment="All Users" PhysicalName="MSRegistrationTable" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="1" name="MSRegistrationTable">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="MSUserId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <Picture id="157" valUnicode="5"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSUserId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="5"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSUserId" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSFname">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSFname"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSFname" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="MSLname">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSLname"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSLname" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="MSCity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSCity"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSCity" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="MSAddress">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSAddress"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSAddress" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="MSGender">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSGender"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSGender" PIC_U="10" Size="10" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="MSEmail">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSEmail"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSEmail" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="MSMobileNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="10"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMobileNo"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMobileNo" PIC_U="10" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="MSUserName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSUserName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSUserName" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="MSUserPassword">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="40"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="40"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSUserPassword"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSUserPassword" PIC_U="40" Size="40" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="MSAdmin">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSAdmin"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSAdmin" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="K1MSRegistrationTableUser">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="K1MSRegistrationTableUser"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="30"/>
+          <Column val="9"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="MSCities" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="MSCities">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="Y"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="3"/>
+
+  <Columns>
+    <Column id="1" name="MSCityCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <Modifiable id="53" val="Y"/>
+        <NullAllowed id="166"/>
+        <NullValue id="167" val="0"/>
+        <NullDisplay id="168"/>
+        <NullDefault id="169"/>
+        <DefaultValue id="170" val="0"/>
+        <CharSet id="172"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <UpdateStyle id="176" val="A"/>
+        <DbColumnName id="178" val="MSCityCode"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSCityCode" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSCityName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
+        <Modifiable id="53" val="Y"/>
+        <NullAllowed id="166"/>
+        <NullValue id="167"/>
+        <NullDisplay id="168"/>
+        <NullDefault id="169"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSCityName"/>
+        <_Dec id="181"/>
+        <_Whole id="182"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSCityName" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="3" name="MSCities">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="MSCities"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="MSLanguage" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="3" name="MSLanguage">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="MSLanuageID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSLanuageID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSLanuageID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSLanguageName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="60"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSLanguageName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSLanguageName" PIC_U="30" Size="60" allowed_null="N" attribute="U" context_cookies="Y" database_definition="2" id="231" storage="32" translate="3"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="MSLanguageID">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="MSLanguageID"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Comment="Movies per cities" PhysicalName="MSMovieD" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="4" name="MSMovieD">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="MSMovieId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <Picture id="157" valUnicode="5"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieId"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="5"/>
+        <_Negative id="192"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieId" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSMovieName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieName" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="MSCityID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSCityID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSCityID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="MSMovieImage">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1000"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="1"/>
+        <DbColumnName id="178" val="MSMovieImage"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieImage" PIC_U="1000" Size="1000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="MSMovieTrailor">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieTrailor"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieTrailor" PIC_U="100" Size="100" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="MSMovieDirector">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieDirector"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieDirector" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="MSMovieCast">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="70"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieCase"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieCase" PIC_U="70" Size="70" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="MSMovieMusic">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="50"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieMusic"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieMusic" PIC_U="50" Size="50" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="MSMovieType">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <GuiDisplay id="158">
+          <PropertyList model="CTRL_GUI0_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </GuiDisplay>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieType"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieType" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <RichClient id="453">
+          <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </RichClient>
+        <RichClientTable id="454">
+          <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </RichClientTable>
+        <WebClient id="702">
+          <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </WebClient>
+        <WebClientTable id="703">
+          <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
+            <ItemsList id="45" valUnicode="Comedy,Drama,Thriller,Adult,Suspense"/>
+          </PropertyList>
+        </WebClientTable>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="MSMovieStatus">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieStatus"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieStatus" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="MSLanguageID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSLanguageID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSLanguageID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="MSMovieDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieDate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="MSEndDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSEndDate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSEndDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="K1MSMSMovieDID">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="K1MSMSMovieDID"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="5">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <Columns/>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Comment="City wise theatre and screens and rates&#xD;&#xA;Also Movies in that Theatre" PhysicalName="MSTheatreScreenRate" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="6" name="MSTheatreScreenRate">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="Y"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="3"/>
+
+  <Columns>
+    <Column id="3" name="MSTheatreID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSTheatreID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSTheatreID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="MSTheatreName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSTheatreName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSTheatreName" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="MSScreenID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSScreenID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSScreenID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="MSScreenName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSScreenName"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSScreenName" PIC_U="30" Size="30" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="MSCity">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSCity"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSCity" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="MSStructure">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="3000"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3000"/>
+        <Definition id="175" val="1"/>
+        <DbColumnName id="178" val="MSStructure"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSStructure" PIC_U="3000" Size="3000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="MSPlatinumRate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSPlatinumRate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSPlatinumRate" PIC_U="5.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="MSGoldRate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSGoldRate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSGoldRate" PIC_U="5.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="MSSilverRate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="3"/>
+        <StoredAs id="173" val="6"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSSilverRate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSSilverRate" PIC_U="5.2" Size="8" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="6" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="3" name="K1MSTheatreScreen">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="MSTheatre"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="4"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys>
+    <Key name="F1MSTheatre1">
+      <Create val="Y"/>
+      <ReferencedTable comp="-1" obj="2"/>
+      <PrimaryKey val="3"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="10"/>
+        </Segment>
+      </Segments>
+    </Key>
+  </ForeignKeys>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="MSShowDetails" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="7" name="MSShowDetails">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="2" name="MSTheatreID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSTheatreID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSTheatreID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="MSScreenID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSScreenID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSScreenID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="MSMovieID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSMovieID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSMovieID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="MSShowDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="4"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSShowDate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSShowDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="MSShowTimings">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_TIME" id="1"/>
+        <Picture id="157" valUnicode="HH:MM PM"/>
+        <StoredAs id="173" val="24"/>
+        <Size id="174" val="6"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSShowTimings"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSShowTimings" PIC_U="HH:MM PM" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="MSSeatsBooked">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="3000"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3000"/>
+        <Definition id="175" val="1"/>
+        <DbColumnName id="178" val="MSSeatsBooked"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSSeatsBooked" PIC_U="3000" Size="3000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="MSShowDetails">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="MSShowDetails"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="3"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="4"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="8"/>
+          <Column val="5"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="6"/>
+          <Column val="6"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="MSBookingMaster" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="8" name="MSBookingMaster">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="MSBookingID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSBookingID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSBookingID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSUserID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSUserID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSUserID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="MSShowID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSShowID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSShowID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="MSBookingDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="4"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSBookingDate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSBookingDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="MSBookingShowDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" comp="-1" id="1" obj="4"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSBookingShowDate"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSBookingShowDate" PIC_U="##/##/####" Size="8" allowed_null="N" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="MSSeatsBooked">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="3000"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3000"/>
+        <Definition id="175" val="1"/>
+        <DbColumnName id="178" val="MSSeatsBooked"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSSeatsBooked" PIC_U="3000" Size="3000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="MSPaymentSuccess">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSPaymentSuccess"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSPaymentSuccess" PIC_U="5" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="K1MSBookingMaster">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="K1MSBookingMaster"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="4"/>
+          <Column val="2"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="9">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <Columns/>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="ShowSeats" Resident="N" UniqueISNConvState="12" data_source="Memory" id="10" name="ShowSeats">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="P"/>
+
+  <HasHint val="Y"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Columns>
+    <Column id="1048607" name="Sr">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="U"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="Sr"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="Sr" PIC_U="U" Size="1" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048577" name="C1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C1"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C1" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048578" name="C2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C2" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048579" name="C3">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C3"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C3" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048580" name="C4">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C4"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C4" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048581" name="C5">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C5"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C5" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048582" name="C6">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C6"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C6" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048583" name="C7">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C7"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C7" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048584" name="C8">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C8"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C8" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048585" name="C9">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C9"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C9" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048586" name="C10">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C10"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C10" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048587" name="C11">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C11"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C11" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048588" name="C12">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C12"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C12" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048589" name="C13">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C13"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C13" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048590" name="C14">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C14"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C14" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048591" name="C15">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C15"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C15" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048592" name="C16">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C16"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C16" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048593" name="C17">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C17"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C17" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048594" name="C18">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C18"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C18" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048595" name="C19">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C19"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C19" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048596" name="C20">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C20"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C20" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048597" name="C21">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C21"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C21" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048598" name="C22">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C22"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C22" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048599" name="C23">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C23"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C23" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048600" name="C24">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C24"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C24" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048601" name="C25">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C25"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C25" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048602" name="C26">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C26"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C26" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048603" name="C27">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C27"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C27" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048604" name="C28">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C28"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C28" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048605" name="C29">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C29"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C29" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="1048606" name="C30">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_LOGICAL" id="1"/>
+        <Picture id="157" valUnicode="1"/>
+        <GuiDisplayTable id="159">
+          <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+        </GuiDisplayTable>
+        <StoredAs id="173" val="15"/>
+        <Size id="174" val="1"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="C30"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="C30" PIC_U="1" Size="1" allowed_null="N" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="11">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <Columns/>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject Comment="Seat Structure" PhysicalName="MSStructureTable" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="12" name="MSStructureTable">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Position val="D"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <Columns>
+    <Column id="1" name="MSStructureID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="1"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="MSStructureID"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSStructureID" PIC_U="5" Size="4" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="MSStructure">
+      <Comment val="Which includes Platinum, Gold and Silver"/>
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="3000"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3000"/>
+        <Definition id="175" val="1"/>
+        <DbColumnName id="178" val="MSStructure"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="MSStructure" PIC_U="3000" Size="3000" allowed_null="N" attribute="A" context_cookies="Y" database_definition="1" id="231" storage="3" translate="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="K1MSStructureID">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="K1MSStructureID"/>
+      <HasHint val="Y"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="N"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="4"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject>  </DataObjects>
+ </DataSourceRepository>
+  </Application>
