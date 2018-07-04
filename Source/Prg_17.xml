@@ -20,10 +20,7 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="1"/>
-            <ParametersAttributes>
-              <Attr MgAttr="B"/>
-            </ParametersAttributes>
+            <ParametersAttributes/>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
@@ -33,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736878" _time="54854" date="03/07/2018" time="15:14:14"/>
+          <LastModified _date="736879" _time="51000" date="04/07/2018" time="14:10:00"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -46,12 +43,6 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="PLogInOut">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_LOGICAL" id="1"/>
-                <_FieldStyle id="276" val="1"/>
-              </PropertyList>
-            </Column>
             <Column id="2" name="VUserName">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" comp="-1" id="1" obj="2"/>
@@ -190,18 +181,6 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="1" FlowIsn="3" id="1">
-                  <Column val="1"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="Y"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
                 <Select FieldID="2" FlowIsn="4" id="2">
                   <Column val="2"/>
                   <Type val="V"/>
@@ -284,7 +263,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="14" VIEW="8" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="14" VIEW="7" VIEWS="3">
                   <DB comp="-1" obj="1"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -394,18 +373,6 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="19">
-                  <FieldID val="1"/>
-                  <WithValue val="13"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="8"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
               </LogicLine>
               <LogicLine>
                 <RaiseEvent FlowIsn="25">
@@ -531,6 +498,18 @@
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="30">
+                  <Parent val="32768"/>
+                  <FieldID val="3"/>
+                  <WithValue val="13"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
               <LogicLine>
                 <RaiseEvent FlowIsn="20">
                   <Event>
