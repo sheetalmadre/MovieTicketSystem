@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736879" _time="51000" date="04/07/2018" time="14:10:00"/>
+          <LastModified _date="736879" _time="66144" date="04/07/2018" time="18:22:24"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -375,14 +375,37 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="25">
+                <RaiseEvent FlowIsn="44">
                   <Event>
                     <EventType val="I"/>
-                    <InternalEventID val="13"/>
+                    <InternalEventID val="594"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
-                  <Condition val="Y"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="12"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Disabled val="1"/>
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="25">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition Exp="10"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
