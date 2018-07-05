@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736879" _time="66898" date="04/07/2018" time="18:34:58"/>
+          <LastModified _date="736880" _time="35423" date="05/07/2018" time="09:50:23"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -364,6 +364,24 @@
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="20"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="22">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="I"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="21"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
