@@ -30,9 +30,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="44460" date="05/07/2018" time="12:21:00"/>
+          <LastModified _date="736881" _time="61598" date="06/07/2018" time="17:06:38"/>
         </Header>
-        <ItemIsn val="25"/>
+        <ItemIsn val="26"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
@@ -97,6 +97,15 @@
                 <Picture id="157" valUnicode="100"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="100"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="13" name="IMG">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -270,7 +279,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -286,7 +295,7 @@
                   <INT_RCMP_INFO>
                     <v>7</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -306,7 +315,20 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="7" Mode="R" SortType="10" VIEW="5" VIEWS="2">
+                <Select FieldID="26" FlowIsn="49" id="26">
+                  <ASS val="9"/>
+                  <Column val="13"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="7" Mode="R" SortType="10" VIEW="6" VIEWS="2">
                   <DB comp="-1" obj="2"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -349,7 +371,7 @@
                   <INT_RCMP_INFO>
                     <v>13</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -372,7 +394,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="13" Mode="R" SortType="16" VIEW="9" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="13" Mode="R" SortType="16" VIEW="10" VIEWS="2">
                   <DB comp="-1" obj="4"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -412,7 +434,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -443,7 +465,7 @@
                   <INT_RCMP_INFO>
                     <v>21</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="17"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -466,7 +488,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="21" Mode="R" SortType="25" VIEW="15" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="21" Mode="R" SortType="25" VIEW="16" VIEWS="3">
                   <DB comp="-1" obj="6"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -494,7 +516,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <Locate MAX="3" MIN="3"/>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="23"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -522,7 +544,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="18"/>
+                  <_DitIndexForToolkit val="19"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -545,7 +567,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="34" Mode="R" SortType="35" VIEW="20" VIEWS="6">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="34" Mode="R" SortType="35" VIEW="21" VIEWS="6">
                   <DB comp="-1" obj="7"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -606,7 +628,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="23"/>
+                  <_DitIndexForToolkit val="24"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -863,7 +885,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="25" _last_test_id="54" id="1">
+          <FormEntry _last_isn="26" _last_test_id="55" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1201"/>
               <Height id="24" val="837"/>
@@ -929,6 +951,17 @@
                 <Height id="24" val="20"/>
                 <ControlName id="46" val="Image8"/>
                 <ImageFile id="88" val="Maska.jpg"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="2" _test_id="55" id="26">
+              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
+                <X id="21" val="48"/>
+                <Y id="22" val="92"/>
+                <Width id="23" val="10"/>
+                <Height id="24" val="26"/>
+                <ControlName id="46" val="Image26"/>
+                <Visible Exp="10" id="61"/>
+                <ImageFile id="88" val="Parmanu.jpg"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="3" _test_id="11" id="7">
@@ -1174,6 +1207,14 @@
           <Expression id="8">
             <ExpSyntax val="{0,15}"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="Trim('Incredibles.jpg')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">

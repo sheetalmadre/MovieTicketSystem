@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736879" _time="69498" date="04/07/2018" time="19:18:18"/>
+          <LastModified _date="736881" _time="44041" date="06/07/2018" time="12:14:01"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -173,19 +173,29 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="2" _last_test_id="2" id="1">
+          <FormEntry _last_isn="3" _last_test_id="3" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1195"/>
               <Height id="24" val="784"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="ShowMovieDetails1"/>
             </PropertyList>
+            <Control _test_id="3" id="3">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="ShowMovieDetails"/>
+                <X id="21" val="33"/>
+                <Y id="22" val="17"/>
+                <Width id="23" val="90"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label3"/>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
                 <X id="21" val="16"/>
-                <Y id="22" val="27"/>
+                <Y id="22" val="70"/>
                 <Width id="23" val="1040"/>
-                <Height id="24" val="749"/>
+                <Height id="24" val="706"/>
                 <ControlName id="46" val="Subform1"/>
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="4"/>

@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="35423" date="05/07/2018" time="09:50:23"/>
+          <LastModified _date="736880" _time="44923" date="05/07/2018" time="12:28:43"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -288,10 +288,10 @@
                 <CallTask FlowIsn="9">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="U"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="42"/>
+                  <TaskID comp="-1" obj="66"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
@@ -382,6 +382,24 @@
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="21"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="23">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="48"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
@@ -510,6 +528,17 @@
                 <ControlName id="46" val="Button8"/>
                 <Visible Exp="6" id="61"/>
                 <Format id="82" valUnicode="BookTicket"/>
+                <Arguments id="126">
+                  <Arguments>
+                    <Argument>
+                      <Expression val="7"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                </Arguments>
                 <RaiseEvent id="234">
                   <EventType val="I"/>
                   <InternalEventID val="594"/>
@@ -641,6 +670,10 @@
           <Expression id="6">
             <ExpSyntax val="{32768,3}"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="'ShowMovieDetails'"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
