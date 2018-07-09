@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="35401" date="05/07/2018" time="09:50:01"/>
+          <LastModified _date="736884" _time="63468" date="09/07/2018" time="17:37:48"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -534,6 +534,25 @@
                 </Update>
               </LogicLine>
               <LogicLine>
+                <RaiseEvent FlowIsn="52">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="432"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
                 <RaiseEvent FlowIsn="20">
                   <Event>
                     <EventType val="I"/>
@@ -787,6 +806,10 @@
           <Expression id="15">
             <ExpSyntax val="{0,10}='FALSE'LOG"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="16">
+            <ExpSyntax val="'Subform13'"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Submit" FORCE_EXIT="N" id="1">
