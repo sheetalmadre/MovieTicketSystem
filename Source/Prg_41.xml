@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="62790" date="09/07/2018" time="17:26:30"/>
+          <LastModified _date="736884" _time="63778" date="09/07/2018" time="17:42:58"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -215,30 +215,6 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </Select>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="4" propagate="78">
-            <Level val="R"/>
-            <Type val="P"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="5" FlowIsn="14" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -506,7 +482,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736884" _time="62757" date="09/07/2018" time="17:25:57"/>
+            <LastModified _date="736884" _time="63778" date="09/07/2018" time="17:42:58"/>
           </Header>
           <ItemIsn val="6"/>
           <Resource>
@@ -544,24 +520,6 @@
                   <Picture id="157" valUnicode="12"/>
                   <StoredAs id="173" val="1"/>
                   <Size id="174" val="12"/>
-                  <_Flip id="194"/>
-                </PropertyList>
-              </Column>
-              <Column id="5" name="Route name">
-                <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_ALPHA" id="1"/>
-                  <Picture id="157" valUnicode="30"/>
-                  <StoredAs id="173" val="1"/>
-                  <Size id="174" val="30"/>
-                  <_Flip id="194"/>
-                </PropertyList>
-              </Column>
-              <Column id="6" name="Outlet name">
-                <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_ALPHA" id="1"/>
-                  <Picture id="157" valUnicode="30"/>
-                  <StoredAs id="173" val="1"/>
-                  <Size id="174" val="30"/>
                   <_Flip id="194"/>
                 </PropertyList>
               </Column>
@@ -695,197 +653,6 @@
                     <Modifier val="S"/>
                     <Direction val="C"/>
                   </Select>
-                </LogicLine>
-              </LogicLines>
-            </LogicUnit>
-            <LogicUnit id="4" propagate="78">
-              <Level val="R"/>
-              <Type val="P"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="S"/>
-                <PublicObject comp="-1"/>
-              </Event>
-              <Expanded val="1"/>
-              <ExecuteOn_ val="O"/>
-              <LogicLines>
-                <LogicLine>
-                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="5" FlowIsn="14" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                    <AppendToErrorLog val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </STP>
-                </LogicLine>
-              </LogicLines>
-            </LogicUnit>
-            <LogicUnit id="3" propagate="89">
-              <Level val="H"/>
-              <Type val="U"/>
-              <Scope val="S"/>
-              <EngineDirective val="S"/>
-              <ShowMessage val="Y"/>
-              <Condition val="89"/>
-              <Event>
-                <EventType val="I"/>
-                <InternalEventID val="594"/>
-                <PublicObject comp="-1"/>
-              </Event>
-              <Expanded val="1"/>
-              <ExecuteOn_ val="O"/>
-              <LogicLines>
-                <LogicLine>
-                  <Select FieldID="5" FlowIsn="7" id="5">
-                    <Column val="5"/>
-                    <Type val="V"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="Y"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <Select FieldID="6" FlowIsn="8" id="6">
-                    <Column val="6"/>
-                    <Type val="V"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="Y"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="9">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="U"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="66"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="10">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="I"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="43"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="11">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="I"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="44"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="12">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="U"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="17"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="13">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="I"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="20"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="22">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="I"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="21"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
-                <LogicLine>
-                  <CallTask FlowIsn="23">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="U"/>
-                      <PublicObject comp="-1"/>
-                    </Event>
-                    <TaskID comp="-1" obj="48"/>
-                    <Lock val="N"/>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <IsRoute val="Y"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </CallTask>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
