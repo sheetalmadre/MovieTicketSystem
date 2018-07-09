@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Card" ISN_2="1" LastIsn="1" id="73">
+        <Header Description="AllAvailableMoviesCards" ISN_2="1" LastIsn="1" id="73">
           <Public val="Card"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736881" _time="57455" date="06/07/2018" time="15:57:35"/>
+          <LastModified _date="736884" _time="43095" date="09/07/2018" time="11:58:15"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -298,7 +298,7 @@
               <Height id="24" val="827"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Card"/>
+              <FormName id="311" valUnicode="AllAvailableMoviesCards"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
