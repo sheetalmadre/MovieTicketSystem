@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="63931" date="09/07/2018" time="17:45:31"/>
+          <LastModified _date="736884" _time="64798" date="09/07/2018" time="17:59:58"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -258,10 +258,10 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="9">
+                <CallTask FlowIsn="24">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="66"/>
@@ -276,10 +276,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="10">
+                <CallTask FlowIsn="25">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="43"/>
@@ -294,10 +294,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="11">
+                <CallTask FlowIsn="26">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="44"/>
@@ -312,10 +312,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="12">
+                <CallTask FlowIsn="27">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="17"/>
@@ -330,10 +330,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="13">
+                <CallTask FlowIsn="28">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="20"/>
@@ -348,10 +348,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="22">
+                <CallTask FlowIsn="29">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="21"/>
@@ -366,10 +366,10 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="23">
+                <CallTask FlowIsn="30">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="48"/>
@@ -384,13 +384,13 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="24">
+                <CallTask FlowIsn="31">
                   <OperationType val="P"/>
                   <Event>
                     <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="66"/>
+                  <TaskID comp="-1" obj="19"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
@@ -440,32 +440,6 @@
             </Control>
           </FormEntry>
         </TaskForms>
-        <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'A'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="2">
-            <ExpSyntax val="'B'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="3">
-            <ExpSyntax val="'C'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="4">
-            <ExpSyntax val="'Login'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="5">
-            <ExpSyntax val="IF({32768,3}='TRUE'LOG,'Logout','Login')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="6">
-            <ExpSyntax val="{32768,3}"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-        </Expressions>
         <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
           <Event>
             <EventType val="N"/>
@@ -500,7 +474,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736884" _time="63839" date="09/07/2018" time="17:43:59"/>
+            <LastModified _date="736884" _time="64798" date="09/07/2018" time="17:59:58"/>
           </Header>
           <ItemIsn val="6"/>
           <Resource>
@@ -674,6 +648,131 @@
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
+            <LogicUnit id="3" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="4"/>
+              </Event>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="7">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="594"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="9"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Skip val="Y"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="8">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="594"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="10"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Skip val="Y"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="5"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+            </LogicUnit>
+            <LogicUnit id="5" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="6"/>
+              </Event>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+            </LogicUnit>
+            <LogicUnit id="6" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="7"/>
+              </Event>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="10">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="594"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="8"/>
+                        <Skip val="N"/>
+                      </Argument>
+                      <Argument>
+                        <Skip val="Y"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
           </TaskLogic>
           <TaskForms>
             <FormEntry _last_isn="12" _last_test_id="17" id="1">
@@ -775,9 +874,8 @@
                   <Visible Exp="6" id="61"/>
                   <Format id="82" valUnicode="Dashboard"/>
                   <RaiseEvent id="234">
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="4"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -802,9 +900,8 @@
                     </Arguments>
                   </Arguments>
                   <RaiseEvent id="234">
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="5"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -818,9 +915,8 @@
                   <Visible Exp="6" id="61"/>
                   <Format id="82" valUnicode="MyBookings"/>
                   <RaiseEvent id="234">
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="6"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -850,9 +946,8 @@
                   <Visible Exp="6" id="61"/>
                   <Format id="82" valUnicode="ChangePassword"/>
                   <RaiseEvent id="234">
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="7"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -913,20 +1008,38 @@
               <ExpSyntax val="'ShowMovieDetails'"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="8">
+              <ExpSyntax val="'ForgotPassword'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="9">
+              <ExpSyntax val="'DashboardAdmin'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="10">
+              <ExpSyntax val="'UserDashboard'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
           </Expressions>
-          <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
+          <EVNT DESC="EventDashboard" FORCE_EXIT="N" id="4">
             <Event>
               <EventType val="N"/>
               <PublicObject comp="-1"/>
             </Event>
           </EVNT>
-          <EVNT DESC="EventAboutUs" FORCE_EXIT="N" id="2">
+          <EVNT DESC="EventBookTicket" FORCE_EXIT="N" id="5">
             <Event>
               <EventType val="N"/>
               <PublicObject comp="-1"/>
             </Event>
           </EVNT>
-          <EVNT DESC="EventContactUs" FORCE_EXIT="N" id="3">
+          <EVNT DESC="EventMyBookings" FORCE_EXIT="N" id="6">
+            <Event>
+              <EventType val="N"/>
+              <PublicObject comp="-1"/>
+            </Event>
+          </EVNT>
+          <EVNT DESC="EventChangePassword" FORCE_EXIT="N" id="7">
             <Event>
               <EventType val="N"/>
               <PublicObject comp="-1"/>
