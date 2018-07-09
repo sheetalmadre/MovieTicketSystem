@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="43095" date="09/07/2018" time="11:58:15"/>
+          <LastModified _date="736884" _time="43997" date="09/07/2018" time="12:13:17"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -128,7 +128,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <Range MAX="5" MIN="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -141,6 +140,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_DIT_INFO>
+                    <v>10</v>
+                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -204,6 +206,9 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_DIT_INFO>
+                    <v>11</v>
+                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -264,9 +269,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>8</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -279,9 +281,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>7</v>
-                  </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -292,7 +291,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="8" _last_test_id="11" id="1">
+          <FormEntry _last_isn="11" _last_test_id="14" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1188"/>
               <Height id="24" val="827"/>
@@ -308,7 +307,7 @@
                 <Height id="24" val="449"/>
                 <ControlName id="46" val="Table1"/>
                 <TitleHeight id="79" val="13"/>
-                <RowHeight id="80" val="350"/>
+                <RowHeight id="80" val="368"/>
                 <Elements id="81" val="1"/>
                 <_WindowWidth id="241" val="396"/>
                 <ScrollBarThumb id="700" val="1"/>
@@ -323,10 +322,21 @@
                 <ColumnTitle id="139" valUnicode=""/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="1" _test_id="13" id="10">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="6" id="19" valUnicode="Text"/>
+                <X id="21" val="52"/>
+                <Y id="22" val="52"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
+                <ControlLayer id="25" val="1"/>
+                <ControlName id="46" val="Label10"/>
+              </PropertyList>
+            </Control>
             <Control ISN_FATHER="1" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
                 <X id="21" val="42"/>
-                <Y id="22" val="41"/>
+                <Y id="22" val="80"/>
                 <Width id="23" val="235"/>
                 <Height id="24" val="182"/>
                 <ControlLayer id="25" val="1"/>
@@ -335,10 +345,21 @@
                 <Attribute id="83" val="85"/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="1" _test_id="14" id="11">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text Exp="7" id="19" valUnicode="Text"/>
+                <X id="21" val="52"/>
+                <Y id="22" val="299"/>
+                <Width id="23" val="23"/>
+                <Height id="24" val="15"/>
+                <ControlLayer id="25" val="1"/>
+                <ControlName id="46" val="Label11"/>
+              </PropertyList>
+            </Control>
             <Control ISN_FATHER="1" _test_id="11" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
                 <X id="21" val="82"/>
-                <Y id="22" val="238"/>
+                <Y id="22" val="342"/>
                 <Width id="23" val="51"/>
                 <Height id="24" val="44"/>
                 <ControlLayer id="25" val="1"/>
@@ -349,7 +370,7 @@
             <Control ISN_FATHER="1" _test_id="8" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
                 <X id="21" val="142"/>
-                <Y id="22" val="238"/>
+                <Y id="22" val="342"/>
                 <Width id="23" val="50"/>
                 <Height id="24" val="40"/>
                 <ControlLayer id="25" val="1"/>
@@ -360,7 +381,7 @@
             <Control ISN_FATHER="1" _test_id="9" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
                 <X id="21" val="202"/>
-                <Y id="22" val="238"/>
+                <Y id="22" val="342"/>
                 <Width id="23" val="46"/>
                 <Height id="24" val="44"/>
                 <ControlLayer id="25" val="1"/>
@@ -368,39 +389,19 @@
                 <ImageFile id="88" val="restaurant.png"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="6" id="7">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="42"/>
-                <Y id="22" val="292"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="1"/>
-                <Data Exp="3" id="43"/>
-                <ControlName id="46" val="StartDate"/>
-                <Format id="82" valUnicode="##/##/####"/>
-                <Attribute id="83" val="68"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="7" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <X id="21" val="42"/>
-                <Y id="22" val="341"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="1"/>
-                <Data Exp="2" id="43"/>
-                <ControlName id="46" val="EneDate"/>
-                <Format id="82" valUnicode="##/##/####"/>
-                <Attribute id="83" val="68"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
           <Expression id="1">
             <ExpSyntax val="Trim({0,4})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="Trim({0,7})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
@@ -420,8 +421,6 @@
             <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
-        <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
-        <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
       </Task>
     </Programs>
   </ProgramsRepository>
