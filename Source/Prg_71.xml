@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="67201" date="05/07/2018" time="18:40:01"/>
+          <LastModified _date="736885" _time="42915" date="10/07/2018" time="11:55:15"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -468,10 +468,10 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="25">
+                <CallTask FlowIsn="29">
                   <OperationType val="P"/>
                   <Event>
-                    <EventType val="I"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="72"/>
@@ -671,7 +671,7 @@
                 <ControlName id="46" val="MSMovieType"/>
                 <SourceTable comp="-1" id="150" obj="2"/>
                 <_DisplayField comp="-1" id="443" obj="2"/>
-                <_LinkField comp="-1" id="444" obj="1"/>
+                <_LinkField comp="-1" id="444" obj="2"/>
               </PropertyList>
             </Control>
             <Control PDOD="1" _test_id="118" id="10">
