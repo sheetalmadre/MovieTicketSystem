@@ -653,6 +653,8 @@
 
   <Position val="D"/>
 
+  <PositionIndex val="-2"/>
+
   <IndexesLastIsn val="3"/>
 
   <Columns>
@@ -786,19 +788,7 @@
     </Index>
   </Indexes>
 
-  <ForeignKeys>
-    <Key name="F1MSTheatre1">
-      <Create val="Y"/>
-      <ReferencedTable comp="-1" obj="2"/>
-      <PrimaryKey val="3"/>
-      <Segments>
-        <Segment>
-          <Size val="4"/>
-          <Column val="10"/>
-        </Segment>
-      </Segments>
-    </Key>
-  </ForeignKeys>
+  <ForeignKeys/>
 
   <WebS/>
 
