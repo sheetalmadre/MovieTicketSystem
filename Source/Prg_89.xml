@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="39695" date="10/07/2018" time="11:01:35"/>
+          <LastModified _date="736885" _time="41071" date="10/07/2018" time="11:24:31"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -309,26 +309,6 @@
                 <Update FlowIsn="18">
                   <FieldID val="3"/>
                   <WithValue val="1"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="19">
-                  <FieldID val="4"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="20">
-                  <FieldID val="5"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
