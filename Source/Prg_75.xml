@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Home" ISN_2="1" LastIsn="5" id="66">
-          <Public val="S2"/>
+        <Header Description="WCMSShowDetails" ISN_2="1" LastIsn="5" id="75">
+          <Public val="WCMSShowDetails"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -25,18 +25,17 @@
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
-          <RoutePath val="A"/>
           <External val="Y"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="43123" date="10/07/2018" time="11:58:43"/>
+          <LastModified _date="736885" _time="38099" date="10/07/2018" time="10:34:59"/>
         </Header>
-        <ItemIsn val="26"/>
+        <ItemIsn val="23"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
-            <Access val="W"/>
+            <Access val="R"/>
             <Share val="W"/>
             <Open val="N"/>
             <Cache val="Y"/>
@@ -67,22 +66,7 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="SelectLocation">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="12"/>
-                <StoredAs id="173" val="1"/>
-                <Size id="174" val="12"/>
-                <_Flip id="194"/>
-              </PropertyList>
-            </Column>
-            <Column id="2" name="RadioButton1">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_LOGICAL" id="1"/>
-                <_FieldStyle id="276" val="1"/>
-              </PropertyList>
-            </Column>
-            <Column id="3" name="City">
+            <Column id="1" name="City">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="10"/>
@@ -91,7 +75,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="4" name="CityString">
+            <Column id="2" name="CityString">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="100"/>
@@ -100,16 +84,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="13" name="IMG">
-              <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="1000"/>
-                <StoredAs id="173" val="1"/>
-                <Size id="174" val="1000"/>
-                <_Flip id="194"/>
-              </PropertyList>
-            </Column>
-            <Column id="5" name="Movie">
+            <Column id="3" name="Movie">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="10"/>
@@ -118,7 +93,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="6" name="MovieString">
+            <Column id="4" name="MovieString">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="100"/>
@@ -127,7 +102,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="7" name="Date">
+            <Column id="5" name="Date">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="20"/>
@@ -136,7 +111,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="8" name="MovieWiseDateValue">
+            <Column id="6" name="MovieWiseDateValue">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="100"/>
@@ -145,7 +120,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="9" name="Theater">
+            <Column id="7" name="Theatre">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="30"/>
@@ -154,7 +129,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="10" name="TheatreString">
+            <Column id="8" name="TheatreString">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="100"/>
@@ -163,7 +138,7 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="11" name="ShowTime">
+            <Column id="9" name="ShowTime">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="20"/>
@@ -172,13 +147,23 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="12" name="ShowWiseDateValue">
+            <Column id="10" name="ShowWiseDateValue">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
                 <Picture id="157" valUnicode="100"/>
                 <StoredAs id="173" val="1"/>
                 <Size id="174" val="100"/>
                 <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="11" name="ShoWtIME">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="10"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="10"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -267,6 +252,10 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>6</v>
+                  </INT_RCMP_INFO>
+                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -279,7 +268,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -287,55 +275,20 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="3" FlowIsn="5" id="3">
-                  <Column val="3"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <INT_RCMP_INFO>
-                    <v>7</v>
-                  </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="11"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
+                <Remark FlowIsn="5">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="4" FlowIsn="6" id="4">
-                  <Column val="4"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="26" FlowIsn="49" id="26">
-                  <ASS val="9"/>
-                  <Column val="13"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="7" Mode="R" SortType="10" VIEW="6" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="6" Key="3" Mode="R" SortType="9" VIEW="3" VIEWS="2">
                   <DB comp="-1" obj="2"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="5" FlowIsn="8" id="5">
+                <Select FieldID="3" FlowIsn="7" id="3">
                   <Column val="1"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -347,7 +300,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="6" FlowIsn="9" id="6">
+                <Select FieldID="4" FlowIsn="8" id="4">
                   <Column val="2"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -360,18 +313,24 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <END_LINK FlowIsn="10"/>
+                <END_LINK FlowIsn="9"/>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="7" FlowIsn="11" id="7">
-                  <Column val="5"/>
+                <Remark FlowIsn="10">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="5" FlowIsn="11" id="5">
+                  <Column val="3"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
-                    <v>13</v>
+                    <v>15</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -379,13 +338,13 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="8" FlowIsn="12" id="8">
-                  <Column val="6"/>
+                <Select FieldID="6" FlowIsn="12" id="6">
+                  <Column val="4"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>12</v>
+                    <v>4</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -394,18 +353,33 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="13" Mode="R" SortType="16" VIEW="10" VIEWS="2">
+                <Remark FlowIsn="13">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="14">
+                  <Type val="1"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="15" Key="1" Mode="R" SortType="18" VIEW="7" VIEWS="2">
                   <DB comp="-1" obj="4"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="9" FlowIsn="14" id="9">
+                <Select FieldID="7" FlowIsn="16" id="7">
                   <Column val="1"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>37</v>
+                  </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -413,12 +387,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="10" FlowIsn="15" id="10">
+                <Select FieldID="8" FlowIsn="17" id="8">
                   <Column val="2"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <Locate MAX="2" MIN="2"/>
+                  <Locate MAX="3" MIN="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -426,15 +400,24 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <END_LINK FlowIsn="16"/>
+                <END_LINK FlowIsn="18"/>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="11" FlowIsn="17" id="11">
-                  <Column val="7"/>
+                <Remark FlowIsn="19">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="9" FlowIsn="20" id="9">
+                  <Column val="5"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="15"/>
+                  <INT_RCMP_INFO>
+                    <v>37</v>
+                  </INT_RCMP_INFO>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -442,13 +425,50 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="12" FlowIsn="18" id="12">
+                <Select FieldID="10" FlowIsn="21" id="10">
+                  <Column val="6"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_DIT_INFO>
+                    <v>6</v>
+                  </INT_DIT_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="22">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="11" FlowIsn="23" id="11">
+                  <Column val="7"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>26</v>
+                  </INT_RCMP_INFO>
+                  <_DitIndexForToolkit val="7"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="12" FlowIsn="24" id="12">
                   <Column val="8"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
-                    <v>14</v>
+                    <v>7</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -457,51 +477,26 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="13" FlowIsn="19" id="13">
-                  <Column val="9"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <INT_RCMP_INFO>
-                    <v>21</v>
-                  </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="17"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
+                <Remark FlowIsn="25">
+                  <Type val="1"/>
+                  <Text val=" "/>
+                </Remark>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="14" FlowIsn="20" id="14">
-                  <Column val="10"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <INT_DIT_INFO>
-                    <v>16</v>
-                  </INT_DIT_INFO>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="21" Mode="R" SortType="25" VIEW="16" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="26" Key="3" Mode="R" SortType="30" VIEW="13" VIEWS="3">
                   <DB comp="-1" obj="6"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="15" FlowIsn="22" id="15">
+                <Select FieldID="13" FlowIsn="27" id="13">
                   <Column val="3"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_RCMP_INFO>
-                    <v>34</v>
+                    <v>37</v>
                   </INT_RCMP_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
@@ -510,13 +505,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="16" FlowIsn="23" id="16">
+                <Select FieldID="14" FlowIsn="28" id="14">
                   <Column val="6"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <Locate MAX="3" MIN="3"/>
-                  <_DitIndexForToolkit val="23"/>
+                  <Locate MAX="7" MIN="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -524,7 +518,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="17" FlowIsn="24" id="17">
+                <Select FieldID="15" FlowIsn="29" id="15">
                   <Column val="4"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -536,15 +530,21 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <END_LINK FlowIsn="25"/>
+                <END_LINK FlowIsn="30"/>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="18" FlowIsn="26" id="18">
-                  <Column val="11"/>
+                <Remark FlowIsn="31">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="16" FlowIsn="32" id="16">
+                  <Column val="9"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -552,13 +552,16 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="19" FlowIsn="27" id="19">
-                  <Column val="12"/>
+                <Select FieldID="17" FlowIsn="33" id="17">
+                  <Column val="10"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>37</v>
+                  </INT_RCMP_INFO>
                   <INT_DIT_INFO>
-                    <v>18</v>
+                    <v>10</v>
                   </INT_DIT_INFO>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -567,14 +570,38 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="34" Mode="R" SortType="35" VIEW="21" VIEWS="6">
+                <Select FieldID="18" FlowIsn="34" id="18">
+                  <Column val="11"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="35">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="36">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="37" Key="1" Mode="R" SortType="43" VIEW="19" VIEWS="5">
                   <DB comp="-1" obj="7"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="20" FlowIsn="36" id="20">
+                <Select FieldID="19" FlowIsn="38" id="19">
                   <Column val="2"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -587,7 +614,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="21" FlowIsn="37" id="21">
+                <Select FieldID="20" FlowIsn="39" id="20">
                   <Column val="3"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
@@ -599,11 +626,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="22" FlowIsn="38" id="22">
+                <Select FieldID="21" FlowIsn="40" id="21">
                   <Column val="4"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <Locate MAX="9" MIN="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -611,11 +639,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="23" FlowIsn="39" id="23">
+                <Select FieldID="22" FlowIsn="41" id="22">
                   <Column val="5"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
+                  <Locate MAX="10" MIN="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -623,12 +652,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="24" FlowIsn="40" id="24">
+                <Select FieldID="23" FlowIsn="42" id="23">
                   <Column val="6"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="24"/>
+                  <Locate MAX="11" MIN="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -636,66 +665,11 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="25" FlowIsn="41" id="25">
-                  <Column val="7"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="N"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <END_LINK FlowIsn="35"/>
+                <END_LINK FlowIsn="43"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="3" propagate="78">
-            <Level val="H"/>
-            <Type val="U"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <KeyCombinationID val="61"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <Disabled val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <CallTask FlowIsn="28">
-                  <OperationType val="P"/>
-                  <Event>
-                    <EventType val="S"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <TaskID comp="-1" obj="45"/>
-                  <Lock val="N"/>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <RetainFocus val="N"/>
-                  <Disabled val="1"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </CallTask>
-              </LogicLine>
-              <LogicLine>
-                <Remark FlowIsn="29">
-                  <Type val="2"/>
-                  <Text val=" "/>
-                </Remark>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="4" propagate="78">
             <Level val="C"/>
             <Type val="S"/>
             <Scope val="S"/>
@@ -711,7 +685,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="85">
+                <CallTask FlowIsn="44">
                   <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
@@ -721,7 +695,52 @@
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
-                      <Variable val="8"/>
+                      <Variable val="6"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="C"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="Movie"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="45">
+                  <OperationType val="T"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="5"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="7"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="10"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -747,20 +766,24 @@
               <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
-            <TXT val="Movie"/>
+            <TXT val="DateS"/>
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="86">
+                <CallTask FlowIsn="46">
                   <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="5"/>
+                  <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Arguments>
+                    <Argument>
+                      <Variable val="7"/>
+                      <Skip val="N"/>
+                    </Argument>
                     <Argument>
                       <Variable val="9"/>
                       <Skip val="N"/>
@@ -792,30 +815,34 @@
               <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
-            <TXT val="Date"/>
+            <TXT val="Theatre"/>
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="87">
+                <CallTask FlowIsn="47">
                   <OperationType val="T"/>
                   <Event>
                     <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="2"/>
+                  <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Arguments>
+                    <Argument>
+                      <Variable val="7"/>
+                      <Skip val="N"/>
+                    </Argument>
                     <Argument>
                       <Variable val="9"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="11"/>
+                      <Variable val="13"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="14"/>
+                      <Variable val="17"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -831,50 +858,59 @@
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="7" propagate="78">
-            <Level val="C"/>
-            <Type val="S"/>
+            <Level val="H"/>
+            <Type val="U"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
+              <KeyCombinationID val="61"/>
               <PublicObject comp="-1"/>
             </Event>
-            <TXT val="Theater"/>
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="88">
-                  <OperationType val="T"/>
+                <CallTask FlowIsn="48">
+                  <OperationType val="P"/>
                   <Event>
                     <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="3"/>
+                  <TaskID comp="-1" obj="76"/>
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
-                      <Variable val="9"/>
+                      <Variable val="3"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="11"/>
+                      <Variable val="21"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
-                      <Variable val="15"/>
+                      <Variable val="22"/>
                       <Skip val="N"/>
                     </Argument>
                     <Argument>
                       <Variable val="19"/>
                       <Skip val="N"/>
                     </Argument>
+                    <Argument>
+                      <Variable val="20"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="23"/>
+                      <Skip val="N"/>
+                    </Argument>
                   </Arguments>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
+                  <DestSubformName val="Subform12"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
@@ -885,316 +921,167 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="26" _last_test_id="55" id="1">
+          <FormEntry _last_isn="12" _last_test_id="23" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="1201"/>
-              <Height id="24" val="837"/>
+              <Width id="23" val="867"/>
+              <Height id="24" val="665"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Home"/>
+              <FormName id="311" valUnicode="WCMSShowDetails"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="9" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19" valUnicode="Group3"/>
-                <X id="21" val="9"/>
-                <Y id="22" val="10"/>
-                <Width id="23" val="1055"/>
-                <Height id="24" val="834"/>
-                <ControlName id="46" val="Group9"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="1" id="2">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19" valUnicode="SlidingImages"/>
-                <X id="21" val="27"/>
-                <Y id="22" val="33"/>
-                <Width id="23" val="456"/>
-                <Height id="24" val="445"/>
-                <ControlName id="46" val="Group1"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="10" id="3">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19"/>
-                <X id="21" val="520"/>
-                <Y id="22" val="33"/>
-                <Width id="23" val="412"/>
-                <Height id="24" val="52"/>
-                <ControlName id="46" val="Group10"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="2" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19"/>
-                <X id="21" val="520"/>
-                <Y id="22" val="91"/>
-                <Width id="23" val="412"/>
-                <Height id="24" val="385"/>
-                <ControlName id="46" val="Group2"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="14" id="5">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19"/>
-                <X id="21" val="27"/>
-                <Y id="22" val="491"/>
-                <Width id="23" val="905"/>
-                <Height id="24" val="142"/>
-                <ControlName id="46" val="Group14"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" _test_id="8" id="6">
-              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
-                <X id="21" val="45"/>
-                <Y id="22" val="65"/>
-                <Width id="23" val="10"/>
-                <Height id="24" val="20"/>
-                <ControlName id="46" val="Image8"/>
-                <ImageFile id="88" val="Maska.jpg"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="2" _test_id="55" id="26">
-              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
-                <X id="21" val="48"/>
-                <Y id="22" val="92"/>
-                <Width id="23" val="10"/>
-                <Height id="24" val="26"/>
-                <ControlName id="46" val="Image26"/>
-                <Visible Exp="10" id="61"/>
-                <ImageFile id="88" val="Parmanu.jpg"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="3" _test_id="11" id="7">
+            <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Instant Ticket Booking"/>
-                <X id="21" val="665"/>
-                <Y id="22" val="54"/>
-                <Width id="23" val="119"/>
-                <Height id="24" val="23"/>
-                <ControlName id="46" val="Label11"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="4" PDOD="192" _test_id="32" id="8">
-              <PropertyList model="CTRL_WEB_CLIENT_RADIO">
-                <X id="21" val="582"/>
-                <Y id="22" val="110"/>
-                <Width id="23" val="139"/>
-                <Height id="24" val="60"/>
-                <Data FieldID="2" id="43"/>
-                <ItemsList id="45" valUnicode="Movies,Cinemas"/>
-                <ControlName id="46" val="RadioButton1"/>
-                <ChoiceColumns id="67" val="1"/>
-                <DisplayList id="303" valUnicode="Movies,Cinemas"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="4" _test_id="45" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="City"/>
-                <X id="21" val="575"/>
-                <Y id="22" val="179"/>
-                <Width id="23" val="19"/>
+                <Text id="19" valUnicode="City:"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="13"/>
+                <Width id="23" val="23"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label27"/>
+                <ControlName id="46" val="Label1"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" PDOD="128" _test_id="39" id="10">
+            <Control PDOD="128" _test_id="7" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
-                <X id="21" val="696"/>
-                <Y id="22" val="179"/>
-                <Width id="23" val="170"/>
-                <Height id="24" val="19"/>
-                <Data FieldID="3" id="43"/>
-                <ItemsList id="45" valUnicode="Pune"/>
+                <X id="21" val="136"/>
+                <Y id="22" val="13"/>
+                <Width id="23" val="141"/>
+                <Height id="24" val="29"/>
+                <Data FieldID="1" id="43"/>
+                <ItemsList id="45" valUnicode="PUNE"/>
                 <ControlName id="46" val="City"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" _test_id="46" id="11">
+            <Control _test_id="2" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Movie"/>
-                <X id="21" val="575"/>
-                <Y id="22" val="227"/>
-                <Width id="23" val="31"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="46"/>
+                <Width id="23" val="75"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label28"/>
+                <ControlName id="46" val="Label2"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" PDOD="128" _test_id="40" id="12">
+            <Control PDOD="128" _test_id="8" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
-                <X id="21" val="696"/>
-                <Y id="22" val="227"/>
-                <Width id="23" val="170"/>
-                <Height id="24" val="19"/>
-                <Data FieldID="7" id="43"/>
-                <ItemsList Exp="7" id="45"/>
+                <X id="21" val="136"/>
+                <Y id="22" val="50"/>
+                <Width id="23" val="138"/>
+                <Height id="24" val="28"/>
+                <Data FieldID="5" id="43"/>
+                <ItemsList Exp="2" id="45"/>
                 <ControlName id="46" val="Movie"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" _test_id="47" id="13">
+            <Control _test_id="3" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Date"/>
-                <X id="21" val="575"/>
-                <Y id="22" val="275"/>
-                <Width id="23" val="25"/>
+                <Text id="19" valUnicode="Date:"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="88"/>
+                <Width id="23" val="81"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label29"/>
+                <ControlName id="46" val="Label3"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" PDOD="128" _test_id="41" id="14">
+            <Control PDOD="128" _test_id="9" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
-                <X id="21" val="696"/>
-                <Y id="22" val="275"/>
-                <Width id="23" val="170"/>
-                <Height id="24" val="19"/>
+                <X id="21" val="136"/>
+                <Y id="22" val="88"/>
+                <Width id="23" val="138"/>
+                <Height id="24" val="23"/>
+                <Data FieldID="9" id="43"/>
+                <ItemsList Exp="4" id="45"/>
+                <ControlName id="46" val="DateS"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="10" id="7">
+              <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
+                <X id="21" val="136"/>
+                <Y id="22" val="119"/>
+                <Width id="23" val="138"/>
+                <Height id="24" val="31"/>
                 <Data FieldID="11" id="43"/>
                 <ItemsList Exp="6" id="45"/>
-                <ControlName id="46" val="Date"/>
+                <ControlName id="46" val="Theatre"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" _test_id="48" id="15">
+            <Control _test_id="4" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Theater"/>
-                <X id="21" val="575"/>
-                <Y id="22" val="323"/>
+                <Text id="19" valUnicode="Theatre"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="123"/>
                 <Width id="23" val="39"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label30"/>
+                <ControlName id="46" val="Label4"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" PDOD="128" _test_id="42" id="16">
-              <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
-                <X id="21" val="696"/>
-                <Y id="22" val="323"/>
-                <Width id="23" val="170"/>
-                <Height id="24" val="19"/>
-                <Data FieldID="13" id="43"/>
-                <ItemsList Exp="5" id="45"/>
-                <ControlName id="46" val="Theater"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="4" _test_id="49" id="17">
+            <Control _test_id="5" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Show Time"/>
-                <X id="21" val="575"/>
-                <Y id="22" val="371"/>
-                <Width id="23" val="55"/>
+                <Text id="19" valUnicode="ShowTime"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="156"/>
+                <Width id="23" val="53"/>
                 <Height id="24" val="15"/>
-                <ControlName id="46" val="Label31"/>
+                <ControlName id="46" val="Label5"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="4" PDOD="128" _test_id="43" id="18">
+            <Control PDOD="128" _test_id="11" id="10">
               <PropertyList model="CTRL_WEB_CLIENT_COMBOBOX">
-                <X id="21" val="696"/>
-                <Y id="22" val="371"/>
-                <Width id="23" val="170"/>
-                <Height id="24" val="19"/>
-                <Data FieldID="18" id="43"/>
-                <ItemsList Exp="4" id="45"/>
+                <X id="21" val="136"/>
+                <Y id="22" val="158"/>
+                <Width id="23" val="143"/>
+                <Height id="24" val="24"/>
+                <Data FieldID="16" id="43"/>
+                <ItemsList Exp="5" id="45"/>
                 <ControlName id="46" val="ShowTime"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="5" _test_id="50" id="21">
-              <PropertyList model="CTRL_WEB_CLIENT_TABLE">
-                <X id="21" val="44"/>
-                <Y id="22" val="513"/>
-                <Width id="23" val="508"/>
-                <Height id="24" val="104"/>
-                <ControlName id="46" val="Table21"/>
-                <TitleHeight id="79" val="19"/>
-                <RowHeight id="80" val="24"/>
-                <Elements id="81" val="2"/>
-                <_WindowWidth id="241" val="508"/>
+            <Control PDOD="128" _test_id="13" id="11">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="78"/>
+                <Y id="22" val="219"/>
+                <Width id="23" val="130"/>
+                <Height id="24" val="53"/>
+                <ControlName id="46" val="Button13"/>
+                <Format id="82" valUnicode="Continue"/>
+                <RaiseEvent id="234">
+                  <EventType val="S"/>
+                  <KeyCombinationID val="61"/>
+                  <PublicObject comp="-1"/>
+                </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="21" PDOD="128" _test_id="51" id="22">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="224"/>
-                <ControlLayer id="25" val="1"/>
-                <ControlName id="46" val="Column22"/>
-                <ColumnTitle id="139" valUnicode="MSTheatreName"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="21" PDOD="128" _test_id="53" id="24">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="90"/>
-                <ControlLayer id="25" val="2"/>
-                <ControlName id="46" val="Column24"/>
-                <ColumnTitle id="139" valUnicode="MSShowTimings"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="21" _test_id="52" id="23">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                  <Var FieldID="16"/>
-                </Model>
-                <X id="21" val="48"/>
-                <Y id="22" val="536"/>
-                <Width id="23" val="216"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="1"/>
-                <Data FieldID="16" id="43"/>
-                <ControlName id="46" val="MSTheatreName"/>
-                <AllowParking id="315"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="21" PDOD="128" _test_id="54" id="25">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                  <Var FieldID="24"/>
-                </Model>
-                <X id="21" val="272"/>
-                <Y id="22" val="536"/>
-                <Width id="23" val="62"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="2"/>
-                <Data FieldID="24" id="43"/>
-                <ControlName id="46" val="MSShowTimings"/>
-                <Format id="82" valUnicode="HH:MM"/>
-                <AllowParking id="315"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="24" id="19">
+            <Control PDOD="128" _test_id="12" id="12">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="26"/>
-                <Y id="22" val="648"/>
-                <Width id="23" val="906"/>
-                <Height id="24" val="69"/>
-                <ControlName id="46" val="Subform24"/>
-                <TaskNumber comp="-1" id="183" obj="45"/>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="26" id="20">
-              <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="25"/>
-                <Y id="22" val="731"/>
-                <Width id="23" val="907"/>
-                <Height id="24" val="88"/>
-                <ControlName id="46" val="Subform26"/>
-                <TaskNumber comp="-1" id="183" obj="46"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="289"/>
+                <Width id="23" val="829"/>
+                <Height id="24" val="366"/>
+                <ControlName id="46" val="Subform12"/>
+                <Arguments id="126"/>
+                <ConnectTo id="156" val="4"/>
+                <TaskNumber id="183"/>
               </PropertyList>
             </Control>
           </FormEntry>
         </TaskForms>
         <Expressions>
           <Expression id="1">
-            <ExpSyntax val="Trim({0,3})"/>
+            <ExpSyntax val="Trim({0,1})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="2">
-            <ExpSyntax val="Trim({0,7})"/>
+            <ExpSyntax val="Trim({0,6})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="3">
-            <ExpSyntax val="Trim({0,13})"/>
+            <ExpSyntax val="Trim({0,5})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="4">
-            <ExpSyntax val="Trim({0,19})"/>
+            <ExpSyntax val="Trim({0,10})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="5">
-            <ExpSyntax val="Trim({0,14})"/>
+            <ExpSyntax val="Trim({0,17})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="6">
@@ -1202,24 +1089,28 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="7">
-            <ExpSyntax val="Trim({0,8})"/>
+            <ExpSyntax val="Trim({0,11})"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="8">
-            <ExpSyntax val="{0,15}"/>
+            <ExpSyntax val="{0,13}"/>
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="9">
-            <ExpSyntax val="Trim('Incredibles.jpg')"/>
-            <ExpAttribute val="A"/>
+            <ExpSyntax val="{0,7}"/>
+            <ExpAttribute val="N"/>
           </Expression>
           <Expression id="10">
-            <ExpSyntax val="'FALSE'LOG"/>
-            <ExpAttribute val="B"/>
+            <ExpSyntax val="DVal({0,9},'DD/MM/YYYY')"/>
+            <ExpAttribute val="D"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="TVal({0,17},'HH:MM PM')"/>
+            <ExpAttribute val="T"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="TheaterString" ISN_2="2" LastIsn="5" id="66">
+          <Header Description="TheatreString" ISN_2="2" id="75">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1235,9 +1126,9 @@
             <SqlWhereExist val="N"/>
             <TaskType val="B"/>
             <External val="N"/>
-            <FormType val="N"/>
+            <FormType val="D"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736878" _time="56512" date="03/07/2018" time="15:41:52"/>
+            <LastModified _date="736879" _time="46121" date="04/07/2018" time="12:48:41"/>
           </Header>
           <ItemIsn val="12"/>
           <Resource>
@@ -1260,21 +1151,21 @@
             <Columns>
               <Column id="1" name="PMovieID">
                 <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
-                  <Picture id="157" valUnicode="5"/>
-                  <_Dec id="181"/>
-                  <_Whole id="182" val="5"/>
-                  <_Negative id="192"/>
-                  <_FieldStyle id="276" val="1"/>
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="14"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
                 </PropertyList>
               </Column>
               <Column id="2" name="PDateS">
                 <PropertyList model="FIELD">
                   <Model attr_obj="FIELD_ALPHA" id="1"/>
                   <Picture id="157" valUnicode="20"/>
-                  <StoredAs id="173" val="1"/>
                   <Size id="174" val="20"/>
+                  <DbColumnName id="178"/>
+                  <UserType id="180"/>
                   <_Flip id="194"/>
+                  <_FieldStyle id="276" val="1"/>
                 </PropertyList>
               </Column>
               <Column id="3" name="PTheatreValue">
@@ -1310,7 +1201,7 @@
               <ConfirmCancel val="N"/>
               <ErrorStrategy val="A"/>
               <LockingStrategy val="I"/>
-              <CacheStrategy val="T"/>
+              <CacheStrategy val="D"/>
               <ForceRecordSuffix val="N"/>
               <TransactionMode val="W"/>
               <TransactionBegin val="T"/>
@@ -1372,7 +1263,9 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="2"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -1384,7 +1277,9 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="3"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -1396,6 +1291,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1403,14 +1299,21 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="4" FlowIsn="6" id="4">
+                  <Remark FlowIsn="6">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="4" FlowIsn="7" id="4">
                     <Column val="2"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
-                      <v>12</v>
+                      <v>14</v>
                     </INT_RCMP_INFO>
+                    <_DitIndexForToolkit val="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1418,11 +1321,12 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="5" FlowIsn="7" id="5">
+                  <Select FieldID="5" FlowIsn="8" id="5">
                     <Column val="3"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1430,12 +1334,13 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="6" FlowIsn="8" id="6">
+                  <Select FieldID="6" FlowIsn="9" id="6">
                     <Column val="4"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Range MAX="3" MIN="3"/>
+                    <Range MAX="2" MIN="2"/>
+                    <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1443,12 +1348,13 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="7" FlowIsn="9" id="7">
+                  <Select FieldID="7" FlowIsn="10" id="7">
                     <Column val="5"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Range MAX="2" MIN="2"/>
+                    <Range MAX="3" MIN="3"/>
+                    <_DitIndexForToolkit val="8"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1456,11 +1362,12 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="8" FlowIsn="10" id="8">
+                  <Select FieldID="8" FlowIsn="11" id="8">
                     <Column val="6"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1468,11 +1375,12 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="9" FlowIsn="11" id="9">
+                  <Select FieldID="9" FlowIsn="12" id="9">
                     <Column val="7"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1480,19 +1388,25 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="12" Mode="R" SortType="16" VIEW="10" VIEWS="3">
+                  <Remark FlowIsn="13">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="14" Key="3" Mode="R" SortType="18" VIEW="10" VIEWS="3">
                     <DB comp="-1" obj="6"/>
                     <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="10" FlowIsn="13" id="10">
+                  <Select FieldID="10" FlowIsn="15" id="10">
                     <Column val="3"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Locate MAX="1" MIN="1"/>
+                    <Locate MAX="5" MIN="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -1500,7 +1414,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="11" FlowIsn="14" id="11">
+                  <Select FieldID="11" FlowIsn="16" id="11">
                     <Column val="6"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -1512,7 +1426,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="12" FlowIsn="15" id="12">
+                  <Select FieldID="12" FlowIsn="17" id="12">
                     <Column val="4"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -1524,7 +1438,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <END_LINK FlowIsn="16"/>
+                  <END_LINK FlowIsn="18"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -1542,9 +1456,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="17">
+                  <Update FlowIsn="19">
                     <FieldID val="3"/>
-                    <WithValue val="5"/>
+                    <WithValue val="4"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1569,9 +1483,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="18">
+                  <Update FlowIsn="20">
                     <FieldID val="3"/>
-                    <WithValue val="4"/>
+                    <WithValue val="1"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1583,40 +1497,289 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry id="1">
+            <FormEntry _last_isn="19" _last_test_id="19" id="1">
               <PropertyList model="FORM_GUI0">
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="TheaterString"/>
+                <FormName id="311" valUnicode="ShowString"/>
               </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_GUI0_TABLE">
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="8"/>
+                  <Y id="22" val="8"/>
+                  <Width id="23" val="3842"/>
+                  <Height id="24" val="182"/>
+                  <TitleHeight id="79" val="12"/>
+                  <RowHeight id="80" val="13"/>
+                  <Elements id="81" val="9"/>
+                  <MultiMarking id="196"/>
+                  <_WindowWidth id="241" val="3842"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="2" id="2">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="1"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="12"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="MovieID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="1"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="3" id="3">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="2"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="47"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="115"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="2"/>
+                  <Data FieldID="2" id="43"/>
+                  <ControlName id="46" val="DateS"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="2"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="4" id="4">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="3"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="169"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="563"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="3" id="43"/>
+                  <ControlName id="46" val="ShowTValue"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="3"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="5" id="5">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="739"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="MSTheatreID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="4"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="6" id="6">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="793"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="5"/>
+                  <Data FieldID="5" id="43"/>
+                  <ControlName id="46" val="MSScreenID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="5"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="7" id="7">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="6"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="845"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="6"/>
+                  <Data FieldID="6" id="43"/>
+                  <ControlName id="46" val="MSMovieID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="6"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="8" id="8">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="7"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="893"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="61"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="7"/>
+                  <Data FieldID="7" id="43"/>
+                  <ControlName id="46" val="MSShowDate"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="7"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="9" id="9">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="8"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="961"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="48"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="8"/>
+                  <Data FieldID="8" id="43"/>
+                  <ControlName id="46" val="MSShowTimings"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="8"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="10" id="10">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="9"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="1027"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="2803"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="9"/>
+                  <Data FieldID="9" id="43"/>
+                  <ControlName id="46" val="MSSeatsBooked"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="9"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="11" id="11">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="35"/>
+                  <ControlLayer id="25" val="1"/>
+                  <ColumnTitle id="139" valUnicode="MovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="12" id="12">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="122"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ColumnTitle id="139" valUnicode="DateS"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="13" id="13">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="570"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ColumnTitle id="139" valUnicode="ShowTValue"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="14" id="14">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="54"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Sortable id="134" val="Y"/>
+                  <ColumnTitle id="139" valUnicode="MSTheatreID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="15" id="15">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="52"/>
+                  <ControlLayer id="25" val="5"/>
+                  <ColumnTitle id="139" valUnicode="MSScreenID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="16" id="16">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="48"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ColumnTitle id="139" valUnicode="MSMovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="17" id="17">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="68"/>
+                  <ControlLayer id="25" val="7"/>
+                  <ColumnTitle id="139" valUnicode="MSShowDate"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="18" id="18">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="66"/>
+                  <ControlLayer id="25" val="8"/>
+                  <ColumnTitle id="139" valUnicode="MSShowTimings"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="19" id="19">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="2810"/>
+                  <ControlLayer id="25" val="9"/>
+                  <ColumnTitle id="139" valUnicode="MSSeatsBooked"/>
+                </PropertyList>
+              </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
             <Expression id="1">
-              <ExpSyntax val="{0,4}"/>
-              <ExpAttribute val="N"/>
-            </Expression>
-            <Expression id="2">
-              <ExpSyntax val="DVal({0,2},'DD/MM/YY')"/>
-              <ExpAttribute val="D"/>
-            </Expression>
-            <Expression id="3">
-              <ExpSyntax val="{0,1}"/>
-              <ExpAttribute val="N"/>
-            </Expression>
-            <Expression id="4">
               <ExpSyntax val="Trim({0,11})&amp;','&amp;Trim({0,3})"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="5">
+            <Expression id="2">
+              <ExpSyntax val="{0,1}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="3">
+              <ExpSyntax val="DVal({0,2},'DD/MM/YYYY')"/>
+              <ExpAttribute val="D"/>
+            </Expression>
+            <Expression id="4">
               <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="5">
+              <ExpSyntax val="{0,4}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
           </Expressions>
-          <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="1"/>
-          <VarRangeInfo Mode="E" VarRangeVeeIsn="6" id="2"/>
+          <VarRangeInfo Mode="E" VarRangeVeeIsn="6" id="1"/>
+          <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="2"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="ShowTimeString" ISN_2="3" LastIsn="5" id="66">
+          <Header Description="ShowTimeString" ISN_2="3" id="75">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1633,48 +1796,46 @@
             <SqlWhereExist val="N"/>
             <TaskType val="B"/>
             <External val="N"/>
-            <FormType val="N"/>
+            <FormType val="D"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736878" _time="56656" date="03/07/2018" time="15:44:16"/>
+            <LastModified _date="736879" _time="46121" date="04/07/2018" time="12:48:41"/>
           </Header>
           <ItemIsn val="10"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="7"/>
-              <Access val="W"/>
+              <Access val="R"/>
               <Share val="W"/>
               <Open val="N"/>
               <Cache val="Y"/>
               <IdentifyRowModifications val="84"/>
             </DB>
             <Columns>
-              <Column id="1" name="MovieId">
+              <Column id="1" name="MovieID">
                 <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
-                  <Picture id="157" valUnicode="5"/>
-                  <_Dec id="181"/>
-                  <_Whole id="182" val="5"/>
-                  <_Negative id="192"/>
-                  <_FieldStyle id="276" val="1"/>
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="14"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
                 </PropertyList>
               </Column>
               <Column id="2" name="DateS">
                 <PropertyList model="FIELD">
                   <Model attr_obj="FIELD_ALPHA" id="1"/>
                   <Picture id="157" valUnicode="20"/>
-                  <StoredAs id="173" val="1"/>
                   <Size id="174" val="20"/>
+                  <DbColumnName id="178"/>
+                  <UserType id="180"/>
                   <_Flip id="194"/>
+                  <_FieldStyle id="276" val="1"/>
                 </PropertyList>
               </Column>
-              <Column id="3" name="Theater">
+              <Column id="3" name="Theatre">
                 <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
-                  <Picture id="157" valUnicode="5"/>
-                  <_Dec id="181"/>
-                  <_Whole id="182" val="5"/>
-                  <_Negative id="192"/>
-                  <_FieldStyle id="276" val="1"/>
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="14"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
                 </PropertyList>
               </Column>
               <Column id="4" name="ShowTValue">
@@ -1710,7 +1871,7 @@
               <ConfirmCancel val="N"/>
               <ErrorStrategy val="A"/>
               <LockingStrategy val="I"/>
-              <CacheStrategy val="T"/>
+              <CacheStrategy val="D"/>
               <ForceRecordSuffix val="N"/>
               <TransactionMode val="W"/>
               <TransactionBegin val="T"/>
@@ -1772,7 +1933,9 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="2"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -1784,7 +1947,9 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="3"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -1797,6 +1962,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -1808,6 +1974,7 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="4"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1815,12 +1982,19 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="5" FlowIsn="7" id="5">
+                  <Remark FlowIsn="7">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="5" FlowIsn="8" id="5">
                     <Column val="2"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Range MAX="1" MIN="1"/>
+                    <Range MAX="5" MIN="5"/>
+                    <_DitIndexForToolkit val="5"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1828,11 +2002,12 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="6" FlowIsn="8" id="6">
+                  <Select FieldID="6" FlowIsn="9" id="6">
                     <Column val="3"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="6"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1840,12 +2015,13 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="7" FlowIsn="9" id="7">
+                  <Select FieldID="7" FlowIsn="10" id="7">
                     <Column val="4"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="2" MIN="2"/>
+                    <_DitIndexForToolkit val="7"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1853,12 +2029,13 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="8" FlowIsn="10" id="8">
+                  <Select FieldID="8" FlowIsn="11" id="8">
                     <Column val="5"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <Range MAX="3" MIN="3"/>
+                    <_DitIndexForToolkit val="8"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1866,11 +2043,12 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="9" FlowIsn="11" id="9">
+                  <Select FieldID="9" FlowIsn="12" id="9">
                     <Column val="6"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="9"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -1878,16 +2056,23 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="10" FlowIsn="12" id="10">
+                  <Select FieldID="10" FlowIsn="13" id="10">
                     <Column val="7"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
                   </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="14">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -1905,9 +2090,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="13">
+                  <Update FlowIsn="15">
                     <FieldID val="4"/>
-                    <WithValue val="5"/>
+                    <WithValue val="4"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1931,9 +2116,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="14">
+                  <Update FlowIsn="16">
                     <FieldID val="4"/>
-                    <WithValue val="4"/>
+                    <WithValue val="1"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -1945,41 +2130,290 @@
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry id="1">
+            <FormEntry _last_isn="19" _last_test_id="19" id="1">
               <PropertyList model="FORM_GUI0">
                 <_Comment id="218"/>
-                <FormName id="311" valUnicode="ShowTimeString"/>
+                <FormName id="311" valUnicode="ShowString"/>
               </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_GUI0_TABLE">
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="8"/>
+                  <Y id="22" val="8"/>
+                  <Width id="23" val="3842"/>
+                  <Height id="24" val="182"/>
+                  <TitleHeight id="79" val="12"/>
+                  <RowHeight id="80" val="13"/>
+                  <Elements id="81" val="9"/>
+                  <MultiMarking id="196"/>
+                  <_WindowWidth id="241" val="3842"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="2" id="2">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="1"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="12"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="MovieID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="1"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="3" id="3">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="2"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="47"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="115"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="2"/>
+                  <Data FieldID="2" id="43"/>
+                  <ControlName id="46" val="DateS"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="2"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="4" id="4">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="169"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="563"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="ShowTValue"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="3"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="5" id="5">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="739"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Data FieldID="5" id="43"/>
+                  <ControlName id="46" val="MSTheatreID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="4"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="6" id="6">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="6"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="793"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="5"/>
+                  <Data FieldID="6" id="43"/>
+                  <ControlName id="46" val="MSScreenID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="5"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="7" id="7">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="7"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="845"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="27"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="6"/>
+                  <Data FieldID="7" id="43"/>
+                  <ControlName id="46" val="MSMovieID"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="6"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="8" id="8">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="8"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="893"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="61"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="7"/>
+                  <Data FieldID="8" id="43"/>
+                  <ControlName id="46" val="MSShowDate"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="7"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="9" id="9">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="9"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="961"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="48"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="8"/>
+                  <Data FieldID="9" id="43"/>
+                  <ControlName id="46" val="MSShowTimings"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="8"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="10" id="10">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT_TBL" id="1">
+                    <Var FieldID="10"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="1027"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="2803"/>
+                  <Height id="24" val="10"/>
+                  <ControlLayer id="25" val="9"/>
+                  <Data FieldID="10" id="43"/>
+                  <ControlName id="46" val="MSSeatsBooked"/>
+                  <Style id="63" val="1"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="9"/>
+                  <Border id="452"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="11" id="11">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="35"/>
+                  <ControlLayer id="25" val="1"/>
+                  <ColumnTitle id="139" valUnicode="MovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="12" id="12">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="122"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ColumnTitle id="139" valUnicode="DateS"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="13" id="13">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="570"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ColumnTitle id="139" valUnicode="ShowTValue"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="14" id="14">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="54"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Sortable id="134" val="Y"/>
+                  <ColumnTitle id="139" valUnicode="MSTheatreID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="15" id="15">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="52"/>
+                  <ControlLayer id="25" val="5"/>
+                  <ColumnTitle id="139" valUnicode="MSScreenID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="16" id="16">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="48"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ColumnTitle id="139" valUnicode="MSMovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="17" id="17">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="68"/>
+                  <ControlLayer id="25" val="7"/>
+                  <ColumnTitle id="139" valUnicode="MSShowDate"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="18" id="18">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="66"/>
+                  <ControlLayer id="25" val="8"/>
+                  <ColumnTitle id="139" valUnicode="MSShowTimings"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="19" id="19">
+                <PropertyList model="CTRL_GUI0_COLUMN">
+                  <Width id="23" val="2810"/>
+                  <ControlLayer id="25" val="9"/>
+                  <ColumnTitle id="139" valUnicode="MSSeatsBooked"/>
+                </PropertyList>
+              </Control>
             </FormEntry>
           </TaskForms>
           <Expressions>
             <Expression id="1">
-              <ExpSyntax val="{0,3}"/>
-              <ExpAttribute val="N"/>
+              <ExpSyntax val="TStr({0,9},'HH:MM PM')&amp;','&amp;Trim({0,4})"/>
+              <ExpAttribute val="A"/>
             </Expression>
             <Expression id="2">
               <ExpSyntax val="{0,1}"/>
               <ExpAttribute val="N"/>
             </Expression>
             <Expression id="3">
-              <ExpSyntax val="DVal({0,2},'DD/MM/YY')"/>
+              <ExpSyntax val="DVal({0,2},'DD/MM/YYYY')"/>
               <ExpAttribute val="D"/>
             </Expression>
             <Expression id="4">
-              <ExpSyntax val="TStr({0,9},'HH:MM PM')&amp;','&amp;Trim({0,4})"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="5">
               <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="5">
+              <ExpSyntax val="{0,3}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
           </Expressions>
-          <VarRangeInfo Mode="E" VarRangeVeeIsn="5" id="1"/>
-          <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="2"/>
-          <VarRangeInfo Mode="E" VarRangeVeeIsn="8" id="3"/>
+          <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="1"/>
+          <VarRangeInfo Mode="E" VarRangeVeeIsn="8" id="2"/>
+          <VarRangeInfo Mode="E" VarRangeVeeIsn="5" id="3"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="MovieString" ISN_2="4" LastIsn="5" id="66">
+          <Header Description="MovieString" ISN_2="4" id="75">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1993,9 +2427,9 @@
             <SqlWhereExist val="N"/>
             <TaskType val="B"/>
             <External val="N"/>
-            <FormType val="N"/>
+            <FormType val="D"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736878" _time="56800" date="03/07/2018" time="15:46:40"/>
+            <LastModified _date="736879" _time="46121" date="04/07/2018" time="12:48:41"/>
           </Header>
           <ItemIsn val="9"/>
           <Resource>
@@ -2009,7 +2443,7 @@
             </DB>
             <DB id="2">
               <DataObject comp="-1" obj="7"/>
-              <Access val="W"/>
+              <Access val="R"/>
               <Share val="W"/>
               <Open val="N"/>
               <Cache val="Y"/>
@@ -2035,13 +2469,18 @@
             <DB comp="-1" obj="7"/>
             <Sort>
               <CLS val="A"/>
+              <Segment>
+                <Field val="4"/>
+                <Size val="4"/>
+                <Direction val="A"/>
+              </Segment>
             </Sort>
             <ForceRecordDelete DEL="N"/>
             <EndTaskCondition val="N"/>
             <EvaluateEndCondition val="B"/>
             <InitialMode val="M"/>
             <Locate Direction="A"/>
-            <Range Direction="A"/>
+            <Range Direction="A" Exp="3"/>
             <VarRange/>
             <TaskProperties>
               <SelectionTable val="N"/>
@@ -2049,7 +2488,7 @@
               <ConfirmCancel val="N"/>
               <ErrorStrategy val="A"/>
               <LockingStrategy val="I"/>
-              <CacheStrategy val="T"/>
+              <CacheStrategy val="D"/>
               <ForceRecordSuffix val="N"/>
               <TransactionMode val="W"/>
               <TransactionBegin val="T"/>
@@ -2148,7 +2587,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
                     <INT_RCMP_INFO>
-                      <v>10</v>
+                      <v>11</v>
                     </INT_RCMP_INFO>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
@@ -2193,19 +2632,25 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="13" VIEW="8" VIEWS="2">
+                  <Remark FlowIsn="10">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="11" Key="1" Mode="R" SortType="14" VIEW="8" VIEWS="2">
                     <DB comp="-1" obj="4"/>
                     <Expanded val="1"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="8" FlowIsn="11" id="8">
+                  <Select FieldID="8" FlowIsn="12" id="8">
                     <Column val="1"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <Locate MAX="1" MIN="1"/>
+                    <Locate MAX="2" MIN="2"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="N"/>
                     <Modifier val="S"/>
@@ -2213,7 +2658,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="9" FlowIsn="12" id="9">
+                  <Select FieldID="9" FlowIsn="13" id="9">
                     <Column val="2"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2225,7 +2670,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <END_LINK FlowIsn="13"/>
+                  <END_LINK FlowIsn="14"/>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -2243,9 +2688,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="14">
+                  <Update FlowIsn="15">
                     <FieldID val="1"/>
-                    <WithValue val="3"/>
+                    <WithValue val="4"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -2270,9 +2715,9 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="15">
+                  <Update FlowIsn="16">
                     <FieldID val="1"/>
-                    <WithValue val="2"/>
+                    <WithValue val="1"/>
                     <Incremental val="N"/>
                     <ForcedUpdate val="Y"/>
                     <Condition val="Y"/>
@@ -2291,23 +2736,213 @@
               </PropertyList>
             </FormEntry>
           </TaskForms>
+          <TaskForms>
+            <FormEntry _last_isn="13" _last_test_id="13" id="2">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <Width id="23" val="3164"/>
+                <Height id="24" val="195"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Rich Client - MSShowDetails"/>
+              </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_RICH_CLIENT_TABLE">
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="8"/>
+                  <Y id="22" val="8"/>
+                  <Width id="23" val="3142"/>
+                  <Height id="24" val="182"/>
+                  <_TitleHeight id="79" val="12"/>
+                  <RowHeight id="80" val="15"/>
+                  <Elements id="81" val="6"/>
+                  <_WindowWidth id="241" val="3142"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="2" id="2">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="2"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="12"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="2" id="43"/>
+                  <ControlName id="46" val="MSTheatreID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="1"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="3" id="3">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="3"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="72"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="2"/>
+                  <Data FieldID="3" id="43"/>
+                  <ControlName id="46" val="MSScreenID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="2"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="4" id="4">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="130"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="MSMovieID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="3"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="5" id="5">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="184"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="62"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Data FieldID="5" id="43"/>
+                  <ControlName id="46" val="MSShowDate"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="4"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="6" id="6">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="6"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="253"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="50"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="5"/>
+                  <Data FieldID="6" id="43"/>
+                  <ControlName id="46" val="MSShowTimings"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="5"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="7" id="7">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="7"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="325"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="2805"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="6"/>
+                  <Data FieldID="7" id="43"/>
+                  <ControlName id="46" val="MSSeatsBooked"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="6"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="8" id="8">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="60"/>
+                  <ControlLayer id="25" val="1"/>
+                  <_Sortable id="134" val="Y"/>
+                  <ColumnTitle id="139" valUnicode="MSTheatreID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="9" id="9">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="58"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ColumnTitle id="139" valUnicode="MSScreenID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="10" id="10">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="54"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ColumnTitle id="139" valUnicode="MSMovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="11" id="11">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="69"/>
+                  <ControlLayer id="25" val="4"/>
+                  <ColumnTitle id="139" valUnicode="MSShowDate"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="12" id="12">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="72"/>
+                  <ControlLayer id="25" val="5"/>
+                  <ColumnTitle id="139" valUnicode="MSShowTimings"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="13" id="13">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="2812"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ColumnTitle id="139" valUnicode="MSSeatsBooked"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
           <Expressions>
             <Expression id="1">
-              <ExpSyntax val="{0,4}"/>
-              <ExpAttribute val="N"/>
-            </Expression>
-            <Expression id="2">
               <ExpSyntax val="Trim({0,9})&amp;','&amp;Trim({0,1})"/>
               <ExpAttribute val="A"/>
             </Expression>
+            <Expression id="2">
+              <ExpSyntax val="{0,4}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
             <Expression id="3">
+              <ExpSyntax val="{0,4}&lt;>0"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="4">
               <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="DateString" ISN_2="5" LastIsn="5" id="66">
+          <Header Description="DateString" ISN_2="5" id="75">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2322,9 +2957,9 @@
             <SqlWhereExist val="N"/>
             <TaskType val="B"/>
             <External val="N"/>
-            <FormType val="N"/>
+            <FormType val="D"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736885" _time="43123" date="10/07/2018" time="11:58:43"/>
+            <LastModified _date="736879" _time="51263" date="04/07/2018" time="14:14:23"/>
           </Header>
           <ItemIsn val="8"/>
           <Resource>
@@ -2339,12 +2974,10 @@
             <Columns>
               <Column id="1" name="Movie">
                 <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
-                  <Picture id="157" valUnicode="5"/>
-                  <_Dec id="181"/>
-                  <_Whole id="182" val="5"/>
-                  <_Negative id="192"/>
-                  <_FieldStyle id="276" val="1"/>
+                  <Model attr_obj="FIELD_NUMERIC" comp="-1" id="1" obj="14"/>
+                  <DbColumnName id="178"/>
+                  <Type id="179"/>
+                  <UserType id="180"/>
                 </PropertyList>
               </Column>
               <Column id="2" name="DateValue">
@@ -2366,6 +2999,16 @@
             <DB comp="-1" obj="7"/>
             <Sort>
               <CLS val="A"/>
+              <Segment>
+                <Field val="5"/>
+                <Size val="4"/>
+                <Direction val="A"/>
+              </Segment>
+              <Segment>
+                <Field val="6"/>
+                <Size val="8"/>
+                <Direction val="A"/>
+              </Segment>
             </Sort>
             <ForceRecordDelete DEL="N"/>
             <EndTaskCondition val="N"/>
@@ -2380,7 +3023,7 @@
               <ConfirmCancel val="N"/>
               <ErrorStrategy val="A"/>
               <LockingStrategy val="I"/>
-              <CacheStrategy val="T"/>
+              <CacheStrategy val="D"/>
               <ForceRecordSuffix val="N"/>
               <TransactionMode val="W"/>
               <TransactionBegin val="T"/>
@@ -2443,6 +3086,7 @@
                     <ExposedToRoute val="N"/>
                     <IsParameter val="Y"/>
                     <DIFF_UPDATE val="T"/>
+                    <PartOfDataview val="Y"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
                     <Direction val="C"/>
@@ -2461,7 +3105,13 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="3" FlowIsn="5" id="3">
+                  <Remark FlowIsn="5">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="3" FlowIsn="6" id="3">
                     <Column val="2"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2473,7 +3123,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="4" FlowIsn="6" id="4">
+                  <Select FieldID="4" FlowIsn="7" id="4">
                     <Column val="3"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2485,7 +3135,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="5" FlowIsn="7" id="5">
+                  <Select FieldID="5" FlowIsn="8" id="5">
                     <Column val="4"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2498,7 +3148,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="6" FlowIsn="8" id="6">
+                  <Select FieldID="6" FlowIsn="9" id="6">
                     <Column val="5"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2510,7 +3160,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="7" FlowIsn="9" id="7">
+                  <Select FieldID="7" FlowIsn="10" id="7">
                     <Column val="6"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2522,7 +3172,7 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="8" FlowIsn="10" id="8">
+                  <Select FieldID="8" FlowIsn="11" id="8">
                     <Column val="7"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -2532,6 +3182,12 @@
                     <Modifier val="S"/>
                     <Direction val="C"/>
                   </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="12">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
@@ -2549,7 +3205,7 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="11">
+                  <Update FlowIsn="13">
                     <FieldID val="2"/>
                     <WithValue val="3"/>
                     <Incremental val="N"/>
@@ -2576,7 +3232,7 @@
               <Expanded val="1"/>
               <LogicLines>
                 <LogicLine>
-                  <Update FlowIsn="12">
+                  <Update FlowIsn="14">
                     <FieldID val="2"/>
                     <WithValue val="2"/>
                     <Incremental val="N"/>
@@ -2597,13 +3253,199 @@
               </PropertyList>
             </FormEntry>
           </TaskForms>
+          <TaskForms>
+            <FormEntry _last_isn="13" _last_test_id="13" id="2">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <Width id="23" val="3164"/>
+                <Height id="24" val="195"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Rich Client - MSShowDetails"/>
+              </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_RICH_CLIENT_TABLE">
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="8"/>
+                  <Y id="22" val="8"/>
+                  <Width id="23" val="3142"/>
+                  <Height id="24" val="182"/>
+                  <_TitleHeight id="79" val="12"/>
+                  <RowHeight id="80" val="15"/>
+                  <Elements id="81" val="6"/>
+                  <_WindowWidth id="241" val="3142"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="2" id="2">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="3"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="12"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="1"/>
+                  <Data FieldID="3" id="43"/>
+                  <ControlName id="46" val="MSTheatreID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="1"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="3" id="3">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="4"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="72"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="2"/>
+                  <Data FieldID="4" id="43"/>
+                  <ControlName id="46" val="MSScreenID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="2"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="1" _test_id="4" id="4">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="5"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="130"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="29"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="3"/>
+                  <Data FieldID="5" id="43"/>
+                  <ControlName id="46" val="MSMovieID"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="3"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="5" id="5">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="6"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="184"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="62"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="4"/>
+                  <Data FieldID="6" id="43"/>
+                  <ControlName id="46" val="MSShowDate"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="4"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="6" id="6">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="7"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="253"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="50"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="5"/>
+                  <Data FieldID="7" id="43"/>
+                  <ControlName id="46" val="MSShowTimings"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="5"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" _test_id="7" id="7">
+                <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+                  <Model ID="MODEL_RICH_CLIENT_TBL" id="1">
+                    <Var FieldID="8"/>
+                  </Model>
+                  <Placement bottom="100" id="20" right="100"/>
+                  <X id="21" val="325"/>
+                  <Y id="22" val="23"/>
+                  <Width id="23" val="2805"/>
+                  <Height id="24" val="12"/>
+                  <ControlLayer id="25" val="6"/>
+                  <Data FieldID="8" id="43"/>
+                  <ControlName id="46" val="MSSeatsBooked"/>
+                  <_Style id="63" val="1"/>
+                  <ExpansionWindow id="84"/>
+                  <TabOrder id="314" val="6"/>
+                  <Border id="452"/>
+                  <CornerRadius id="668"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="8" id="8">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="60"/>
+                  <ControlLayer id="25" val="1"/>
+                  <_Sortable id="134" val="Y"/>
+                  <ColumnTitle id="139" valUnicode="MSTheatreID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="9" id="9">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="58"/>
+                  <ControlLayer id="25" val="2"/>
+                  <ColumnTitle id="139" valUnicode="MSScreenID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="10" id="10">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="54"/>
+                  <ControlLayer id="25" val="3"/>
+                  <ColumnTitle id="139" valUnicode="MSMovieID"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="11" id="11">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="69"/>
+                  <ControlLayer id="25" val="4"/>
+                  <ColumnTitle id="139" valUnicode="MSShowDate"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="12" id="12">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="72"/>
+                  <ControlLayer id="25" val="5"/>
+                  <ColumnTitle id="139" valUnicode="MSShowTimings"/>
+                </PropertyList>
+              </Control>
+              <Control ISN_FATHER="1" PDOD="128" _test_id="13" id="13">
+                <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+                  <Width id="23" val="2812"/>
+                  <ControlLayer id="25" val="6"/>
+                  <ColumnTitle id="139" valUnicode="MSSeatsBooked"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
           <Expressions>
             <Expression id="1">
               <ExpSyntax val="{0,1}"/>
               <ExpAttribute val="N"/>
             </Expression>
             <Expression id="2">
-              <ExpSyntax val="DStr({0,6},'DD/MM/YY')&amp;','&amp;Trim({0,2})"/>
+              <ExpSyntax val="DStr({0,6},'DD/MM/YYYY')&amp;','&amp;Trim({0,2})"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="3">

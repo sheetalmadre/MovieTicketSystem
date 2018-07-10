@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="43997" date="09/07/2018" time="12:13:17"/>
+          <LastModified _date="736885" _time="42573" date="10/07/2018" time="11:49:33"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -57,8 +57,8 @@
           <EvaluateEndCondition val="B"/>
           <InitialMode val="M"/>
           <Locate Direction="A"/>
-          <Range Direction="A"/>
-          <VarRange LastIsn="2"/>
+          <Range Direction="A" Exp="8"/>
+          <VarRange LastIsn="3"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -289,6 +289,54 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="T"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="302"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="Image3"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="17">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="49"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="16">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry _last_isn="11" _last_test_id="14" id="1">
@@ -404,21 +452,9 @@
             <ExpSyntax val="Trim({0,7})"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="2">
-            <ExpSyntax val="{0,12}"/>
-            <ExpAttribute val="D"/>
-          </Expression>
-          <Expression id="3">
-            <ExpSyntax val="{0,13}"/>
-            <ExpAttribute val="D"/>
-          </Expression>
-          <Expression id="4">
-            <ExpSyntax val="2"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="5">
-            <ExpSyntax val="5"/>
-            <ExpAttribute val="N"/>
+          <Expression id="8">
+            <ExpSyntax val="Date()&lt;={0,12}+7"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
       </Task>
