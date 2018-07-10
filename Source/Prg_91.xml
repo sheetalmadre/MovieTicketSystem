@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="ViewLanguageDetails" ISN_2="1" LastIsn="1" id="91">
-          <Public val="VL1"/>
+        <Header Description="ViewCityDetails" ISN_2="1" LastIsn="1" id="91">
+          <Public val="VC1"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -32,12 +32,12 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="39636" date="05/07/2018" time="11:00:36"/>
+          <LastModified _date="736885" _time="42828" date="10/07/2018" time="11:53:48"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
           <DB id="1">
-            <DataObject comp="-1" obj="3"/>
+            <DataObject comp="-1" obj="2"/>
             <Access val="W"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -55,7 +55,7 @@
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
-            <Column id="2" name="L_Id">
+            <Column id="2" name="C_Id">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" id="1"/>
                 <Picture id="157" valUnicode="5"/>
@@ -65,7 +65,7 @@
                 <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
-            <Column id="3" name="L_name">
+            <Column id="3" name="C_name">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_UNICODE" id="1"/>
                 <Picture id="157" valUnicode="30"/>
@@ -140,10 +140,10 @@
         </Resource>
         <Information>
           <Key>
-            <Column val="1"/>
+            <Column val="3"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="3"/>
+          <DB comp="-1" obj="2"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -514,7 +514,7 @@
               <Height id="24" val="871"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="ViewLanguageDetails"/>
+              <FormName id="311" valUnicode="ViewCityDetails"/>
             </PropertyList>
             <Control PDOD="128" _test_id="109" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_GROUP">
@@ -589,7 +589,7 @@
                 <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column24"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="MSLanuageID"/>
+                <ColumnTitle id="139" valUnicode="City Id"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="96" id="3">
@@ -597,7 +597,7 @@
                 <Width id="23" val="224"/>
                 <ControlLayer id="25" val="2"/>
                 <ControlName id="46" val="Column25"/>
-                <ColumnTitle id="139" valUnicode="MSLanguageName"/>
+                <ColumnTitle id="139" valUnicode="City Name"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="100" id="4">
@@ -623,7 +623,7 @@
                 <Border id="452"/>
               </PropertyList>
             </Control>
-            <Control ISN_FATHER="1" _test_id="91" id="6">
+            <Control ISN_FATHER="1" PDOD="128" _test_id="91" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
                   <Var FieldID="2"/>
