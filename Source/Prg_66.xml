@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736881" _time="61598" date="06/07/2018" time="17:06:38"/>
+          <LastModified _date="736885" _time="43123" date="10/07/2018" time="11:58:43"/>
         </Header>
         <ItemIsn val="26"/>
         <Resource>
@@ -711,10 +711,10 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="30">
+                <CallTask FlowIsn="85">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="4"/>
@@ -752,10 +752,10 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="31">
+                <CallTask FlowIsn="86">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="5"/>
@@ -797,10 +797,10 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="32">
+                <CallTask FlowIsn="87">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="2"/>
@@ -846,10 +846,10 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="33">
+                <CallTask FlowIsn="88">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="3"/>
@@ -1149,6 +1149,7 @@
                 <ControlLayer id="25" val="2"/>
                 <Data FieldID="24" id="43"/>
                 <ControlName id="46" val="MSShowTimings"/>
+                <Format id="82" valUnicode="HH:MM"/>
                 <AllowParking id="315"/>
                 <Border id="452"/>
               </PropertyList>
@@ -2323,7 +2324,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736878" _time="56937" date="03/07/2018" time="15:48:57"/>
+            <LastModified _date="736885" _time="43123" date="10/07/2018" time="11:58:43"/>
           </Header>
           <ItemIsn val="8"/>
           <Resource>
@@ -2607,10 +2608,6 @@
             </Expression>
             <Expression id="3">
               <ExpSyntax val="''"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="4">
-              <ExpSyntax val=""/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>

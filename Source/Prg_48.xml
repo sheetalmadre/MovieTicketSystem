@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736881" _time="44041" date="06/07/2018" time="12:14:01"/>
+          <LastModified _date="736885" _time="43332" date="10/07/2018" time="12:02:12"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -152,10 +152,10 @@
             <ExecuteOn_ val="S"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="4">
+                <CallTask FlowIsn="5">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="1"/>
@@ -204,16 +204,6 @@
             </Control>
           </FormEntry>
         </TaskForms>
-        <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'DetailsOfMovies'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="2">
-            <ExpSyntax val="'Subform1'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-        </Expressions>
         <Task MainProgram="N">
           <Header Description="ShowMovieDetails" ISN_2="1" LastIsn="4" id="48">
             <ExecutionRight comp="-1"/>
@@ -229,7 +219,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736879" _time="59998" date="04/07/2018" time="16:39:58"/>
+            <LastModified _date="736885" _time="43332" date="10/07/2018" time="12:02:12"/>
           </Header>
           <ItemIsn val="19"/>
           <Resource>
@@ -590,10 +580,10 @@
                   </Update>
                 </LogicLine>
                 <LogicLine>
-                  <CallTask FlowIsn="35">
+                  <CallTask FlowIsn="36">
                     <OperationType val="P"/>
                     <Event>
-                      <EventType val="I"/>
+                      <EventType val="N"/>
                       <PublicObject comp="-1"/>
                     </Event>
                     <TaskID comp="-1" obj="49"/>
@@ -607,7 +597,6 @@
                     <Wait val="Y"/>
                     <SyncData val="N"/>
                     <IsRoute val="N"/>
-                    <DestSubformName val="Subform1"/>
                     <RetainFocus val="N"/>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
@@ -827,18 +816,6 @@
             </Expression>
             <Expression id="2">
               <ExpSyntax val="Trim({0,4})"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="3">
-              <ExpSyntax val="'DetailsOfMovies'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="4">
-              <ExpSyntax val="Translate ('%MSShowImgVideo%')"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="5">
-              <ExpSyntax val="'Subform1'"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>

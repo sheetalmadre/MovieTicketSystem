@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736881" _time="47171" date="06/07/2018" time="13:06:11"/>
+          <LastModified _date="736885" _time="43219" date="10/07/2018" time="12:00:19"/>
         </Header>
         <ItemIsn val="17"/>
         <Resource>
@@ -453,40 +453,8 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="Trim({0,11})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="4">
             <ExpSyntax val="1"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="5">
-            <ExpSyntax val="Counter(0)+{0,9}"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="6">
-            <ExpSyntax val="Trim({0,17})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="7">
-            <ExpSyntax val="{0,16}"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="8">
-            <ExpSyntax val="{0,17}=''"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="10">
-            <ExpSyntax val="'htg'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="11">
-            <ExpSyntax val="{0,17}&lt;>''"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="12">
-            <ExpSyntax val="{0,9}+(Counter(0)+1)"/>
             <ExpAttribute val="N"/>
           </Expression>
         </Expressions>

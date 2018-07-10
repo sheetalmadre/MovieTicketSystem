@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736874" _time="55869" date="29/06/2018" time="15:31:09"/>
+          <LastModified _date="736885" _time="43386" date="10/07/2018" time="12:03:06"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -408,16 +408,8 @@
             <ExpSyntax val="{0,10}"/>
             <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="2">
-            <ExpSyntax val="Trim({0,3})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="3">
             <ExpSyntax val="Trim({0,9})"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="4">
-            <ExpSyntax val="'http://localhost/PaniBani.mp4'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="5">
