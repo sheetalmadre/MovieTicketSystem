@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="42446" date="02/07/2018" time="11:47:26"/>
+          <LastModified _date="736885" _time="40709" date="10/07/2018" time="11:18:29"/>
         </Header>
         <ItemIsn val="31"/>
         <Resource>
@@ -1020,10 +1020,10 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="62">
+                <CallTask FlowIsn="63">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="S"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="2"/>
@@ -1528,7 +1528,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="ShowExistingTheatreAndScreen" ISN_2="2" id="63">
+          <Header Description="ShowExistingTheatreAndScreen" ISN_2="2" LastIsn="2" id="63">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
