@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="64928" date="09/07/2018" time="18:02:08"/>
+          <LastModified _date="736886" _time="64219" date="11/07/2018" time="17:50:19"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -152,6 +152,18 @@
             <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="5">
+                  <Parent val="32768"/>
+                  <FieldID val="3"/>
+                  <WithValue val="2"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
               <LogicLine>
                 <CallTask FlowIsn="4">
                   <OperationType val="P"/>
@@ -313,6 +325,10 @@
           <Expression id="1">
             <ExpSyntax val="IF({32768,3}='TRUE'LOG,'Logout','Login')"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="AddMovie" FORCE_EXIT="N" id="1">
