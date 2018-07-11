@@ -28,9 +28,9 @@
           <RoutePath val="Login"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="M"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736886" _time="62341" date="11/07/2018" time="17:19:01"/>
+          <LastModified _date="736886" _time="64336" date="11/07/2018" time="17:52:16"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -418,7 +418,6 @@
                     <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
-                  <Disabled val="1"/>
                   <Condition Exp="10"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -627,7 +626,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Login"/>
-              <WindowType id="358" val="12"/>
+              <WindowType id="358" val="1"/>
             </PropertyList>
             <Control PDOD="128" _test_id="11" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
@@ -845,6 +844,14 @@
           </Expression>
           <Expression id="20">
             <ExpSyntax val="'ForgotPassword'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="21">
+            <ExpSyntax val="Trim({32768,5})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="23">
+            <ExpSyntax val="Str({32768,4},'')"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
