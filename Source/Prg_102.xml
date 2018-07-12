@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="ViewLanguageD" ISN_2="1" LastIsn="1" id="102">
-          <Public val="VLD1"/>
+        <Header Description="ViewCity" ISN_2="1" LastIsn="1" id="102">
+          <Public val="VC11"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -32,12 +32,12 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="45508" date="12/07/2018" time="12:38:28"/>
+          <LastModified _date="736887" _time="55817" date="12/07/2018" time="15:30:17"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
           <DB id="1">
-            <DataObject comp="-1" obj="3"/>
+            <DataObject comp="-1" obj="2"/>
             <Access val="R"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -104,10 +104,10 @@
         </Resource>
         <Information>
           <Key>
-            <Column val="1"/>
+            <Column val="3"/>
             <Mode val="N"/>
           </Key>
-          <DB comp="-1" obj="3"/>
+          <DB comp="-1" obj="2"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -199,7 +199,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <Locate MIN="2"/>
                   <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
@@ -323,7 +322,7 @@
               <Height id="24" val="838"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="ViewLanguageDetails"/>
+              <FormName id="311" valUnicode="ViewCity"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="89" id="1">
@@ -345,7 +344,7 @@
                 <ControlLayer id="25" val="1"/>
                 <ControlName id="46" val="Column24"/>
                 <Sortable id="134" val="Y"/>
-                <ColumnTitle id="139" valUnicode="MSLanuageID"/>
+                <ColumnTitle id="139" valUnicode="City ID"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="96" id="3">
@@ -353,7 +352,7 @@
                 <Width id="23" val="224"/>
                 <ControlLayer id="25" val="2"/>
                 <ControlName id="46" val="Column25"/>
-                <ColumnTitle id="139" valUnicode="MSLanguageName"/>
+                <ColumnTitle id="139" valUnicode="City"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="1" _test_id="90" id="4">
@@ -406,10 +405,6 @@
         <Expressions>
           <Expression id="1">
             <ExpSyntax val="{0,2}"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="2">
-            <ExpSyntax val="{0,1}"/>
             <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
