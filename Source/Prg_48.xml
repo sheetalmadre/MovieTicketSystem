@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="65392" date="12/07/2018" time="18:09:52"/>
+          <LastModified _date="736887" _time="68176" date="12/07/2018" time="18:56:16"/>
         </Header>
         <ItemIsn val="25"/>
         <Resource>
@@ -499,6 +499,18 @@
                 </Update>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="60">
+                  <Parent val="32768"/>
+                  <FieldID val="7"/>
+                  <WithValue val="5"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <RaiseEvent FlowIsn="28">
                   <Event>
                     <EventType val="I"/>
@@ -544,6 +556,30 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="7" FlowIsn="59" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -785,6 +821,10 @@
           <Expression id="6">
             <ExpSyntax val="{0,4}"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="Str({0,4},'')"/>
+            <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
         <VarRangeInfo Mode="E" VarRangeVeeIsn="19" id="1"/>
