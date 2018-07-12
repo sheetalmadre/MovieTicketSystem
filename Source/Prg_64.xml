@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="RCMSShowDetails" ISN_2="1" LastIsn="5" id="64">
+          <Public val="RCMSShowDetails"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -24,11 +25,11 @@
           <SqlWhereExist val="N"/>
           <TaskType val="C"/>
           <Interactive val="Y"/>
-          <External val="N"/>
+          <External val="Y"/>
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736877" _time="61547" date="02/07/2018" time="17:05:47"/>
+          <LastModified _date="736885" _time="40421" date="10/07/2018" time="11:13:41"/>
         </Header>
         <ItemIsn val="17"/>
         <Resource>
@@ -908,7 +909,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="TheatreString" ISN_2="2" id="64">
+          <Header Description="TheatreString" ISN_2="2" LastIsn="5" id="64">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1577,7 +1578,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="2"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="ShowTimeString" ISN_2="3" id="64">
+          <Header Description="ShowTimeString" ISN_2="3" LastIsn="5" id="64">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2211,7 +2212,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="5" id="3"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="MovieString" ISN_2="4" id="64">
+          <Header Description="MovieString" ISN_2="4" LastIsn="5" id="64">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2740,7 +2741,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="DateString" ISN_2="5" id="64">
+          <Header Description="DateString" ISN_2="5" LastIsn="5" id="64">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>

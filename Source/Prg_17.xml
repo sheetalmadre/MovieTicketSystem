@@ -28,11 +28,11 @@
           <RoutePath val="Login"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="M"/>
+          <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736884" _time="63749" date="09/07/2018" time="17:42:29"/>
+          <LastModified _date="736886" _time="64336" date="11/07/2018" time="17:52:16"/>
         </Header>
-        <ItemIsn val="10"/>
+        <ItemIsn val="12"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="1"/>
@@ -263,11 +263,23 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Mode="R" SortType="14" VIEW="7" VIEWS="3">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="10" Key="1" Mode="R" SortType="14" VIEW="7" VIEWS="4">
                   <DB comp="-1" obj="1"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
                 </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="12" FlowIsn="58" id="12">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
               </LogicLine>
               <LogicLine>
                 <Select FieldID="8" FlowIsn="11" id="8">
@@ -375,6 +387,30 @@
                 </STP>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="55">
+                  <Parent val="32768"/>
+                  <FieldID val="5"/>
+                  <WithValue val="17"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="56">
+                  <Parent val="32768"/>
+                  <FieldID val="4"/>
+                  <WithValue val="18"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <RaiseEvent FlowIsn="25">
                   <Event>
                     <EventType val="I"/>
@@ -429,23 +465,26 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="22">
-                  <OperationType val="P"/>
+                <RaiseEvent FlowIsn="77">
                   <Event>
-                    <EventType val="U"/>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="18"/>
-                  <Lock val="N"/>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <DestSubformName val="Subform9"/>
-                  <RetainFocus val="N"/>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="19"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
-                </CallTask>
+                </RaiseEvent>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -464,23 +503,26 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <CallTask FlowIsn="23">
-                  <OperationType val="P"/>
+                <RaiseEvent FlowIsn="78">
                   <Event>
                     <EventType val="I"/>
+                    <InternalEventID val="594"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="19"/>
-                  <Lock val="N"/>
-                  <Wait val="Y"/>
-                  <SyncData val="N"/>
-                  <IsRoute val="N"/>
-                  <DestSubformName val="Subform9"/>
-                  <RetainFocus val="N"/>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="20"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
-                </CallTask>
+                </RaiseEvent>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -584,7 +626,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="Login"/>
-              <WindowType id="358" val="12"/>
+              <WindowType id="358" val="1"/>
             </PropertyList>
             <Control PDOD="128" _test_id="11" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
@@ -786,6 +828,30 @@
           </Expression>
           <Expression id="16">
             <ExpSyntax val="'Subform13'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="17">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="18">
+            <ExpSyntax val="{0,12}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="19">
+            <ExpSyntax val="'SingUp'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="20">
+            <ExpSyntax val="'ForgotPassword'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="21">
+            <ExpSyntax val="Trim({32768,5})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="23">
+            <ExpSyntax val="Str({32768,4},'')"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>
