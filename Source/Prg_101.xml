@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CallLanguage" ISN_2="1" LastIsn="1" id="101">
-          <Public val="CL11"/>
+        <Header Description="CallCity" ISN_2="1" LastIsn="1" id="101">
+          <Public val="CC11"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="52026" date="12/07/2018" time="14:27:06"/>
+          <LastModified _date="736887" _time="55715" date="12/07/2018" time="15:28:35"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -212,7 +212,7 @@
                     <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
-                  <TaskID comp="-1" obj="98"/>
+                  <TaskID comp="-1" obj="102"/>
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
@@ -240,7 +240,7 @@
               <Height id="24" val="456"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="CallLanguage"/>
+              <FormName id="311" valUnicode="CallCity"/>
             </PropertyList>
             <Control PDOD="1" _test_id="6" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
