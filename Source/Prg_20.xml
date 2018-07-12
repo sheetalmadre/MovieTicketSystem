@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736886" _time="65618" date="11/07/2018" time="18:13:38"/>
+          <LastModified _date="736887" _time="42414" date="12/07/2018" time="11:46:54"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -150,6 +150,7 @@
               <PublicObject comp="-1" obj="9"/>
             </Event>
             <Expanded val="1"/>
+            <Disabled val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -159,6 +160,7 @@
                   <WithValue val="2"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -167,6 +169,7 @@
               <LogicLine>
                 <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="1" FlowIsn="11" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -186,6 +189,7 @@
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -199,6 +203,7 @@
                     <PublicObject comp="-1"/>
                   </Event>
                   <Wait val="78"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -218,6 +223,7 @@
               <PublicObject comp="-1"/>
             </Event>
             <Expanded val="1"/>
+            <Disabled val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -234,6 +240,7 @@
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
