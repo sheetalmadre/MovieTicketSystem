@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736886" _time="64336" date="11/07/2018" time="17:52:16"/>
+          <LastModified _date="736887" _time="45738" date="12/07/2018" time="12:42:18"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -323,6 +323,46 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="9" propagate="78">
+            <Level val="R"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="87">
+                  <Parent val="32768"/>
+                  <FieldID val="4"/>
+                  <WithValue val="25"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="88">
+                  <Parent val="32768"/>
+                  <FieldID val="5"/>
+                  <WithValue val="26"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
           <LogicUnit id="3" propagate="78">
             <Level val="C"/>
             <Type val="V"/>
@@ -541,9 +581,28 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <Update FlowIsn="30">
+                <BLOCK EndBlock="119" EndBlockSegment="108" FlowIsn="107" Type="I">
+                  <Condition Exp="33"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="109">
                   <Parent val="32768"/>
                   <FieldID val="3"/>
+                  <WithValue val="24"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="110">
+                  <Parent val="32768"/>
+                  <FieldID val="6"/>
                   <WithValue val="13"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
@@ -553,7 +612,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="52">
+                <RaiseEvent FlowIsn="111">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="432"/>
@@ -567,12 +626,12 @@
                     </Argument>
                   </Arguments>
                   <Condition val="Y"/>
-                  <Modifier val="S"/>
+                  <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="20">
+                <RaiseEvent FlowIsn="112">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="594"/>
@@ -594,7 +653,14 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="51">
+                <BLOCK EndBlock="119" EndBlockSegment="119" FlowIsn="108" Type="E">
+                  <Condition Exp="34"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="118">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="594"/>
@@ -606,14 +672,14 @@
                       <Expression val="14"/>
                       <Skip val="N"/>
                     </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
                   </Arguments>
                   <Condition Exp="15"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="119"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -807,7 +873,7 @@
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="11">
-            <ExpSyntax val="{0,10}='TRUE'LOG"/>
+            <ExpSyntax val="{0,10}"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="12">
@@ -823,7 +889,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="15">
-            <ExpSyntax val="{0,10}='FALSE'LOG"/>
+            <ExpSyntax val="(Trim({0,2})=Trim({0,8}) AND Trim({0,3})=Trim({0,9})) AND NOT({0,10})"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="16">
@@ -846,13 +912,25 @@
             <ExpSyntax val="'ForgotPassword'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="21">
-            <ExpSyntax val="Trim({32768,5})"/>
+          <Expression id="24">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="25">
+            <ExpSyntax val="0"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="26">
+            <ExpSyntax val="''"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="23">
-            <ExpSyntax val="Str({32768,4},'')"/>
-            <ExpAttribute val="A"/>
+          <Expression id="33">
+            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="34">
+            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND NOT ({0,10})"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Submit" FORCE_EXIT="N" id="1">
