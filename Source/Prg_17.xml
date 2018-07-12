@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="45738" date="12/07/2018" time="12:42:18"/>
+          <LastModified _date="736887" _time="54282" date="12/07/2018" time="15:04:42"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -660,6 +660,49 @@
                 </BLOCK>
               </LogicLine>
               <LogicLine>
+                <Update FlowIsn="137">
+                  <Parent val="32768"/>
+                  <FieldID val="3"/>
+                  <WithValue val="24"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="138">
+                  <Parent val="32768"/>
+                  <FieldID val="6"/>
+                  <WithValue val="13"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="139">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="432"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
                 <RaiseEvent FlowIsn="118">
                   <Event>
                     <EventType val="I"/>
@@ -672,8 +715,11 @@
                       <Expression val="14"/>
                       <Skip val="N"/>
                     </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
                   </Arguments>
-                  <Condition Exp="15"/>
+                  <Condition val="Y"/>
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </RaiseEvent>
@@ -888,10 +934,6 @@
             <ExpSyntax val="'UserDashboard'"/>
             <ExpAttribute val="A"/>
           </Expression>
-          <Expression id="15">
-            <ExpSyntax val="(Trim({0,2})=Trim({0,8}) AND Trim({0,3})=Trim({0,9})) AND NOT({0,10})"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="16">
             <ExpSyntax val="'Subform13'"/>
             <ExpAttribute val="A"/>
@@ -925,7 +967,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33">
-            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>''"/>
+            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND {0,10}"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="34">

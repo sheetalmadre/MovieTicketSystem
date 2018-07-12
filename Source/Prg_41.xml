@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="HomePage" ISN_2="1" LastIsn="6" id="41">
+        <Header Description="HomePage" ISN_2="1" LastIsn="5" id="41">
           <Public val="S1"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736886" _time="68204" date="11/07/2018" time="18:56:44"/>
+          <LastModified _date="736887" _time="54276" date="12/07/2018" time="15:04:36"/>
         </Header>
         <ItemIsn val="6"/>
         <Resource>
@@ -458,12 +458,6 @@
             </Control>
           </FormEntry>
         </TaskForms>
-        <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'Login'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-        </Expressions>
         <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
           <Event>
             <EventType val="N"/>
@@ -483,7 +477,7 @@
           </Event>
         </EVNT>
         <Task MainProgram="N">
-          <Header Description="ShowButton" ISN_2="5" LastIsn="6" id="41">
+          <Header Description="ShowButton" ISN_2="5" LastIsn="5" id="41">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -498,7 +492,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736886" _time="68204" date="11/07/2018" time="18:56:44"/>
+            <LastModified _date="736887" _time="54276" date="12/07/2018" time="15:04:36"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -823,22 +817,54 @@
               <ShowMessage val="Y"/>
               <Condition val="89"/>
               <Event>
-                <EventType val="S"/>
-                <KeyCombinationID val="61"/>
-                <PublicObject comp="-1"/>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="8"/>
               </Event>
-              <TXT val="VLoginLogoutButton"/>
               <Expanded val="1"/>
-              <Disabled val="1"/>
               <ExecuteOn_ val="O"/>
               <LogicLines>
                 <LogicLine>
-                  <BLOCK EndBlock="27" EndBlockSegment="23" FlowIsn="22" Type="I">
-                    <Disabled val="1"/>
-                    <Condition Exp="14"/>
+                  <Update FlowIsn="45">
+                    <Parent val="32768"/>
+                    <FieldID val="6"/>
+                    <WithValue val="20"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
-                  </BLOCK>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="46">
+                    <Parent val="32768"/>
+                    <FieldID val="3"/>
+                    <WithValue val="21"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="58">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="432"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="22"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
                 </LogicLine>
                 <LogicLine>
                   <RaiseEvent FlowIsn="12">
@@ -857,28 +883,96 @@
                         <Skip val="Y"/>
                       </Argument>
                     </Arguments>
-                    <Disabled val="1"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </RaiseEvent>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="8" propagate="78">
+              <Level val="H"/>
+              <Type val="U"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="U"/>
+                <PublicObject comp="-1" obj="9"/>
+              </Event>
+              <Expanded val="1"/>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <Update FlowIsn="34">
+                    <Parent val="32768"/>
+                    <FieldID val="6"/>
+                    <WithValue val="20"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="35">
+                    <Parent val="32768"/>
+                    <FieldID val="3"/>
+                    <WithValue val="21"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="39">
+                    <Parent val="32768"/>
+                    <FieldID val="4"/>
+                    <WithValue val="24"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="40">
+                    <Parent val="32768"/>
+                    <FieldID val="5"/>
+                    <WithValue val="25"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <RaiseEvent FlowIsn="37">
+                    <Event>
+                      <EventType val="I"/>
+                      <InternalEventID val="432"/>
+                      <PublicObject comp="-1"/>
+                    </Event>
+                    <Wait val="78"/>
+                    <Arguments>
+                      <Argument>
+                        <Expression val="22"/>
+                        <Skip val="N"/>
+                      </Argument>
+                    </Arguments>
                     <Condition val="Y"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </RaiseEvent>
                 </LogicLine>
                 <LogicLine>
-                  <Remark FlowIsn="25">
-                    <Type val="2"/>
-                    <Text val=" "/>
-                  </Remark>
-                </LogicLine>
-                <LogicLine>
-                  <BLOCK EndBlock="27" EndBlockSegment="27" FlowIsn="23" Type="E">
-                    <Disabled val="1"/>
-                    <Condition Exp="15"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </BLOCK>
-                </LogicLine>
-                <LogicLine>
-                  <RaiseEvent FlowIsn="13">
+                  <RaiseEvent FlowIsn="33">
                     <Event>
                       <EventType val="I"/>
                       <InternalEventID val="594"/>
@@ -887,42 +981,23 @@
                     <Wait val="78"/>
                     <Arguments>
                       <Argument>
-                        <Expression val="13"/>
+                        <Expression val="12"/>
                         <Skip val="N"/>
                       </Argument>
                       <Argument>
                         <Skip val="Y"/>
                       </Argument>
                     </Arguments>
-                    <Disabled val="1"/>
-                    <Condition val="Y"/>
+                    <Condition Exp="23"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </RaiseEvent>
-                </LogicLine>
-                <LogicLine>
-                  <Update FlowIsn="26">
-                    <Parent val="32768"/>
-                    <FieldID val="3"/>
-                    <WithValue val="16"/>
-                    <Incremental val="N"/>
-                    <ForcedUpdate val="Y"/>
-                    <Disabled val="1"/>
-                    <Condition val="Y"/>
-                    <Modifier val="B"/>
-                    <Direction val="C"/>
-                  </Update>
-                </LogicLine>
-                <LogicLine>
-                  <END_BLK FlowIsn="27">
-                    <Disabled val="1"/>
-                  </END_BLK>
                 </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="12" _last_test_id="17" id="1">
+            <FormEntry _last_isn="13" _last_test_id="18" id="1">
               <PropertyList model="FORM_WEB_CLIENT">
                 <Width id="23" val="1052"/>
                 <Height id="24" val="93"/>
@@ -1018,7 +1093,7 @@
                   <Width id="23" val="74"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="Button7o"/>
-                  <Visible Exp="6" id="61"/>
+                  <Visible Exp="17" id="61"/>
                   <Format id="82" valUnicode="Dashboard"/>
                   <RaiseEvent id="234">
                     <EventType val="U"/>
@@ -1033,7 +1108,7 @@
                   <Width id="23" val="81"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="Button8"/>
-                  <Visible Exp="6" id="61"/>
+                  <Visible Exp="17" id="61"/>
                   <Format id="82" valUnicode="BookTicket"/>
                   <Arguments id="126">
                     <Arguments>
@@ -1059,7 +1134,7 @@
                   <Width id="23" val="81"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="Button9"/>
-                  <Visible Exp="6" id="61"/>
+                  <Visible Exp="17" id="61"/>
                   <Format id="82" valUnicode="MyBookings"/>
                   <RaiseEvent id="234">
                     <EventType val="U"/>
@@ -1074,7 +1149,7 @@
                   <Width id="23" val="72"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="Button10"/>
-                  <Visible Exp="6" id="61"/>
+                  <Visible Exp="17" id="61"/>
                   <Format id="82" valUnicode="MyAccount"/>
                   <RaiseEvent id="234">
                     <EventType val="I"/>
@@ -1090,7 +1165,7 @@
                   <Width id="23" val="108"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="Button11"/>
-                  <Visible Exp="6" id="61"/>
+                  <Visible Exp="17" id="61"/>
                   <Format id="82" valUnicode="ChangePassword"/>
                   <RaiseEvent id="234">
                     <EventType val="U"/>
@@ -1105,11 +1180,26 @@
                   <Width id="23" val="65"/>
                   <Height id="24" val="22"/>
                   <ControlName id="46" val="VLoginLogoutButton"/>
-                  <Format Exp="5" id="82" valUnicode="Login"/>
+                  <Visible Exp="19" id="61"/>
+                  <Format id="82" valUnicode="Login"/>
                   <RaiseEvent id="234">
-                    <EventType val="S"/>
-                    <KeyCombinationID val="61"/>
-                    <PublicObject comp="-1"/>
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="8"/>
+                  </RaiseEvent>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="18" id="13">
+                <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                  <X id="21" val="859"/>
+                  <Y id="22" val="30"/>
+                  <Width id="23" val="65"/>
+                  <Height id="24" val="22"/>
+                  <ControlName id="46" val="Button13"/>
+                  <Visible Exp="17" id="61"/>
+                  <Format id="82" valUnicode="Logout"/>
+                  <RaiseEvent id="234">
+                    <EventType val="U"/>
+                    <PublicObject comp="-1" obj="9"/>
                   </RaiseEvent>
                 </PropertyList>
               </Control>
@@ -1127,14 +1217,6 @@
             <Expression id="3">
               <ExpSyntax val="'C'"/>
               <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="5">
-              <ExpSyntax val="IF({32768,3}='TRUE'LOG,'Logout','Login')"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="6">
-              <ExpSyntax val="{32768,3}"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="7">
               <ExpSyntax val="'ShowMovieDetails'"/>
@@ -1156,24 +1238,36 @@
               <ExpSyntax val="'Login'"/>
               <ExpAttribute val="A"/>
             </Expression>
-            <Expression id="13">
-              <ExpSyntax val="'Home'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="14">
-              <ExpSyntax val="{32768,3}='FALSE'LOG"/>
+            <Expression id="17">
+              <ExpSyntax val="{32768,6}"/>
               <ExpAttribute val="B"/>
             </Expression>
-            <Expression id="15">
-              <ExpSyntax val="{32768,3}='TRUE'LOG"/>
+            <Expression id="19">
+              <ExpSyntax val="{32768,3}"/>
               <ExpAttribute val="B"/>
             </Expression>
-            <Expression id="16">
+            <Expression id="20">
               <ExpSyntax val="'FALSE'LOG"/>
               <ExpAttribute val="B"/>
             </Expression>
-            <Expression id="17">
-              <ExpSyntax val=""/>
+            <Expression id="21">
+              <ExpSyntax val="'TRUE'LOG"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="22">
+              <ExpSyntax val="'Subform13'"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="23">
+              <ExpSyntax val="{32768,4}=0 OR {32768,5}=''"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="24">
+              <ExpSyntax val="0"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="25">
+              <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>
@@ -1201,7 +1295,13 @@
               <PublicObject comp="-1"/>
             </Event>
           </EVNT>
-          <EVNT DESC="EventLoginLogout" FORCE_EXIT="N" id="8">
+          <EVNT DESC="EventLogin" FORCE_EXIT="N" id="8">
+            <Event>
+              <EventType val="N"/>
+              <PublicObject comp="-1"/>
+            </Event>
+          </EVNT>
+          <EVNT DESC="EventLogout" FORCE_EXIT="N" id="9">
             <Event>
               <EventType val="N"/>
               <PublicObject comp="-1"/>
