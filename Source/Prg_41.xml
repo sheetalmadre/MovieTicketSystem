@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="68270" date="12/07/2018" time="18:57:50"/>
+          <LastModified _date="736888" _time="67275" date="13/07/2018" time="18:41:15"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -475,6 +475,24 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="48">
+                  <OperationType val="P"/>
+                  <Event>
+                    <EventType val="N"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <TaskID comp="-1" obj="73"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="Y"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
@@ -554,7 +572,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736887" _time="67419" date="12/07/2018" time="18:43:39"/>
+            <LastModified _date="736888" _time="67250" date="13/07/2018" time="18:40:50"/>
           </Header>
           <ItemIsn val="7"/>
           <Resource>
@@ -1306,7 +1324,7 @@
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="7">
-              <ExpSyntax val="'ShowMovieDetails'"/>
+              <ExpSyntax val="'AllAvailableMoviesCards'"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="8">

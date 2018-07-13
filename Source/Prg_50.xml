@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="43386" date="10/07/2018" time="12:03:06"/>
+          <LastModified _date="736888" _time="63984" date="13/07/2018" time="17:46:24"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -90,7 +90,7 @@
           <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange LastIsn="1"/>
+          <VarRange LastIsn="3"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -424,8 +424,12 @@
             <ExpSyntax val="Trim({32768,1})&amp;Trim({0,4})"/>
             <ExpAttribute val="A"/>
           </Expression>
+          <Expression id="8">
+            <ExpSyntax val="4"/>
+            <ExpAttribute val="N"/>
+          </Expression>
         </Expressions>
-        <VarRangeInfo Mode="E" VarRangeVeeIsn="8" id="1"/>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="8" id="3"/>
       </Task>
     </Programs>
   </ProgramsRepository>

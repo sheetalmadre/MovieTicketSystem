@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="68176" date="12/07/2018" time="18:56:16"/>
+          <LastModified _date="736888" _time="64185" date="13/07/2018" time="17:49:45"/>
         </Header>
         <ItemIsn val="25"/>
         <Resource>
@@ -556,30 +556,6 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="4" propagate="78">
-            <Level val="T"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="7" FlowIsn="59" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>

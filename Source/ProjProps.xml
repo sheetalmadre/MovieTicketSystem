@@ -21,7 +21,7 @@
     <WebClientData>
       <OutputFolder val=".\output"/>
       <SourceImagesFolder val=".\images"/>
-      <Theme val="Material Design Exposed Functionality"/>
+      <Theme val="Material Design"/>
       <GenerateMetadataOnly val="N"/>
       <MultiLingualSupport val="N"/>
       <StartupProgramISN val="41"/>
