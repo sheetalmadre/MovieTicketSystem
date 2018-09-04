@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="42675" date="04/09/2018" time="11:51:15"/>
+          <LastModified _date="736941" _time="43183" date="04/09/2018" time="11:59:43"/>
         </Header>
         <ItemIsn val="39"/>
         <Resource>
@@ -864,7 +864,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="50" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="This Screen is already exist" TitleTxt="Error" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="50" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Rates are already entered for this Screen" TitleTxt="Error" VR_DISP="B">
                   <AppendToErrorLog val="Y"/>
                   <Condition Exp="14"/>
                   <Modifier val="B"/>
