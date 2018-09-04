@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -29,9 +29,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="43003" date="10/07/2018" time="11:56:43"/>
+          <LastModified _date="736941" _time="42079" date="04/09/2018" time="11:41:19"/>
         </Header>
-        <ItemIsn val="20"/>
+        <ItemIsn val="21"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="4"/>
@@ -332,7 +332,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="101" Key="1" Mode="R" SortType="102" VIEW="4" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="101" Key="1" Mode="R" SortType="102" VIEW="4" VIEWS="3">
                   <DB comp="-1" obj="4"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -364,6 +364,18 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="21" FlowIsn="146" id="21">
+                  <Column val="14"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <END_LINK FlowIsn="102"/>
               </LogicLine>
               <LogicLine>
@@ -374,7 +386,7 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="4" FlowIsn="6" id="4">
-                  <ASS val="33"/>
+                  <ASS val="36"/>
                   <Column val="4"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
@@ -460,6 +472,7 @@
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>9</v>
+                    <v>10</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
@@ -476,6 +489,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
+                    <v>11</v>
                     <v>12</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="11"/>
@@ -493,6 +507,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
+                    <v>13</v>
                     <v>14</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="13"/>
@@ -510,6 +525,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
+                    <v>15</v>
                     <v>16</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="15"/>
@@ -527,6 +543,7 @@
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
+                    <v>17</v>
                     <v>18</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="17"/>
@@ -556,12 +573,16 @@
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>9</v>
+                    <v>10</v>
+                    <v>11</v>
                     <v>12</v>
+                    <v>13</v>
                     <v>14</v>
+                    <v>15</v>
                     <v>16</v>
+                    <v>17</v>
                     <v>18</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -580,7 +601,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -924,7 +944,7 @@
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
             <Level val="C"/>
-            <Type val="V"/>
+            <Type val="S"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -938,8 +958,8 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="36" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="TheatreID must be entered" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="36" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="TheatreID must be entered" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="13"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -949,7 +969,7 @@
           </LogicUnit>
           <LogicUnit id="5" propagate="78">
             <Level val="C"/>
-            <Type val="V"/>
+            <Type val="S"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -963,8 +983,8 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="37" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="ScreenID must be entered" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="37" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="ScreenID must be entered" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="14"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -974,7 +994,7 @@
           </LogicUnit>
           <LogicUnit id="6" propagate="78">
             <Level val="C"/>
-            <Type val="V"/>
+            <Type val="S"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -988,16 +1008,16 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="38" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="MovieID must be entered" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="38" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="MovieID must be entered" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="15"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="106" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Enter New Movie .." TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="106" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Movie is not in theatre, enter New Movie .." TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="34"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -1007,7 +1027,7 @@
           </LogicUnit>
           <LogicUnit id="7" propagate="78">
             <Level val="C"/>
-            <Type val="V"/>
+            <Type val="S"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
             <ShowMessage val="Y"/>
@@ -1021,8 +1041,8 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="39" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Date should not less than todays date ..." TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="39" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Date should not less than todays date ..." TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="6"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -1102,7 +1122,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="24" _last_test_id="24" id="1">
+          <FormEntry _last_isn="27" _last_test_id="27" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1281"/>
               <Height id="24" val="785"/>
@@ -1231,7 +1251,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="10" id="43"/>
                 <ControlName id="46" val="am9_0001"/>
-                <Enabled id="62"/>
+                <Enabled Exp="16" id="62"/>
                 <Format id="82" valUnicode="HH:MM:SS"/>
                 <TabInto id="269"/>
                 <AllowParking Exp="31" id="315"/>
@@ -1249,7 +1269,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="11" id="43"/>
                 <ControlName id="46" val="pm12_0001"/>
-                <Enabled id="62"/>
+                <Enabled Exp="17" id="62"/>
                 <TabInto id="269"/>
                 <AllowParking Exp="31" id="315"/>
                 <Border id="452"/>
@@ -1281,7 +1301,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="12" id="43"/>
                 <ControlName id="46" val="pm3_0001"/>
-                <Enabled id="62"/>
+                <Enabled Exp="18" id="62"/>
                 <TabInto id="269"/>
                 <AllowParking Exp="31" id="315"/>
                 <Border id="452"/>
@@ -1313,7 +1333,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="13" id="43"/>
                 <ControlName id="46" val="pm6_0001"/>
-                <Enabled id="62"/>
+                <Enabled Exp="19" id="62"/>
                 <TabInto id="269"/>
                 <AllowParking Exp="31" id="315"/>
                 <Border id="452"/>
@@ -1345,7 +1365,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="14" id="43"/>
                 <ControlName id="46" val="pm9_0001"/>
-                <Enabled id="62"/>
+                <Enabled Exp="20" id="62"/>
                 <TabInto id="269"/>
                 <AllowParking Exp="31" id="315"/>
                 <Border id="452"/>
@@ -1366,60 +1386,10 @@
                 <Enabled Exp="20" id="62"/>
               </PropertyList>
             </Control>
-            <Control _test_id="5" id="19">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="MovieAllottedTime"/>
-                <X id="21" val="12"/>
-                <Y id="22" val="290"/>
-                <Width id="23" val="89"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label5"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="6" id="20">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="15"/>
-                </Model>
-                <X id="21" val="12"/>
-                <Y id="22" val="308"/>
-                <Width id="23" val="372"/>
-                <Height id="24" val="40"/>
-                <Data FieldID="15" id="43"/>
-                <ControlName id="46" val="MovieAllottedTime"/>
-                <MultiLineEdit id="71" val="Y"/>
-                <AllowParking id="315"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="12" id="21">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="TimeWiseRecordsAvailable?"/>
-                <X id="21" val="12"/>
-                <Y id="22" val="351"/>
-                <Width id="23" val="138"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label12"/>
-              </PropertyList>
-            </Control>
-            <Control _test_id="14" id="22">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_RICH_CLIENT" id="1">
-                  <Var FieldID="16"/>
-                </Model>
-                <X id="21" val="12"/>
-                <Y id="22" val="378"/>
-                <Width id="23" val="372"/>
-                <Height id="24" val="47"/>
-                <Data FieldID="16" id="43"/>
-                <ControlName id="46" val="TimeWiseRecordsAvailable?"/>
-                <MultiLineEdit id="71" val="Y"/>
-                <AllowParking id="315"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="23" id="23">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="12"/>
-                <Y id="22" val="431"/>
+                <X id="21" val="5"/>
+                <Y id="22" val="314"/>
                 <Width id="23" val="143"/>
                 <Height id="24" val="37"/>
                 <ControlName id="46" val="Button23"/>
@@ -1432,10 +1402,10 @@
             </Control>
             <Control PDOD="128" _test_id="24" id="24">
               <PropertyList model="CTRL_WEB_CLIENT_SUBFORM">
-                <X id="21" val="430"/>
-                <Y id="22" val="461"/>
-                <Width id="23" val="834"/>
-                <Height id="24" val="294"/>
+                <X id="21" val="390"/>
+                <Y id="22" val="354"/>
+                <Width id="23" val="874"/>
+                <Height id="24" val="401"/>
                 <ControlName id="46" val="Subform24"/>
                 <Arguments id="126"/>
                 <ConnectTo id="156" val="4"/>
@@ -1487,10 +1457,6 @@
           <Expression id="11">
             <ExpSyntax val="IF({0,9},{0,3},0)"/>
             <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="33">
-            <ExpSyntax val="{0,4}"/>
-            <ExpAttribute val="D"/>
           </Expression>
           <Expression id="13">
             <ExpSyntax val="{0,1}=0"/>
@@ -1573,8 +1539,12 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="34">
-            <ExpSyntax val="{0,20}&lt;Date()"/>
+            <ExpSyntax val="{0,3}>0 AND {0,21}&lt;Date()"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="36">
+            <ExpSyntax val="Date()"/>
+            <ExpAttribute val="D"/>
           </Expression>
         </Expressions>
         <EVNT DESC="Submit" FORCE_EXIT="N" id="1">

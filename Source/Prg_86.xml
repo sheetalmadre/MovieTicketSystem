@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="WCMSShowDetails" ISN_2="1" LastIsn="5" id="86">
+        <Header Description="WCMSShowDetails" ISN_2="1" LastIsn="8" id="86">
           <Public val="WCMSShowDetails"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="38099" date="10/07/2018" time="10:34:59"/>
+          <LastModified _date="736941" _time="45737" date="04/09/2018" time="12:42:17"/>
         </Header>
         <ItemIsn val="23"/>
         <Resource>
@@ -87,9 +87,9 @@
             <Column id="3" name="Movie">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="10"/>
+                <Picture id="157" valUnicode="15"/>
                 <StoredAs id="173" val="1"/>
-                <Size id="174" val="10"/>
+                <Size id="174" val="15"/>
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
@@ -921,7 +921,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="12" _last_test_id="23" id="1">
+          <FormEntry _last_isn="14" _last_test_id="25" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="867"/>
               <Height id="24" val="665"/>
@@ -1110,7 +1110,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="TheatreString" ISN_2="2" id="86">
+          <Header Description="TheatreString" ISN_2="2" LastIsn="8" id="86">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1779,7 +1779,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="2"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="ShowTimeString" ISN_2="3" id="86">
+          <Header Description="ShowTimeString" ISN_2="3" LastIsn="8" id="86">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -1798,7 +1798,7 @@
             <External val="N"/>
             <FormType val="D"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736879" _time="46121" date="04/07/2018" time="12:48:41"/>
+            <LastModified _date="736941" _time="45270" date="04/09/2018" time="12:34:30"/>
           </Header>
           <ItemIsn val="10"/>
           <Resource>
@@ -2413,7 +2413,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="5" id="3"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="MovieString" ISN_2="4" id="86">
+          <Header Description="MovieString" ISN_2="4" LastIsn="8" id="86">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -2942,7 +2942,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="DateString" ISN_2="5" id="86">
+          <Header Description="DateString" ISN_2="5" LastIsn="8" id="86">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
