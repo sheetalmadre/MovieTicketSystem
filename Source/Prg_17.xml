@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="50802" date="04/09/2018" time="14:06:42"/>
+          <LastModified _date="736941" _time="53100" date="04/09/2018" time="14:45:00"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -572,20 +572,6 @@
               <LogicLine>
                 <END_BLK FlowIsn="119"/>
               </LogicLine>
-              <LogicLine>
-                <RaiseEvent FlowIsn="25">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="14"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="10"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="6" propagate="78">
@@ -663,20 +649,6 @@
                 </RaiseEvent>
               </LogicLine>
             </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="8" propagate="78">
-            <Level val="T"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -896,7 +868,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="19">
-            <ExpSyntax val="'SingUp'"/>
+            <ExpSyntax val="'SignUp'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="20">
