@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="44391" date="04/09/2018" time="12:19:51"/>
+          <LastModified _date="736941" _time="44885" date="04/09/2018" time="12:28:05"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -399,6 +399,30 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <Update FlowIsn="23">
+                  <Parent val="32768"/>
+                  <FieldID val="3"/>
+                  <WithValue val="8"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="28">
+                  <Parent val="32768"/>
+                  <FieldID val="6"/>
+                  <WithValue val="2"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="19">
                   <Parent val="32768"/>
                   <FieldID val="4"/>
@@ -458,7 +482,7 @@
                       <Skip val="Y"/>
                     </Argument>
                   </Arguments>
-                  <Condition val="Y"/>
+                  <Condition Exp="9"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
@@ -659,6 +683,14 @@
           <Expression id="7">
             <ExpSyntax val="'Login'"/>
             <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="8">
+            <ExpSyntax val="'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="{32768,4}=0 OR {32768,5}=''"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <EVNT DESC="AddMovie" FORCE_EXIT="N" id="1">
