@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -37,7 +37,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="38277" date="10/07/2018" time="10:37:57"/>
+          <LastModified _date="736941" _time="44810" date="04/09/2018" time="12:26:50"/>
         </Header>
         <ItemIsn val="32"/>
         <Resource>
@@ -847,7 +847,6 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="65" EndBlockSegment="65" FlowIsn="55" Type="I">
-                  <Disabled val="1"/>
                   <Condition Exp="13"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -859,7 +858,6 @@
                   <WithValue val="14"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -871,7 +869,6 @@
                   <WithValue val="17"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -883,7 +880,6 @@
                   <WithValue val="18"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -895,7 +891,6 @@
                   <WithValue val="15"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -907,7 +902,6 @@
                   <WithValue val="19"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -919,7 +913,6 @@
                   <WithValue val="20"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -931,7 +924,6 @@
                   <WithValue val="16"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -943,7 +935,6 @@
                   <WithValue val="21"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -955,16 +946,13 @@
                   <WithValue val="22"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
               <LogicLine>
-                <END_BLK FlowIsn="65">
-                  <Disabled val="1"/>
-                </END_BLK>
+                <END_BLK FlowIsn="65"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -1276,7 +1264,7 @@
         <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="1"/>
         <VarRangeInfo Mode="E" VarRangeVeeIsn="9" id="2"/>
         <Task MainProgram="N">
-          <Header Description="WebClientShowSeats" ISN_2="2" id="87">
+          <Header Description="WebClientShowSeats" ISN_2="2" LastIsn="2" id="87">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
