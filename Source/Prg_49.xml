@@ -33,7 +33,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736866" _time="64692" date="21/06/2018" time="17:58:12"/>
+          <LastModified _date="736888" _time="66845" date="13/07/2018" time="18:34:05"/>
         </Header>
         <ItemIsn val="17"/>
         <Resource>
@@ -54,7 +54,7 @@
             <IdentifyRowModifications val="84"/>
           </DB>
           <Columns>
-            <Column id="1" name="MovieId">
+            <Column id="1" name="P.MovieId">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_NUMERIC" id="1"/>
                 <Picture id="157" valUnicode="12"/>
@@ -91,7 +91,7 @@
           <InitialMode val="M"/>
           <Locate Direction="A"/>
           <Range Direction="A"/>
-          <VarRange LastIsn="1"/>
+          <VarRange LastIsn="2"/>
           <TaskProperties>
             <SelectionTable val="N"/>
             <ConfirmUpdate CNFU="N"/>
@@ -156,6 +156,18 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="14" FlowIsn="16" id="14">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
                   <Type val="R"/>
@@ -177,7 +189,7 @@
                   <INT_DIT_INFO>
                     <v>2</v>
                   </INT_DIT_INFO>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="9"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -217,7 +229,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="22"/>
+                  <_DitIndexForToolkit val="23"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -230,7 +242,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="19"/>
+                  <_DitIndexForToolkit val="20"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -243,7 +255,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="21"/>
+                  <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -268,7 +280,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -281,7 +293,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="11"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -309,7 +321,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="18"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -322,18 +334,6 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="14" FlowIsn="16" id="14">
-                  <Column val="1"/>
-                  <Type val="V"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="Y"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -378,7 +378,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -416,7 +416,19 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="23">
+                <Update FlowIsn="37">
+                  <Parent val="32768"/>
+                  <FieldID val="7"/>
+                  <WithValue val="7"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="40">
                   <OperationType val="P"/>
                   <Event>
                     <EventType val="N"/>
@@ -426,7 +438,8 @@
                   <Lock val="N"/>
                   <Arguments>
                     <Argument>
-                      <Variable val="15"/>
+                      <Parent val="32768"/>
+                      <Variable val="7"/>
                       <Skip val="N"/>
                     </Argument>
                   </Arguments>
@@ -441,9 +454,33 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="9" FlowIsn="39" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="24" _last_test_id="24" id="1">
+          <FormEntry _last_isn="25" _last_test_id="25" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1298"/>
               <Height id="24" val="837"/>
@@ -504,6 +541,16 @@
                 <ControlName id="46" val="Group3"/>
               </PropertyList>
             </Control>
+            <Control ISN_FATHER="1" _test_id="25" id="25">
+              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
+                <Text id="19" valUnicode="@ Movie Ticket Booking System"/>
+                <X id="21" val="783"/>
+                <Y id="22" val="769"/>
+                <Width id="23" val="157"/>
+                <Height id="24" val="15"/>
+                <ControlName id="46" val="Label25"/>
+              </PropertyList>
+            </Control>
             <Control ISN_FATHER="4" _test_id="5" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
                 <X id="21" val="58"/>
@@ -546,7 +593,8 @@
                 <Width id="23" val="69"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button24"/>
-                <Format id="82" valUnicode="Show Trailer"/>
+                <Format id="82" valUnicode="View Trailer"/>
+                <ButtonStyle id="96" val="3"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <PublicObject comp="-1" obj="2"/>
@@ -729,7 +777,7 @@
                 <ControlName id="46" val="Button14"/>
                 <Color id="51" val="4"/>
                 <Format id="82" valUnicode="Book Ticket"/>
-                <ButtonStyle id="96" val="3"/>
+                <ButtonStyle id="96" val="1"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <PublicObject comp="-1" obj="1"/>
@@ -759,6 +807,18 @@
             <ExpSyntax val="{0,11}"/>
             <ExpAttribute val="N"/>
           </Expression>
+          <Expression id="6">
+            <ExpSyntax val="{0,15}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="{0,1}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'Yet to impliment'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
         </Expressions>
         <EVNT DESC="BookMovie" FORCE_EXIT="N" id="1">
           <Event>
@@ -772,7 +832,7 @@
             <PublicObject comp="-1"/>
           </Event>
         </EVNT>
-        <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
+        <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="2"/>
       </Task>
     </Programs>
   </ProgramsRepository>
