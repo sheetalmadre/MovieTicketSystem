@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <LastIsn val="0"/>
   </Header>
@@ -21,10 +21,10 @@
     <WebClientData>
       <OutputFolder val=".\output"/>
       <SourceImagesFolder val=".\images"/>
-      <Theme val="Material Design Exposed Functionality"/>
+      <Theme val="Material Design"/>
       <GenerateMetadataOnly val="N"/>
       <MultiLingualSupport val="N"/>
-      <StartupProgramISN val="101"/>
+      <StartupProgramISN val="41"/>
     </WebClientData>
   </ProjectProperties>
 
