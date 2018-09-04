@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="40917" date="04/09/2018" time="11:21:57"/>
+          <LastModified _date="736941" _time="41010" date="04/09/2018" time="11:23:30"/>
         </Header>
         <ItemIsn val="21"/>
         <Resource>
@@ -1588,7 +1588,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="34">
-            <ExpSyntax val="{0,21}>Date()"/>
+            <ExpSyntax val="{0,21}&lt;Date()"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
