@@ -37,7 +37,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="44810" date="04/09/2018" time="12:26:50"/>
+          <LastModified _date="736941" _time="50158" date="04/09/2018" time="13:55:58"/>
         </Header>
         <ItemIsn val="32"/>
         <Resource>
@@ -847,6 +847,7 @@
               </LogicLine>
               <LogicLine>
                 <BLOCK EndBlock="65" EndBlockSegment="65" FlowIsn="55" Type="I">
+                  <Disabled val="1"/>
                   <Condition Exp="13"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -858,6 +859,7 @@
                   <WithValue val="14"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -869,6 +871,7 @@
                   <WithValue val="17"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -880,6 +883,7 @@
                   <WithValue val="18"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -891,6 +895,7 @@
                   <WithValue val="15"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -902,6 +907,7 @@
                   <WithValue val="19"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -913,6 +919,7 @@
                   <WithValue val="20"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -924,6 +931,7 @@
                   <WithValue val="16"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -935,6 +943,7 @@
                   <WithValue val="21"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -946,13 +955,16 @@
                   <WithValue val="22"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </Update>
               </LogicLine>
               <LogicLine>
-                <END_BLK FlowIsn="65"/>
+                <END_BLK FlowIsn="65">
+                  <Disabled val="1"/>
+                </END_BLK>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
