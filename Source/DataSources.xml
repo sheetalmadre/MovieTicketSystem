@@ -2,7 +2,7 @@
  
 <Header>
 
-  <Version val="14000.00"/>
+  <Version val="14010.00"/>
 
   <WithIsn val="Y"/>
 
@@ -18,8 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
- 
-<DataObject Comment="All Users" PhysicalName="MSRegistrationTable" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="1" name="MSRegistrationTable">
+<DataObject Comment="All Users" PhysicalName="MSRegistrationTable" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="1" name="MSRegistrationTable">
 
   <Encrypt val="N"/>
 
@@ -36,6 +35,8 @@
   <ObjectType val="T"/>
 
   <Position val="D"/>
+
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="1"/>
 
@@ -212,7 +213,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="MSCities" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" name="MSCities">
+<DataObject PhysicalName="MSCities" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="2" name="MSCities">
 
   <Encrypt val="N"/>
 
@@ -229,6 +230,8 @@
   <ObjectType val="T"/>
 
   <Position val="D"/>
+
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="3"/>
 
@@ -300,7 +303,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="MSLanguage" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="3" name="MSLanguage">
+<DataObject PhysicalName="MSLanguage" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="3" name="MSLanguage">
 
   <Encrypt val="N"/>
 
@@ -317,6 +320,8 @@
   <ObjectType val="T"/>
 
   <Position val="D"/>
+
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="1"/>
 
@@ -373,7 +378,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject Comment="Movies per cities" PhysicalName="MSMovieD" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="4" name="MSMovieD">
+<DataObject Comment="Movies per cities" PhysicalName="MSMovieD" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="4" name="MSMovieD">
 
   <Encrypt val="N"/>
 
@@ -390,6 +395,8 @@
   <ObjectType val="T"/>
 
   <Position val="D"/>
+
+  <PositionIndex val="-2"/>
 
   <IndexesLastIsn val="1"/>
 
@@ -636,7 +643,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject Comment="City wise theatre and screens and rates&#xD;&#xA;Also Movies in that Theatre" PhysicalName="MSTheatreScreenRate" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="6" name="MSTheatreScreenRate">
+<DataObject Comment="City wise theatre and screens and rates&#xD;&#xA;Also Movies in that Theatre" PhysicalName="MSTheatreScreenRate" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="6" name="MSTheatreScreenRate">
 
   <Encrypt val="N"/>
 
@@ -794,7 +801,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="MSShowDetails" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="7" name="MSShowDetails">
+<DataObject PhysicalName="MSShowDetails" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="7" name="MSShowDetails">
 
   <Encrypt val="N"/>
 
@@ -932,7 +939,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="MSBookingMaster" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="8" name="MSBookingMaster">
+<DataObject PhysicalName="MSBookingMaster" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="8" name="MSBookingMaster">
 
   <Encrypt val="N"/>
 
@@ -1635,7 +1642,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject Comment="Seat Structure" PhysicalName="MSStructureTable" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="12" name="MSStructureTable">
+<DataObject Comment="Seat Structure" PhysicalName="MSStructureTable" Resident="N" UniqueISNConvState="12" data_source="MovieTicket.SQLite" id="12" name="MSStructureTable">
 
   <Encrypt val="N"/>
 
