@@ -29,9 +29,9 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="38807" date="04/09/2018" time="10:46:47"/>
+          <LastModified _date="736941" _time="40917" date="04/09/2018" time="11:21:57"/>
         </Header>
-        <ItemIsn val="20"/>
+        <ItemIsn val="21"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="4"/>
@@ -332,7 +332,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="101" Key="1" Mode="R" SortType="102" VIEW="4" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="101" Key="1" Mode="R" SortType="102" VIEW="4" VIEWS="3">
                   <DB comp="-1" obj="4"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -354,6 +354,21 @@
               <LogicLine>
                 <Select FieldID="20" FlowIsn="105" id="20">
                   <Column val="10"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>6</v>
+                  </INT_RCMP_INFO>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="21" FlowIsn="146" id="21">
+                  <Column val="14"/>
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
@@ -996,7 +1011,7 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="106" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Enter New Movie .." TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="106" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Movie is not in theatre, enter New Movie .." TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <Condition Exp="34"/>
                   <Modifier val="B"/>
@@ -1489,7 +1504,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="33">
-            <ExpSyntax val="{0,4}"/>
+            <ExpSyntax val="{0,20}"/>
             <ExpAttribute val="D"/>
           </Expression>
           <Expression id="13">
@@ -1573,7 +1588,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="34">
-            <ExpSyntax val="{0,20}&lt;Date()"/>
+            <ExpSyntax val="{0,21}>Date()"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
