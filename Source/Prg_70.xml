@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="AddMovie" ISN_2="1" LastIsn="2" id="70">
-          <Public val="S_OK"/>
+          <Public val="AddMovie"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="54714" date="05/07/2018" time="15:11:54"/>
+          <LastModified _date="736941" _time="56483" date="04/09/2018" time="15:41:23"/>
         </Header>
         <ItemIsn val="28"/>
         <Resource>
@@ -669,7 +669,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <BLOCK EndBlock="39" EndBlockSegment="35" FlowIsn="33" Type="I">
+                <BLOCK EndBlock="40" EndBlockSegment="35" FlowIsn="33" Type="I">
                   <Condition Exp="3"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -684,17 +684,30 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <BLOCK EndBlock="39" EndBlockSegment="39" FlowIsn="35" Type="E">
+                <BLOCK EndBlock="40" EndBlockSegment="40" FlowIsn="35" Type="E">
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </BLOCK>
               </LogicLine>
               <LogicLine>
-                <CallTask FlowIsn="36">
+                <RaiseEvent FlowIsn="36">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="63"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="37">
                   <OperationType val="T"/>
                   <Event>
-                    <EventType val="S"/>
+                    <EventType val="N"/>
                     <PublicObject comp="-1"/>
                   </Event>
                   <TaskID comp="-1" obj="2"/>
@@ -709,7 +722,7 @@
                 </CallTask>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="37">
+                <RaiseEvent FlowIsn="38">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="295"/>
@@ -722,7 +735,7 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="38">
+                <RaiseEvent FlowIsn="39">
                   <Event>
                     <EventType val="U"/>
                     <PublicObject comp="-1" obj="1"/>
@@ -734,7 +747,7 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <END_BLK FlowIsn="39"/>
+                <END_BLK FlowIsn="40"/>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -755,7 +768,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <RaiseEvent FlowIsn="40">
+                <RaiseEvent FlowIsn="41">
                   <Event>
                     <EventType val="U"/>
                     <PublicObject comp="-1" obj="1"/>
@@ -767,7 +780,7 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="41">
+                <Remark FlowIsn="42">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
@@ -790,7 +803,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="42" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Enter Movie name" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="43" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Enter Movie name" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <Condition Exp="3"/>
                   <Modifier val="B"/>
@@ -815,7 +828,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="43" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select City" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="44" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select City" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <Condition Exp="4"/>
                   <Modifier val="B"/>
@@ -840,7 +853,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="44" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select Movie type" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="45" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select Movie type" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <Condition Exp="5"/>
                   <Modifier val="B"/>
@@ -865,7 +878,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="45" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select Movie status" TitleTxt="Warning" VR_DISP="B">
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="46" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Select Movie status" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
                   <Condition Exp="6"/>
                   <Modifier val="B"/>
@@ -873,7 +886,7 @@
                 </STP>
               </LogicLine>
               <LogicLine>
-                <Remark FlowIsn="46">
+                <Remark FlowIsn="47">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
@@ -895,7 +908,7 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <Update FlowIsn="47">
+                <Update FlowIsn="48">
                   <FieldID val="15"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -906,7 +919,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="48">
+                <Update FlowIsn="49">
                   <FieldID val="16"/>
                   <WithValue val="7"/>
                   <Incremental val="N"/>
@@ -917,7 +930,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="49">
+                <Update FlowIsn="50">
                   <FieldID val="17"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -928,7 +941,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="50">
+                <Update FlowIsn="51">
                   <FieldID val="18"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -939,7 +952,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="51">
+                <Update FlowIsn="52">
                   <FieldID val="19"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -950,7 +963,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="52">
+                <Update FlowIsn="53">
                   <FieldID val="20"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -961,7 +974,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="53">
+                <Update FlowIsn="54">
                   <FieldID val="21"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -972,7 +985,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="54">
+                <Update FlowIsn="55">
                   <FieldID val="22"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -983,7 +996,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="55">
+                <Update FlowIsn="56">
                   <FieldID val="23"/>
                   <WithValue val="2"/>
                   <Incremental val="N"/>
@@ -994,7 +1007,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="56">
+                <Update FlowIsn="57">
                   <FieldID val="24"/>
                   <WithValue val="7"/>
                   <Incremental val="N"/>
@@ -1005,7 +1018,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="57">
+                <Update FlowIsn="58">
                   <FieldID val="25"/>
                   <WithValue val="8"/>
                   <Incremental val="N"/>
@@ -1016,7 +1029,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <Update FlowIsn="58">
+                <Update FlowIsn="59">
                   <FieldID val="26"/>
                   <WithValue val="8"/>
                   <Incremental val="N"/>
@@ -1027,7 +1040,7 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="59">
+                <RaiseEvent FlowIsn="60">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="33"/>
@@ -1041,7 +1054,7 @@
                 </RaiseEvent>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="60">
+                <RaiseEvent FlowIsn="61">
                   <Event>
                     <EventType val="I"/>
                     <InternalEventID val="295"/>
@@ -1518,7 +1531,7 @@
           </Event>
         </EVNT>
         <Task MainProgram="N">
-          <Header Description="AddMovieNew" ISN_2="2" id="70">
+          <Header Description="AddMovieNew" ISN_2="2" LastIsn="2" id="70">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
