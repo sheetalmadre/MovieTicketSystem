@@ -20,18 +20,22 @@
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <ParametersAttributes/>
+            <TSK_PARAMS val="1"/>
+            <ParametersAttributes>
+              <Attr MgAttr="N"/>
+            </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="W"/>
           <Interactive val="Y"/>
+          <RoutePath val="AllAvailableMoviesCards"/>
           <External val="Y"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="42573" date="10/07/2018" time="11:49:33"/>
+          <LastModified _date="736888" _time="67498" date="13/07/2018" time="18:44:58"/>
         </Header>
-        <ItemIsn val="13"/>
+        <ItemIsn val="14"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="4"/>
@@ -41,7 +45,18 @@
             <Cache val="Y"/>
             <IdentifyRowModifications val="84"/>
           </DB>
-          <Columns/>
+          <Columns>
+            <Column id="1" name="P.paramCards">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="5"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="5"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
@@ -121,6 +136,18 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="14" FlowIsn="23" id="14">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
               </LogicLine>
               <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
@@ -306,6 +333,40 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <Update FlowIsn="22">
+                  <Parent val="32768"/>
+                  <FieldID val="7"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="19">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="9"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="17">
                   <OperationType val="P"/>
                   <Event>
@@ -324,6 +385,7 @@
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
                   <RetainFocus val="N"/>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -455,6 +517,14 @@
           <Expression id="8">
             <ExpSyntax val="Date()&lt;={0,12}+7"/>
             <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="'DetailsOfMovies'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="{0,1}"/>
+            <ExpAttribute val="N"/>
           </Expression>
         </Expressions>
       </Task>

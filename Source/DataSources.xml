@@ -18,6 +18,7 @@
  <DataSourceRepository>
   <DataObjects>
  
+ 
 <DataObject Comment="All Users" PhysicalName="MSRegistrationTable" Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="1" name="MSRegistrationTable">
 
   <Encrypt val="N"/>
@@ -861,13 +862,13 @@
     <Column id="6" name="MSShowTimings">
       <PropertyList model="FIELD">
         <Model attr_obj="FIELD_TIME" id="1"/>
-        <Picture id="157" valUnicode="HH:MM PM"/>
+        <Picture id="157" valUnicode="HH:MM"/>
         <StoredAs id="173" val="24"/>
         <Size id="174" val="6"/>
         <Definition id="175" val="2"/>
         <DbColumnName id="178" val="MSShowTimings"/>
         <_Flip id="194"/>
-        <_FieldPhysical Name="MSShowTimings" PIC_U="HH:MM PM" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+        <_FieldPhysical Name="MSShowTimings" PIC_U="HH:MM" Size="6" allowed_null="N" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
         <_FieldStyle id="276" val="1"/>
       </PropertyList>
     </Column>
