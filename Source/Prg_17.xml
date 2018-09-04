@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14010.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736887" _time="54282" date="12/07/2018" time="15:04:42"/>
+          <LastModified _date="736941" _time="41997" date="04/09/2018" time="11:39:57"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -451,136 +451,6 @@
                 </Update>
               </LogicLine>
               <LogicLine>
-                <RaiseEvent FlowIsn="25">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="14"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Condition Exp="10"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="5" propagate="78">
-            <Level val="C"/>
-            <Type val="V"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <TXT val="VUserPassword"/>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="21" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition Exp="4"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="6" propagate="78">
-            <Level val="H"/>
-            <Type val="U"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="U"/>
-              <PublicObject comp="-1" obj="2"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <RaiseEvent FlowIsn="77">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="19"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                  </Arguments>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="7" propagate="78">
-            <Level val="H"/>
-            <Type val="U"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="U"/>
-              <PublicObject comp="-1" obj="3"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <RaiseEvent FlowIsn="78">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="594"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Arguments>
-                    <Argument>
-                      <Expression val="20"/>
-                      <Skip val="N"/>
-                    </Argument>
-                    <Argument>
-                      <Skip val="Y"/>
-                    </Argument>
-                  </Arguments>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="8" propagate="78">
-            <Level val="T"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
                 <BLOCK EndBlock="119" EndBlockSegment="108" FlowIsn="107" Type="I">
                   <Condition Exp="33"/>
                   <Modifier val="B"/>
@@ -727,7 +597,136 @@
               <LogicLine>
                 <END_BLK FlowIsn="119"/>
               </LogicLine>
+              <LogicLine>
+                <RaiseEvent FlowIsn="25">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="14"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Disabled val="1"/>
+                  <Condition Exp="10"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
             </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="5" propagate="78">
+            <Level val="C"/>
+            <Type val="V"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="VUserPassword"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="21" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="4"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="6" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="2"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <RaiseEvent FlowIsn="77">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="19"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="7" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <RaiseEvent FlowIsn="78">
+                  <Event>
+                    <EventType val="I"/>
+                    <InternalEventID val="594"/>
+                    <PublicObject comp="-1"/>
+                  </Event>
+                  <Wait val="78"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="20"/>
+                      <Skip val="N"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                    </Argument>
+                  </Arguments>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </RaiseEvent>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="8" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -967,11 +966,11 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="33">
-            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND {0,10}"/>
+            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND {0,10} AND (Trim({0,2})=Trim({0,8}) AND Trim({0,3})=Trim({0,9}))"/>
             <ExpAttribute val="B"/>
           </Expression>
           <Expression id="34">
-            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND NOT ({0,10})"/>
+            <ExpSyntax val="Trim({0,2})&lt;>'' AND Trim({0,3})&lt;>'' AND NOT ({0,10}) AND (Trim({0,2})=Trim({0,8}) AND Trim({0,3})=Trim({0,9}))"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
