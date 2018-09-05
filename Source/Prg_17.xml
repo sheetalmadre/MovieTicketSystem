@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="41997" date="04/09/2018" time="11:39:57"/>
+          <LastModified _date="736941" _time="53100" date="04/09/2018" time="14:45:00"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -363,31 +363,6 @@
               </LogicLine>
             </LogicLines>
           </LogicUnit>
-          <LogicUnit id="3" propagate="78">
-            <Level val="C"/>
-            <Type val="V"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <TXT val="VUserName"/>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="1" FlowIsn="15" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition Exp="3"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
           <LogicUnit id="4" propagate="78">
             <Level val="H"/>
             <Type val="U"/>
@@ -403,16 +378,16 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="1" FlowIsn="16" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="1" FlowIsn="16" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="7"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
               </LogicLine>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="17" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="17" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
                   <Condition Exp="8"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
@@ -597,45 +572,6 @@
               <LogicLine>
                 <END_BLK FlowIsn="119"/>
               </LogicLine>
-              <LogicLine>
-                <RaiseEvent FlowIsn="25">
-                  <Event>
-                    <EventType val="I"/>
-                    <InternalEventID val="14"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
-                  <Wait val="78"/>
-                  <Disabled val="1"/>
-                  <Condition Exp="10"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </RaiseEvent>
-              </LogicLine>
-            </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="5" propagate="78">
-            <Level val="C"/>
-            <Type val="V"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <TXT val="VUserPassword"/>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
-            <LogicLines>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="21" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition Exp="4"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="6" propagate="78">
@@ -713,20 +649,6 @@
                 </RaiseEvent>
               </LogicLine>
             </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="8" propagate="78">
-            <Level val="T"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-              <PublicObject comp="-1"/>
-            </Event>
-            <Expanded val="1"/>
-            <ExecuteOn_ val="O"/>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
@@ -946,7 +868,7 @@
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="19">
-            <ExpSyntax val="'SingUp'"/>
+            <ExpSyntax val="'SignUp'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="20">
