@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736990" _time="51084" date="23/10/2018" time="14:11:24"/>
+          <LastModified _date="736990" _time="52151" date="23/10/2018" time="14:29:11"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -505,9 +505,10 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="11" _last_test_id="12" id="1">
+          <FormEntry _last_isn="12" _last_test_id="13" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Height id="24" val="338"/>
+              <Width id="23" val="351"/>
+              <Height id="24" val="346"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="DashboardAdmin"/>
