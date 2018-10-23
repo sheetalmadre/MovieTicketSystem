@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="39163" date="05/07/2018" time="10:52:43"/>
+          <LastModified _date="736990" _time="51873" date="23/10/2018" time="14:24:33"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -239,7 +239,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -252,7 +252,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="10"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -265,7 +265,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -278,7 +278,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="12"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -297,7 +297,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -310,7 +309,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -323,7 +321,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -336,7 +333,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -364,10 +360,6 @@
               <LogicLine>
                 <CallTask FlowIsn="12">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="S"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -467,60 +459,6 @@
               <_Comment id="218"/>
               <FormName id="311" valUnicode="AddCity"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="35" id="7">
-              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
-                <Text id="19" valUnicode="Group1"/>
-                <X id="21" val="20"/>
-                <Y id="22" val="18"/>
-                <Width id="23" val="895"/>
-                <Height id="24" val="99"/>
-                <ControlName id="46" val="Group7"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="7" PDOD="128" _test_id="37" id="9">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="58"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="136"/>
-                <Height id="24" val="34"/>
-                <Data FieldID="7" id="43"/>
-                <ControlName id="46" val="Button9"/>
-                <Format id="82" valUnicode="Home"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="7" PDOD="128" _test_id="38" id="10">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="230"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="136"/>
-                <Height id="24" val="34"/>
-                <Data FieldID="8" id="43"/>
-                <ControlName id="46" val="Button10"/>
-                <Format id="82" valUnicode="About Us"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="7" PDOD="128" _test_id="39" id="11">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="398"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="136"/>
-                <Height id="24" val="34"/>
-                <Data FieldID="9" id="43"/>
-                <ControlName id="46" val="Button11"/>
-                <Format id="82" valUnicode="Contact Us"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="7" PDOD="128" _test_id="40" id="12">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="567"/>
-                <Y id="22" val="46"/>
-                <Width id="23" val="136"/>
-                <Height id="24" val="34"/>
-                <Data FieldID="10" id="43"/>
-                <ControlName id="46" val="Button12"/>
-                <Format id="82" valUnicode="login"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="36" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_GROUP">
                 <Text id="19" valUnicode="Group2"/>
