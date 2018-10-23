@@ -27,9 +27,9 @@
           <Interactive val="Y"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736990" _time="51873" date="23/10/2018" time="14:24:33"/>
+          <LastModified _date="736990" _time="52113" date="23/10/2018" time="14:28:33"/>
         </Header>
         <ItemIsn val="10"/>
         <Resource>
@@ -458,6 +458,7 @@
               <GridY id="39" val="13"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="AddCity"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control PDOD="128" _test_id="36" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_GROUP">
