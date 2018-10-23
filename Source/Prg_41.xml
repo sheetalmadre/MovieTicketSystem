@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736888" _time="67275" date="13/07/2018" time="18:41:15"/>
+          <LastModified _date="736990" _time="53436" date="23/10/2018" time="14:50:36"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -285,10 +285,6 @@
               <LogicLine>
                 <CallTask FlowIsn="24">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="66"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -303,10 +299,6 @@
               <LogicLine>
                 <CallTask FlowIsn="25">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="43"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -321,10 +313,6 @@
               <LogicLine>
                 <CallTask FlowIsn="26">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="44"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -339,10 +327,6 @@
               <LogicLine>
                 <CallTask FlowIsn="28">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="20"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -357,10 +341,6 @@
               <LogicLine>
                 <CallTask FlowIsn="29">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="21"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -375,10 +355,6 @@
               <LogicLine>
                 <CallTask FlowIsn="30">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="48"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -399,10 +375,6 @@
               <LogicLine>
                 <CallTask FlowIsn="31">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="19"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -417,10 +389,6 @@
               <LogicLine>
                 <CallTask FlowIsn="32">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="18"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -435,10 +403,6 @@
               <LogicLine>
                 <CallTask FlowIsn="33">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="17"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -453,10 +417,6 @@
               <LogicLine>
                 <CallTask FlowIsn="34">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="49"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -478,10 +438,6 @@
               <LogicLine>
                 <CallTask FlowIsn="48">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="73"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -532,12 +488,6 @@
             </Control>
           </FormEntry>
         </TaskForms>
-        <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="4"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-        </Expressions>
         <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
           <Event>
             <EventType val="N"/>
@@ -572,10 +522,18 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736888" _time="67250" date="13/07/2018" time="18:40:50"/>
+            <LastModified _date="736990" _time="53436" date="23/10/2018" time="14:50:36"/>
           </Header>
-          <ItemIsn val="7"/>
+          <ItemIsn val="11"/>
           <Resource>
+            <DB id="1">
+              <DataObject comp="-1" obj="1"/>
+              <Access val="R"/>
+              <Share val="W"/>
+              <Open val="N"/>
+              <Cache val="Y"/>
+              <IdentifyRowModifications val="84"/>
+            </DB>
             <Columns>
               <Column id="1" name="BHome">
                 <PropertyList model="FIELD">
@@ -762,6 +720,60 @@
                     <Direction val="C"/>
                   </Select>
                 </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="106">
+                    <Type val="0"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="107" Key="1" Mode="R" SortType="108" VIEW="6" VIEWS="3">
+                    <DB comp="-1" obj="1"/>
+                    <Expanded val="1"/>
+                    <Condition val="Y"/>
+                  </LNK>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="10" FlowIsn="110" id="10">
+                    <Column val="1"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="28" MIN="28"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="9" FlowIsn="109" id="9">
+                    <Column val="9"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="29" MIN="29"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="11" FlowIsn="111" id="11">
+                    <Column val="12"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <END_LINK FlowIsn="108"/>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
             <LogicUnit id="3" propagate="78">
@@ -795,7 +807,7 @@
                         <Skip val="Y"/>
                       </Argument>
                     </Arguments>
-                    <Condition val="Y"/>
+                    <Condition Exp="31"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </RaiseEvent>
@@ -817,7 +829,7 @@
                         <Skip val="Y"/>
                       </Argument>
                     </Arguments>
-                    <Condition val="Y"/>
+                    <Condition Exp="33"/>
                     <Modifier val="B"/>
                     <Direction val="C"/>
                   </RaiseEvent>
@@ -1374,6 +1386,22 @@
             <Expression id="25">
               <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="28">
+              <ExpSyntax val="{32768,4}"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="29">
+              <ExpSyntax val="Trim({32768,5})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="31">
+              <ExpSyntax val="{0,11}"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="33">
+              <ExpSyntax val="NOT({0,11})"/>
+              <ExpAttribute val="B"/>
             </Expression>
           </Expressions>
           <EVNT DESC="EventDashboard" FORCE_EXIT="N" id="4">
