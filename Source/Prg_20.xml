@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="44885" date="04/09/2018" time="12:28:05"/>
+          <LastModified _date="736990" _time="51084" date="23/10/2018" time="14:11:24"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -265,10 +265,6 @@
               <LogicLine>
                 <CallTask FlowIsn="15">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="70"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -299,10 +295,6 @@
               <LogicLine>
                 <CallTask FlowIsn="16">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -333,10 +325,6 @@
               <LogicLine>
                 <CallTask FlowIsn="17">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="63"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -367,11 +355,37 @@
               <LogicLine>
                 <CallTask FlowIsn="18">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="67"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="10" propagate="78">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="U"/>
+              <PublicObject comp="-1" obj="3"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <CallTask FlowIsn="33">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="68"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
                   <SyncData val="N"/>
@@ -516,7 +530,7 @@
             <Control PDOD="128" _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="50"/>
+                <Y id="22" val="49"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button2"/>
@@ -530,49 +544,21 @@
             <Control PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="78"/>
+                <Y id="22" val="77"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button3"/>
-                <Format id="82" valUnicode="AddMovieType"/>
+                <Format id="82" valUnicode="AddCity"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
                   <PublicObject comp="-1" obj="3"/>
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="4" id="4">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="107"/>
-                <Width id="23" val="110"/>
-                <Height id="24" val="22"/>
-                <ControlName id="46" val="Button4"/>
-                <Format id="82" valUnicode="MovieReport"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="4"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
-            <Control PDOD="128" _test_id="5" id="5">
-              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="136"/>
-                <Width id="23" val="110"/>
-                <Height id="24" val="22"/>
-                <ControlName id="46" val="Button5"/>
-                <Format id="82" valUnicode="LanguageReport"/>
-                <RaiseEvent id="234">
-                  <EventType val="U"/>
-                  <PublicObject comp="-1" obj="5"/>
-                </RaiseEvent>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="11" id="10">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="163"/>
+                <Y id="22" val="105"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button10"/>
@@ -586,7 +572,7 @@
             <Control PDOD="128" _test_id="12" id="11">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="192"/>
+                <Y id="22" val="133"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button11"/>
@@ -597,6 +583,36 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
+            <Control PDOD="128" _test_id="4" id="4">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="39"/>
+                <Y id="22" val="161"/>
+                <Width id="23" val="110"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="Button4"/>
+                <Enabled Exp="2" id="62"/>
+                <Format id="82" valUnicode="MovieReport"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="4"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="5" id="5">
+              <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
+                <X id="21" val="39"/>
+                <Y id="22" val="189"/>
+                <Width id="23" val="110"/>
+                <Height id="24" val="22"/>
+                <ControlName id="46" val="Button5"/>
+                <Enabled Exp="2" id="62"/>
+                <Format id="82" valUnicode="LanguageReport"/>
+                <RaiseEvent id="234">
+                  <EventType val="U"/>
+                  <PublicObject comp="-1" obj="5"/>
+                </RaiseEvent>
+              </PropertyList>
+            </Control>
             <Control PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
@@ -604,6 +620,7 @@
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button6"/>
+                <Enabled Exp="2" id="62"/>
                 <Format id="82" valUnicode="BookingReport"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
@@ -614,10 +631,11 @@
             <Control PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="246"/>
+                <Y id="22" val="245"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button7"/>
+                <Enabled Exp="2" id="62"/>
                 <Format id="82" valUnicode="MyAccount"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
@@ -628,10 +646,11 @@
             <Control PDOD="128" _test_id="8" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="275"/>
+                <Y id="22" val="273"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button8"/>
+                <Enabled Exp="2" id="62"/>
                 <Format id="82" valUnicode="ChangePassword"/>
                 <RaiseEvent id="234">
                   <EventType val="U"/>
@@ -642,7 +661,7 @@
             <Control PDOD="128" _test_id="9" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <X id="21" val="39"/>
-                <Y id="22" val="304"/>
+                <Y id="22" val="301"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button9"/>
@@ -692,6 +711,10 @@
             <ExpSyntax val="{32768,4}=0 OR {32768,5}=''"/>
             <ExpAttribute val="B"/>
           </Expression>
+          <Expression id="10">
+            <ExpSyntax val="'FALSE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
         </Expressions>
         <EVNT DESC="AddMovie" FORCE_EXIT="N" id="1">
           <Event>
@@ -705,7 +728,7 @@
             <PublicObject comp="-1"/>
           </Event>
         </EVNT>
-        <EVNT DESC="AddMovieType" FORCE_EXIT="N" id="3">
+        <EVNT DESC="AddCity" FORCE_EXIT="N" id="3">
           <Event>
             <EventType val="N"/>
             <PublicObject comp="-1"/>
