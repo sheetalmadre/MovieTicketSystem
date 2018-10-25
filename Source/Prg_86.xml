@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -27,11 +27,11 @@
           <Interactive val="Y"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="45737" date="04/09/2018" time="12:42:17"/>
+          <LastModified _date="736992" _time="42866" date="25/10/2018" time="11:54:26"/>
         </Header>
-        <ItemIsn val="23"/>
+        <ItemIsn val="31"/>
         <Resource>
           <DB id="1">
             <DataObject comp="-1" obj="2"/>
@@ -687,10 +687,6 @@
               <LogicLine>
                 <CallTask FlowIsn="44">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="4"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -728,10 +724,6 @@
               <LogicLine>
                 <CallTask FlowIsn="45">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="5"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -773,10 +765,6 @@
               <LogicLine>
                 <CallTask FlowIsn="46">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -822,10 +810,6 @@
               <LogicLine>
                 <CallTask FlowIsn="47">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -875,10 +859,6 @@
               <LogicLine>
                 <CallTask FlowIsn="48">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="87"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -928,6 +908,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="WCMSShowDetails"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
