@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="43183" date="04/09/2018" time="11:59:43"/>
+          <LastModified _date="736992" _time="40157" date="25/10/2018" time="11:09:17"/>
         </Header>
         <ItemIsn val="39"/>
         <Resource>
@@ -1080,10 +1080,6 @@
               <LogicLine>
                 <CallTask FlowIsn="63">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -1248,6 +1244,7 @@
                 <Height id="24" val="16"/>
                 <Data FieldID="31" id="43"/>
                 <ControlName id="46" val="MSCityName"/>
+                <Modifiable id="53"/>
                 <AllowParking id="315"/>
               </PropertyList>
             </Control>
