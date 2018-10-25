@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="68024" date="25/10/2018" time="18:53:44"/>
+          <LastModified _date="736992" _time="68446" date="25/10/2018" time="19:00:46"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -189,7 +189,7 @@
                   <INT_RCMP_INFO>
                     <v>10</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <PartOfDataview val="Y"/>
                   <Condition val="Y"/>
@@ -203,7 +203,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -216,7 +216,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="7"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -229,7 +229,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="8"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -243,7 +243,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="1"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -652,7 +651,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="11" _last_test_id="12" id="1">
+          <FormEntry _last_isn="12" _last_test_id="13" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="1014"/>
               <Height id="24" val="425"/>
@@ -661,32 +660,21 @@
               <FormName id="311" valUnicode="Login"/>
               <WindowType id="358" val="1"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="11" id="1">
-              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
-                <X id="21" val="394"/>
-                <Y id="22" val="3"/>
-                <Width id="23" val="437"/>
-                <Height id="24" val="421"/>
-                <Data FieldID="6" id="43"/>
-                <ControlName id="46" val="Image11"/>
-                <ImageFile id="88" val="Login.jpg"/>
-              </PropertyList>
-            </Control>
             <Control PDOD="128" _test_id="1" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_GROUP">
                 <Text id="19" valUnicode="Login To Your Account"/>
-                <X id="21" val="46"/>
-                <Y id="22" val="45"/>
-                <Width id="23" val="322"/>
-                <Height id="24" val="201"/>
+                <X id="21" val="519"/>
+                <Y id="22" val="52"/>
+                <Width id="23" val="358"/>
+                <Height id="24" val="268"/>
                 <ControlName id="46" val="Group1"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="2" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="UserName"/>
-                <X id="21" val="66"/>
-                <Y id="22" val="75"/>
+                <X id="21" val="569"/>
+                <Y id="22" val="82"/>
                 <Width id="23" val="59"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label3"/>
@@ -698,8 +686,8 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="146"/>
-                <Y id="22" val="75"/>
+                <X id="21" val="649"/>
+                <Y id="22" val="82"/>
                 <Width id="23" val="198"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="2" id="43"/>
@@ -709,8 +697,8 @@
             <Control ISN_FATHER="2" _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Password"/>
-                <X id="21" val="66"/>
-                <Y id="22" val="110"/>
+                <X id="21" val="569"/>
+                <Y id="22" val="117"/>
                 <Width id="23" val="59"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label5"/>
@@ -722,8 +710,8 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="146"/>
-                <Y id="22" val="110"/>
+                <X id="21" val="649"/>
+                <Y id="22" val="117"/>
                 <Width id="23" val="198"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="3" id="43"/>
@@ -734,8 +722,8 @@
             <Control ISN_FATHER="2" PDOD="128" _test_id="8" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model comp="-1" id="1" obj="5"/>
-                <X id="21" val="92"/>
-                <Y id="22" val="166"/>
+                <X id="21" val="595"/>
+                <Y id="22" val="173"/>
                 <Width id="23" val="100"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="4" id="43"/>
@@ -749,8 +737,8 @@
             <Control ISN_FATHER="2" PDOD="128" _test_id="7" id="8">
               <PropertyList FLD_FLAGS="1" model="CTRL_WEB_CLIENT_BUTTON">
                 <Model comp="-1" id="1" obj="6"/>
-                <X id="21" val="215"/>
-                <Y id="22" val="166"/>
+                <X id="21" val="718"/>
+                <Y id="22" val="173"/>
                 <Width id="23" val="88"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="5" id="43"/>
@@ -759,8 +747,8 @@
             </Control>
             <Control ISN_FATHER="2" _test_id="12" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="146"/>
-                <Y id="22" val="209"/>
+                <X id="21" val="649"/>
+                <Y id="22" val="216"/>
                 <Width id="23" val="86"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button12"/>
@@ -771,10 +759,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="10" id="10">
+            <Control ISN_FATHER="2" PDOD="128" _test_id="10" id="10">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="172"/>
-                <Y id="22" val="259"/>
+                <X id="21" val="675"/>
+                <Y id="22" val="266"/>
                 <Width id="23" val="48"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button10"/>
@@ -786,14 +774,24 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control _test_id="9" id="11">
+            <Control ISN_FATHER="2" _test_id="9" id="11">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Don't have an account?"/>
-                <X id="21" val="46"/>
-                <Y id="22" val="261"/>
+                <X id="21" val="549"/>
+                <Y id="22" val="268"/>
                 <Width id="23" val="117"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label9"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="13" id="12">
+              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
+                <X id="21" val="40"/>
+                <Y id="22" val="58"/>
+                <Width id="23" val="319"/>
+                <Height id="24" val="270"/>
+                <ControlName id="46" val="Image12"/>
+                <ImageFile id="88" val="Login.jpg"/>
               </PropertyList>
             </Control>
           </FormEntry>
