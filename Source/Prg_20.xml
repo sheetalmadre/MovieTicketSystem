@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736990" _time="52151" date="23/10/2018" time="14:29:11"/>
+          <LastModified _date="736992" _time="69118" date="25/10/2018" time="19:11:58"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -505,7 +505,7 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="12" _last_test_id="13" id="1">
+          <FormEntry _last_isn="13" _last_test_id="14" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
               <Width id="23" val="351"/>
               <Height id="24" val="346"/>
@@ -514,10 +514,20 @@
               <FormName id="311" valUnicode="DashboardAdmin"/>
               <WindowType id="358" val="1"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="1" id="1">
+            <Control PDOD="128" _test_id="14" id="13">
+              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
+                <Text id="19" valUnicode="Group1"/>
+                <X id="21" val="24"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="154"/>
+                <Height id="24" val="336"/>
+                <ControlName id="46" val="Group13"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="13" PDOD="128" _test_id="1" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="21"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="31"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button1"/>
@@ -528,10 +538,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="2" id="2">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="2" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="49"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="59"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button2"/>
@@ -542,10 +552,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="3" id="3">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="3" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="77"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="87"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button3"/>
@@ -556,10 +566,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="11" id="10">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="11" id="10">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="105"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="115"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button10"/>
@@ -570,10 +580,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="12" id="11">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="12" id="11">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="133"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="143"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button11"/>
@@ -584,10 +594,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="4" id="4">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="4" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="161"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="171"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button4"/>
@@ -599,10 +609,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="5" id="5">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="5" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="189"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="199"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button5"/>
@@ -614,10 +624,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="6" id="6">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="6" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="217"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="227"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button6"/>
@@ -629,10 +639,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="7" id="7">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="7" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="245"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="255"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button7"/>
@@ -644,10 +654,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="8" id="8">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="8" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="273"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="283"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button8"/>
@@ -659,10 +669,10 @@
                 </RaiseEvent>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="9" id="9">
+            <Control ISN_FATHER="13" PDOD="128" _test_id="9" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="39"/>
-                <Y id="22" val="301"/>
+                <X id="21" val="30"/>
+                <Y id="22" val="311"/>
                 <Width id="23" val="110"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button9"/>
