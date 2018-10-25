@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -37,7 +37,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736942" _time="34594" date="05/09/2018" time="09:36:34"/>
+          <LastModified _date="736992" _time="52494" date="25/10/2018" time="14:34:54"/>
         </Header>
         <ItemIsn val="32"/>
         <Resource>
@@ -1020,12 +1020,16 @@
                 </Evaluate>
               </LogicLine>
               <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="73" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Please login to Book the tickets .." TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="27"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="68">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -1046,10 +1050,6 @@
               <LogicLine>
                 <CallTask FlowIsn="69">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="90"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -1065,10 +1065,6 @@
               <LogicLine>
                 <CallTask FlowIsn="71">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="90"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -1089,10 +1085,6 @@
               <LogicLine>
                 <CallTask FlowIsn="70">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="88"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -1300,6 +1292,10 @@
           <Expression id="26">
             <ExpSyntax val="ExpCalc('1'EXP)+ExpCalc('3'EXP)+ExpCalc('5'EXP)"/>
             <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="27">
+            <ExpSyntax val="{32768,4}=0"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="1"/>
