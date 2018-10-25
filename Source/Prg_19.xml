@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="50563" date="04/09/2018" time="14:02:43"/>
+          <LastModified _date="736992" _time="68906" date="25/10/2018" time="19:08:26"/>
         </Header>
         <ItemIsn val="9"/>
         <Resource>
@@ -161,7 +161,7 @@
                     <v>8</v>
                     <v>18</v>
                   </INT_RCMP_INFO>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -174,7 +174,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -187,7 +187,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="6"/>
+                  <_DitIndexForToolkit val="7"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -395,54 +395,65 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="8" _last_test_id="14" id="1">
+          <FormEntry _last_isn="10" _last_test_id="16" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
-              <Width id="23" val="485"/>
+              <Width id="23" val="1046"/>
+              <Height id="24" val="350"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="ForgotPassword"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
-            <Control _test_id="7" id="1">
+            <Control PDOD="128" _test_id="15" id="9">
+              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
+                <Text id="19" valUnicode="Group1"/>
+                <X id="21" val="24"/>
+                <Y id="22" val="27"/>
+                <Width id="23" val="451"/>
+                <Height id="24" val="252"/>
+                <ControlName id="46" val="Group9"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="9" _test_id="7" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="UserName:"/>
-                <X id="21" val="6"/>
-                <Y id="22" val="13"/>
+                <X id="21" val="40"/>
+                <Y id="22" val="75"/>
                 <Width id="23" val="62"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label7"/>
               </PropertyList>
             </Control>
-            <Control _test_id="1" id="2">
+            <Control ISN_FATHER="9" _test_id="1" id="2">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="1"/>
                 </Model>
-                <X id="21" val="142"/>
-                <Y id="22" val="13"/>
+                <X id="21" val="176"/>
+                <Y id="22" val="75"/>
                 <Width id="23" val="216"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="1" id="43"/>
                 <ControlName id="46" val="VUserName"/>
               </PropertyList>
             </Control>
-            <Control _test_id="8" id="3">
+            <Control ISN_FATHER="9" _test_id="8" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="ChangePassword:"/>
-                <X id="21" val="6"/>
-                <Y id="22" val="46"/>
+                <X id="21" val="40"/>
+                <Y id="22" val="108"/>
                 <Width id="23" val="95"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label8"/>
               </PropertyList>
             </Control>
-            <Control _test_id="2" id="4">
+            <Control ISN_FATHER="9" _test_id="2" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="142"/>
-                <Y id="22" val="46"/>
+                <X id="21" val="176"/>
+                <Y id="22" val="108"/>
                 <Width id="23" val="286"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="2" id="43"/>
@@ -450,23 +461,23 @@
                 <PasswordEdit id="85" val="Y"/>
               </PropertyList>
             </Control>
-            <Control _test_id="9" id="5">
+            <Control ISN_FATHER="9" _test_id="9" id="5">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="ConfirmChangePassword:"/>
-                <X id="21" val="6"/>
-                <Y id="22" val="79"/>
+                <X id="21" val="40"/>
+                <Y id="22" val="141"/>
                 <Width id="23" val="130"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label9"/>
               </PropertyList>
             </Control>
-            <Control _test_id="3" id="6">
+            <Control ISN_FATHER="9" _test_id="3" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_EDIT">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="142"/>
-                <Y id="22" val="79"/>
+                <X id="21" val="176"/>
+                <Y id="22" val="141"/>
                 <Width id="23" val="286"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="3" id="43"/>
@@ -474,21 +485,21 @@
                 <PasswordEdit id="85" val="Y"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="14" id="7">
+            <Control ISN_FATHER="9" PDOD="128" _test_id="14" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model comp="-1" id="1" obj="6"/>
-                <X id="21" val="197"/>
-                <Y id="22" val="137"/>
+                <X id="21" val="231"/>
+                <Y id="22" val="199"/>
                 <Width id="23" val="63"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button14"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="13" id="8">
+            <Control ISN_FATHER="9" PDOD="128" _test_id="13" id="8">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model comp="-1" id="1" obj="5"/>
-                <X id="21" val="86"/>
-                <Y id="22" val="138"/>
+                <X id="21" val="120"/>
+                <Y id="22" val="200"/>
                 <Width id="23" val="71"/>
                 <Height id="24" val="22"/>
                 <ControlName id="46" val="Button13"/>
@@ -496,6 +507,16 @@
                   <EventType val="U"/>
                   <PublicObject comp="-1" obj="1"/>
                 </RaiseEvent>
+              </PropertyList>
+            </Control>
+            <Control _test_id="16" id="10">
+              <PropertyList model="CTRL_WEB_CLIENT_IMAGE">
+                <X id="21" val="519"/>
+                <Y id="22" val="35"/>
+                <Width id="23" val="358"/>
+                <Height id="24" val="244"/>
+                <ControlName id="46" val="Image10"/>
+                <ImageFile id="88" val="ForgotPass.jpg"/>
               </PropertyList>
             </Control>
           </FormEntry>
