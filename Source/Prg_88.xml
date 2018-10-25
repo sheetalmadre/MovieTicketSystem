@@ -44,7 +44,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="41902" date="25/10/2018" time="11:38:22"/>
+          <LastModified _date="736992" _time="52384" date="25/10/2018" time="14:33:04"/>
         </Header>
         <ItemIsn val="54"/>
         <Resource>
@@ -1234,6 +1234,7 @@
               <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
+            <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -1258,6 +1259,7 @@
               <EventType val="S"/>
               <PublicObject comp="-1"/>
             </Event>
+            <Expanded val="1"/>
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
@@ -2021,6 +2023,13 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <BLOCK EndBlock="102" EndBlockSegment="102" FlowIsn="101" Type="I">
+                  <Condition Exp="111"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
                 <Update FlowIsn="96">
                   <FieldID val="49"/>
                   <WithValue val="105"/>
@@ -2061,7 +2070,24 @@
               <LogicLine>
                 <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="100" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Booking Done ..." TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="113"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="102"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="104">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="103" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Please Login to Book the tickets" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="112"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
@@ -3358,6 +3384,18 @@
           <Expression id="110">
             <ExpSyntax val="{0,43}"/>
             <ExpAttribute val="T"/>
+          </Expression>
+          <Expression id="111">
+            <ExpSyntax val="{32768,4}&lt;>0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="112">
+            <ExpSyntax val="{32768,4}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="113">
+            <ExpSyntax val="ViewMod(0)"/>
+            <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
         <Task MainProgram="N">
