@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -44,7 +44,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736885" _time="39486" date="10/07/2018" time="10:58:06"/>
+          <LastModified _date="736992" _time="41902" date="25/10/2018" time="11:38:22"/>
         </Header>
         <ItemIsn val="54"/>
         <Resource>
@@ -1185,10 +1185,6 @@
               <LogicLine>
                 <CallTask FlowIsn="59">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="2"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -2038,10 +2034,6 @@
               <LogicLine>
                 <CallTask FlowIsn="97">
                   <OperationType val="T"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="3"/>
                   <Lock val="N"/>
                   <Wait val="Y"/>
@@ -2065,6 +2057,14 @@
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="100" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Booking Done ..." TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -2941,127 +2941,127 @@
           </Expression>
           <Expression id="6">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,32}'VAR),StrTokenCnt(VarName('{0,32}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,32}'VAR),StrTokenCnt(VarName('{0,32}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="7">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,31}'VAR),StrTokenCnt(VarName('{0,31}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,31}'VAR),StrTokenCnt(VarName('{0,31}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="8">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,30}'VAR),StrTokenCnt(VarName('{0,30}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,30}'VAR),StrTokenCnt(VarName('{0,30}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="9">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,29}'VAR),StrTokenCnt(VarName('{0,29}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,29}'VAR),StrTokenCnt(VarName('{0,29}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="10">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,28}'VAR),StrTokenCnt(VarName('{0,28}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,28}'VAR),StrTokenCnt(VarName('{0,28}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="11">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,27}'VAR),StrTokenCnt(VarName('{0,27}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,27}'VAR),StrTokenCnt(VarName('{0,27}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="12">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,26}'VAR),StrTokenCnt(VarName('{0,26}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,26}'VAR),StrTokenCnt(VarName('{0,26}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="13">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,25}'VAR),StrTokenCnt(VarName('{0,25}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,25}'VAR),StrTokenCnt(VarName('{0,25}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="14">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,24}'VAR),StrTokenCnt(VarName('{0,24}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,24}'VAR),StrTokenCnt(VarName('{0,24}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="15">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,23}'VAR),StrTokenCnt(VarName('{0,23}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,23}'VAR),StrTokenCnt(VarName('{0,23}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="16">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,22}'VAR),StrTokenCnt(VarName('{0,22}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,22}'VAR),StrTokenCnt(VarName('{0,22}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="17">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,21}'VAR),StrTokenCnt(VarName('{0,21}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,21}'VAR),StrTokenCnt(VarName('{0,21}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="18">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,20}'VAR),StrTokenCnt(VarName('{0,20}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,20}'VAR),StrTokenCnt(VarName('{0,20}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="19">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,19}'VAR),StrTokenCnt(VarName('{0,19}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,19}'VAR),StrTokenCnt(VarName('{0,19}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="20">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,18}'VAR),StrTokenCnt(VarName('{0,18}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,18}'VAR),StrTokenCnt(VarName('{0,18}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="21">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,17}'VAR),StrTokenCnt(VarName('{0,17}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,17}'VAR),StrTokenCnt(VarName('{0,17}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="22">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,16}'VAR),StrTokenCnt(VarName('{0,16}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,16}'VAR),StrTokenCnt(VarName('{0,16}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="23">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,15}'VAR),StrTokenCnt(VarName('{0,15}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,15}'VAR),StrTokenCnt(VarName('{0,15}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="24">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,14}'VAR),StrTokenCnt(VarName('{0,14}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,14}'VAR),StrTokenCnt(VarName('{0,14}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="25">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,13}'VAR),StrTokenCnt(VarName('{0,13}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,13}'VAR),StrTokenCnt(VarName('{0,13}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="26">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,12}'VAR),StrTokenCnt(VarName('{0,12}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,12}'VAR),StrTokenCnt(VarName('{0,12}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="27">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,11}'VAR),StrTokenCnt(VarName('{0,11}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,11}'VAR),StrTokenCnt(VarName('{0,11}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="28">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,10}'VAR),StrTokenCnt(VarName('{0,10}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,10}'VAR),StrTokenCnt(VarName('{0,10}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="29">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,9}'VAR),StrTokenCnt(VarName('{0,9}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,9}'VAR),StrTokenCnt(VarName('{0,9}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="30">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,8}'VAR),StrTokenCnt(VarName('{0,8}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,8}'VAR),StrTokenCnt(VarName('{0,8}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="31">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,7}'VAR),StrTokenCnt(VarName('{0,7}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,7}'VAR),StrTokenCnt(VarName('{0,7}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="32">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,6}'VAR),StrTokenCnt(VarName('{0,6}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,6}'VAR),StrTokenCnt(VarName('{0,6}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="33">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,5}'VAR),StrTokenCnt(VarName('{0,5}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,5}'VAR),StrTokenCnt(VarName('{0,5}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="34">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,4}'VAR),StrTokenCnt(VarName('{0,4}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,4}'VAR),StrTokenCnt(VarName('{0,4}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="35">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,3}'VAR),StrTokenCnt(VarName('{0,3}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,3}'VAR),StrTokenCnt(VarName('{0,3}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="36">
             <ExpSyntax val="CheckVisibility(Trim(MID(StrToken(VarName('{0,2}'VAR),StrTokenCnt(VarName('{0,2}'VAR),'.'),'.'),2,Len(Trim(StrToken(VarName('{0,2}'VAR),StrTokenCnt(VarName('{0,2}'VAR),'.'),'.')))-1)))"/>
-            <ExpAttribute val="*"/>
+            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="37">
             <ExpSyntax val="{0,39}"/>
@@ -3361,7 +3361,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="modify" ISN_2="2" id="88">
+          <Header Description="modify" ISN_2="2" LastIsn="3" id="88">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -4577,7 +4577,7 @@
           </Expressions>
         </Task>
         <Task MainProgram="N">
-          <Header Description="UpdCurrentBooking" ISN_2="3" id="88">
+          <Header Description="UpdCurrentBooking" ISN_2="3" LastIsn="3" id="88">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
