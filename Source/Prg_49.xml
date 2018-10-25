@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -33,7 +33,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736888" _time="66845" date="13/07/2018" time="18:34:05"/>
+          <LastModified _date="736992" _time="43051" date="25/10/2018" time="11:57:31"/>
         </Header>
         <ItemIsn val="17"/>
         <Resource>
@@ -430,10 +430,6 @@
               <LogicLine>
                 <CallTask FlowIsn="40">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="50"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -471,10 +467,30 @@
               <LogicLine>
                 <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="9" FlowIsn="39" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
                   <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
+                  <Condition val="N"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </STP>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="42">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="115"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -805,10 +821,6 @@
           </Expression>
           <Expression id="5">
             <ExpSyntax val="{0,11}"/>
-            <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="6">
-            <ExpSyntax val="{0,15}"/>
             <ExpAttribute val="N"/>
           </Expression>
           <Expression id="7">
