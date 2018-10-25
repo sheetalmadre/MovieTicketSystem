@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="45398" date="25/10/2018" time="12:36:38"/>
+          <LastModified _date="736992" _time="48756" date="25/10/2018" time="13:32:36"/>
         </Header>
         <ItemIsn val="32"/>
         <Resource>
@@ -735,6 +735,14 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="149" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="ww" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
                 <CallTask FlowIsn="48">
                   <OperationType val="P"/>
                   <TaskID comp="-1" obj="87"/>
@@ -768,7 +776,6 @@
                   <Wait val="Y"/>
                   <SyncData val="N"/>
                   <IsRoute val="N"/>
-                  <DestSubformName val="Subform12"/>
                   <RetainFocus val="N"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
