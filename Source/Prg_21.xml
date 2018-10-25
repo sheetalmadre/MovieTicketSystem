@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736880" _time="35349" date="05/07/2018" time="09:49:09"/>
+          <LastModified _date="736992" _time="69256" date="25/10/2018" time="19:14:16"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -181,7 +181,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="1"/>
+                  <_DitIndexForToolkit val="2"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -194,7 +194,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="2"/>
+                  <_DitIndexForToolkit val="3"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -207,7 +207,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="3"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -220,7 +220,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="4"/>
+                  <_DitIndexForToolkit val="5"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -233,7 +233,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="5"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -244,19 +244,31 @@
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry _last_isn="20" _last_test_id="20" id="1">
+          <FormEntry _last_isn="21" _last_test_id="21" id="1">
             <PropertyList model="FORM_WEB_CLIENT">
+              <Width id="23" val="658"/>
+              <Height id="24" val="347"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="UserDashboard"/>
             </PropertyList>
-            <Control PDOD="128" _test_id="11" id="11">
+            <Control PDOD="128" _test_id="21" id="21">
+              <PropertyList model="CTRL_WEB_CLIENT_GROUP">
+                <Text id="19" valUnicode="Group1"/>
+                <X id="21" val="27"/>
+                <Y id="22" val="12"/>
+                <Width id="23" val="454"/>
+                <Height id="24" val="317"/>
+                <ControlName id="46" val="Group21"/>
+              </PropertyList>
+            </Control>
+            <Control ISN_FATHER="21" PDOD="128" _test_id="11" id="11">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="1"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="13"/>
+                <X id="21" val="55"/>
+                <Y id="22" val="53"/>
                 <Width id="23" val="370"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="1" id="43"/>
@@ -264,13 +276,13 @@
                 <Format id="82" valUnicode="BookingTicket"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="12" id="12">
+            <Control ISN_FATHER="21" PDOD="128" _test_id="12" id="12">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="2"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="48"/>
+                <X id="21" val="55"/>
+                <Y id="22" val="88"/>
                 <Width id="23" val="370"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="2" id="43"/>
@@ -278,13 +290,13 @@
                 <Format id="82" valUnicode="MyBookings"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="13" id="13">
+            <Control ISN_FATHER="21" PDOD="128" _test_id="13" id="13">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="83"/>
+                <X id="21" val="55"/>
+                <Y id="22" val="123"/>
                 <Width id="23" val="370"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="3" id="43"/>
@@ -292,13 +304,13 @@
                 <Format id="82" valUnicode="MyAccount"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="14" id="14">
+            <Control ISN_FATHER="21" PDOD="128" _test_id="14" id="14">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="118"/>
+                <X id="21" val="55"/>
+                <Y id="22" val="158"/>
                 <Width id="23" val="370"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="4" id="43"/>
@@ -306,13 +318,13 @@
                 <Format id="82" valUnicode="ChangePassword"/>
               </PropertyList>
             </Control>
-            <Control PDOD="128" _test_id="15" id="15">
+            <Control ISN_FATHER="21" PDOD="128" _test_id="15" id="15">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="5"/>
                 </Model>
-                <X id="21" val="15"/>
-                <Y id="22" val="153"/>
+                <X id="21" val="55"/>
+                <Y id="22" val="193"/>
                 <Width id="23" val="370"/>
                 <Height id="24" val="22"/>
                 <Data FieldID="5" id="43"/>
