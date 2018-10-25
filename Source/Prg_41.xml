@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="37708" date="25/10/2018" time="10:28:28"/>
+          <LastModified _date="736992" _time="38507" date="25/10/2018" time="10:41:47"/>
         </Header>
         <ItemIsn val="7"/>
         <Resource>
@@ -244,7 +244,7 @@
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
-            <Level val="T"/>
+            <Level val="R"/>
             <Type val="P"/>
             <Scope val="S"/>
             <EngineDirective val="S"/>
@@ -255,7 +255,7 @@
               <PublicObject comp="-1"/>
             </Event>
             <Expanded val="1"/>
-            <ExecuteOn_ val="S"/>
+            <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
                 <CallTask FlowIsn="50">
@@ -267,7 +267,7 @@
                   <IsRoute val="N"/>
                   <DestSubformName val="Subform9"/>
                   <RetainFocus val="Y"/>
-                  <Condition val="Y"/>
+                  <Condition Exp="1"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </CallTask>
@@ -519,6 +519,12 @@
             </Control>
           </FormEntry>
         </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="IsFirstRecordCycle(0)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+        </Expressions>
         <EVNT DESC="EventHome" FORCE_EXIT="N" id="1">
           <Event>
             <EventType val="N"/>
