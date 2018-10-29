@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736996" _time="49005" date="29/10/2018" time="13:36:45"/>
+          <LastModified _date="736996" _time="49968" date="29/10/2018" time="13:52:48"/>
         </Header>
         <ItemIsn val="28"/>
         <Resource>
@@ -575,7 +575,6 @@
                   <IsParameter val="N"/>
                   <INT_DIT_INFO>
                     <v>28</v>
-                    <v>30</v>
                   </INT_DIT_INFO>
                   <_DitIndexForToolkit val="22"/>
                   <DIFF_UPDATE val="T"/>
@@ -599,6 +598,7 @@
               </LogicLine>
               <LogicLine>
                 <Select FieldID="25" FlowIsn="29" id="25">
+                  <ASS val="12"/>
                   <Column val="12"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
@@ -616,7 +616,6 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="28"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -629,7 +628,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="29"/>
+                  <_DitIndexForToolkit val="27"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -642,7 +641,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="30"/>
+                  <_DitIndexForToolkit val="28"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -882,6 +881,37 @@
               </LogicLine>
               <LogicLine>
                 <Remark FlowIsn="47">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="10" propagate="78">
+            <Level val="C"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="V_MSMovieDate"/>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="62" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Date should not be less that todays date" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="13"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="63">
                   <Type val="2"/>
                   <Text val=" "/>
                 </Remark>
@@ -1176,7 +1206,7 @@
             </Control>
             <Control ISN_FATHER="1" _test_id="51" id="9">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="City Id"/>
+                <Text id="19" valUnicode="City"/>
                 <X id="21" val="38"/>
                 <Y id="22" val="165"/>
                 <Width id="23" val="59"/>
@@ -1343,7 +1373,7 @@
             </Control>
             <Control ISN_FATHER="1" _test_id="65" id="25">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="Language Id"/>
+                <Text id="19" valUnicode="Language"/>
                 <X id="21" val="38"/>
                 <Y id="22" val="402"/>
                 <Width id="23" val="90"/>
@@ -1388,31 +1418,6 @@
                 <Data FieldID="25" id="43"/>
                 <ControlName id="46" val="V_MSMovieDate"/>
                 <Enabled Exp="11" id="62"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="69" id="29">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="End Date"/>
-                <X id="21" val="38"/>
-                <Y id="22" val="469"/>
-                <Width id="23" val="73"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label35"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="68" id="30">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="26"/>
-                </Model>
-                <X id="21" val="191"/>
-                <Y id="22" val="469"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <Data FieldID="26" id="43"/>
-                <ControlName id="46" val="V_MSEndDate"/>
-                <Enabled Exp="10" id="62"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="32" id="31">
@@ -1486,12 +1491,16 @@
             <ExpSyntax val="0"/>
             <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="10">
-            <ExpSyntax val="IF({0,23}='Upcoming' OR {0,23}='New','FALSE'LOG,'TRUE'LOG)"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="11">
             <ExpSyntax val="IF({0,23}='New','FALSE'LOG,'TRUE'LOG)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="Date()"/>
+            <ExpAttribute val="D"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="{0,25}&lt;Date()"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
@@ -1515,7 +1524,7 @@
             <External val="Y"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="736996" _time="45807" date="29/10/2018" time="12:43:27"/>
+            <LastModified _date="736996" _time="49963" date="29/10/2018" time="13:52:43"/>
           </Header>
           <ItemIsn val="13"/>
           <Resource>
@@ -1771,7 +1780,7 @@
                 </LogicLine>
                 <LogicLine>
                   <Select FieldID="13" FlowIsn="16" id="13">
-                    <ASS val="13"/>
+                    <ASS val="14"/>
                     <Column val="14"/>
                     <Type val="R"/>
                     <ExposedToRoute val="N"/>
@@ -1845,9 +1854,9 @@
               <ExpSyntax val="{1,25}"/>
               <ExpAttribute val="D"/>
             </Expression>
-            <Expression id="13">
-              <ExpSyntax val="{1,26}"/>
-              <ExpAttribute val="D"/>
+            <Expression id="14">
+              <ExpSyntax val="{1,25}+8"/>
+              <ExpAttribute val="N"/>
             </Expression>
           </Expressions>
         </Task>
