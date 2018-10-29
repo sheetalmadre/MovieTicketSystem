@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="69118" date="25/10/2018" time="19:11:58"/>
+          <LastModified _date="736996" _time="44468" date="29/10/2018" time="12:21:08"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -720,10 +720,6 @@
           </Expression>
           <Expression id="9">
             <ExpSyntax val="{32768,4}=0 OR {32768,5}=''"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="10">
-            <ExpSyntax val="'FALSE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>
