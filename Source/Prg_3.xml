@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736991" _time="56959" date="24/10/2018" time="15:49:19"/>
+          <LastModified _date="736996" _time="57764" date="29/10/2018" time="16:02:44"/>
         </Header>
         <ItemIsn val="33"/>
         <Resource>
@@ -1154,14 +1154,6 @@
                   <Direction val="C"/>
                 </STP>
               </LogicLine>
-              <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="106" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="Movie is not in theatre, enter New Movie .." TitleTxt="Error" VR_DISP="B">
-                  <AppendToErrorLog val="Y"/>
-                  <Condition Exp="34"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
           <LogicUnit id="7" propagate="78">
@@ -1723,10 +1715,6 @@
           <Expression id="32">
             <ExpSyntax val="{0,3}"/>
             <ExpAttribute val="N"/>
-          </Expression>
-          <Expression id="34">
-            <ExpSyntax val="{0,3}>0 AND {0,21}&lt;Date()"/>
-            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="36">
             <ExpSyntax val="Date()"/>
