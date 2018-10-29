@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="68446" date="25/10/2018" time="19:00:46"/>
+          <LastModified _date="736996" _time="43791" date="29/10/2018" time="12:09:51"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -604,10 +604,25 @@
                       <Skip val="Y"/>
                     </Argument>
                   </Arguments>
+                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
                 </RaiseEvent>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="144">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="18"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <IsRoute val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
