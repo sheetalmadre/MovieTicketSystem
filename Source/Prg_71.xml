@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="ViewMovieDetails" ISN_2="1" LastIsn="2" id="71">
+        <Header Description="ViewMovieDetails" ISN_2="1" LastIsn="1" id="71">
           <Public val="MovieDetail"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="60761" date="04/09/2018" time="16:52:41"/>
+          <LastModified _date="736996" _time="58377" date="29/10/2018" time="16:12:57"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -316,30 +316,6 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="12" FlowIsn="14" id="12">
-                  <Column val="10"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="13" FlowIsn="15" id="13">
-                  <Column val="14"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
                 <Select FieldID="14" FlowIsn="16" id="14">
                   <Column val="1"/>
                   <Type val="V"/>
@@ -468,10 +444,6 @@
               <LogicLine>
                 <CallTask FlowIsn="25">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="72"/>
                   <Lock val="N"/>
                   <Arguments>
