@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736996" _time="43791" date="29/10/2018" time="12:09:51"/>
+          <LastModified _date="736996" _time="44257" date="29/10/2018" time="12:17:37"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -819,14 +819,6 @@
           <Expression id="2">
             <ExpSyntax val="'Please insert valid password'"/>
             <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="3">
-            <ExpSyntax val="{0,2}=''"/>
-            <ExpAttribute val="B"/>
-          </Expression>
-          <Expression id="4">
-            <ExpSyntax val="{0,3}=''"/>
-            <ExpAttribute val="B"/>
           </Expression>
           <Expression id="5">
             <ExpSyntax val="'movienight2.jpg'"/>
