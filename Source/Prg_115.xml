@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736992" _time="48756" date="25/10/2018" time="13:32:36"/>
+          <LastModified _date="736996" _time="42185" date="29/10/2018" time="11:43:05"/>
         </Header>
         <ItemIsn val="32"/>
         <Resource>
@@ -735,14 +735,6 @@
             <ExecuteOn_ val="O"/>
             <LogicLines>
               <LogicLine>
-                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="149" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="ww" TitleTxt="Warning" VR_DISP="B">
-                  <AppendToErrorLog val="N"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </STP>
-              </LogicLine>
-              <LogicLine>
                 <CallTask FlowIsn="48">
                   <OperationType val="P"/>
                   <TaskID comp="-1" obj="87"/>
@@ -792,7 +784,7 @@
               <Height id="24" val="665"/>
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="CalledWCMSShowDetails"/>
+              <FormName id="311" valUnicode="WCMSShowDetails"/>
               <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="2" id="3">
