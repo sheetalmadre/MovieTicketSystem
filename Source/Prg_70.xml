@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736996" _time="45807" date="29/10/2018" time="12:43:27"/>
+          <LastModified _date="736996" _time="49005" date="29/10/2018" time="13:36:45"/>
         </Header>
         <ItemIsn val="28"/>
         <Resource>
@@ -736,7 +736,6 @@
                     <PublicObject comp="-1" obj="1"/>
                   </Event>
                   <Wait val="78"/>
-                  <Disabled val="1"/>
                   <Condition val="Y"/>
                   <Modifier val="B"/>
                   <Direction val="C"/>
