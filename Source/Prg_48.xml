@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736888" _time="64185" date="13/07/2018" time="17:49:45"/>
+          <LastModified _date="736996" _time="58024" date="29/10/2018" time="16:07:04"/>
         </Header>
         <ItemIsn val="25"/>
         <Resource>
@@ -222,7 +222,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="11"/>
+                  <_DitIndexForToolkit val="10"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -286,7 +286,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="15"/>
+                  <_DitIndexForToolkit val="14"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -299,7 +299,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="16"/>
+                  <_DitIndexForToolkit val="15"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -324,7 +324,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="13"/>
+                  <_DitIndexForToolkit val="12"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -337,7 +337,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="14"/>
+                  <_DitIndexForToolkit val="13"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -353,31 +353,6 @@
                   <INT_RCMP_INFO>
                     <v>23</v>
                   </INT_RCMP_INFO>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="15" FlowIsn="15" id="15">
-                  <Column val="10"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="18"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="16" FlowIsn="16" id="16">
-                  <Column val="14"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -434,7 +409,7 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="23" Mode="R" SortType="24" VIEW="20" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="23" Mode="R" SortType="24" VIEW="18" VIEWS="2">
                   <DB comp="-1" obj="3"/>
                   <Expanded val="1"/>
                   <Condition val="Y"/>
@@ -459,7 +434,7 @@
                   <Type val="R"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="17"/>
+                  <_DitIndexForToolkit val="16"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="N"/>
                   <Modifier val="S"/>
@@ -535,10 +510,6 @@
               <LogicLine>
                 <CallTask FlowIsn="31">
                   <OperationType val="P"/>
-                  <Event>
-                    <EventType val="N"/>
-                    <PublicObject comp="-1"/>
-                  </Event>
                   <TaskID comp="-1" obj="49"/>
                   <Lock val="N"/>
                   <Arguments>
@@ -582,12 +553,12 @@
               <PropertyList model="CTRL_WEB_CLIENT_TABLE">
                 <X id="21" val="33"/>
                 <Y id="22" val="55"/>
-                <Width id="23" val="1499"/>
+                <Width id="23" val="1413"/>
                 <Height id="24" val="226"/>
                 <ControlName id="46" val="Table5"/>
                 <TitleHeight id="79" val="19"/>
                 <RowHeight id="80" val="174"/>
-                <Elements id="81" val="8"/>
+                <Elements id="81" val="7"/>
                 <_WindowWidth id="241" val="1100"/>
               </PropertyList>
             </Control>
@@ -646,14 +617,6 @@
                 <ControlLayer id="25" val="7"/>
                 <ControlName id="46" val="Column20"/>
                 <ColumnTitle id="139" valUnicode="MSLanguageName"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="5" PDOD="128" _test_id="18" id="18">
-              <PropertyList model="CTRL_WEB_CLIENT_COLUMN">
-                <Width id="23" val="86"/>
-                <ControlLayer id="25" val="8"/>
-                <ControlName id="46" val="Column18"/>
-                <ColumnTitle id="139" valUnicode="MSMovieDate"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="5" PDOD="1" _test_id="7" id="7">
@@ -753,21 +716,6 @@
                 <Data FieldID="24" id="43"/>
                 <ControlName id="46" val="MSLanguageName"/>
                 <AllowParking id="315"/>
-                <Border id="452"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="5" PDOD="128" _test_id="19" id="19">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT_TBL" id="1">
-                  <Var FieldID="15"/>
-                </Model>
-                <X id="21" val="1446"/>
-                <Y id="22" val="78"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <ControlLayer id="25" val="8"/>
-                <Data FieldID="15" id="43"/>
-                <ControlName id="46" val="MSMovieDate"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
