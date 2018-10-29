@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736996" _time="57950" date="29/10/2018" time="16:05:50"/>
+          <LastModified _date="736996" _time="58152" date="29/10/2018" time="16:09:12"/>
         </Header>
         <ItemIsn val="15"/>
         <Resource>
@@ -585,7 +585,7 @@
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="MSMovieMusic"/>
                 <X id="21" val="66"/>
-                <Y id="22" val="394"/>
+                <Y id="22" val="381"/>
                 <Width id="23" val="75"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label47"/>
@@ -598,7 +598,7 @@
                   <Var FieldID="8"/>
                 </Model>
                 <X id="21" val="171"/>
-                <Y id="22" val="394"/>
+                <Y id="22" val="381"/>
                 <Width id="23" val="356"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="8" id="43"/>
@@ -609,7 +609,7 @@
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="Movie type"/>
                 <X id="21" val="66"/>
-                <Y id="22" val="444"/>
+                <Y id="22" val="418"/>
                 <Width id="23" val="54"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label57"/>
@@ -621,7 +621,7 @@
                   <Var FieldID="9"/>
                 </Model>
                 <X id="21" val="171"/>
-                <Y id="22" val="444"/>
+                <Y id="22" val="418"/>
                 <Width id="23" val="75"/>
                 <Height id="24" val="19"/>
                 <Data FieldID="9" id="43"/>
@@ -632,7 +632,7 @@
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="MSMovieStatus"/>
                 <X id="21" val="66"/>
-                <Y id="22" val="492"/>
+                <Y id="22" val="466"/>
                 <Width id="23" val="77"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label50"/>
@@ -645,7 +645,7 @@
                   <Var FieldID="10"/>
                 </Model>
                 <X id="21" val="173"/>
-                <Y id="22" val="492"/>
+                <Y id="22" val="466"/>
                 <Width id="23" val="216"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="10" id="43"/>
@@ -656,7 +656,7 @@
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
                 <Text id="19" valUnicode="MSLanguageID"/>
                 <X id="21" val="66"/>
-                <Y id="22" val="538"/>
+                <Y id="22" val="512"/>
                 <Width id="23" val="77"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label52"/>
@@ -669,7 +669,7 @@
                   <Var FieldID="11"/>
                 </Model>
                 <X id="21" val="173"/>
-                <Y id="22" val="538"/>
+                <Y id="22" val="512"/>
                 <Width id="23" val="36"/>
                 <Height id="24" val="20"/>
                 <Data FieldID="11" id="43"/>
