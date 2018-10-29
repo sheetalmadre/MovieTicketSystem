@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736996" _time="43732" date="29/10/2018" time="12:08:52"/>
+          <LastModified _date="736996" _time="44314" date="29/10/2018" time="12:18:34"/>
         </Header>
         <ItemIsn val="22"/>
         <Resource>
@@ -1313,36 +1313,12 @@
             <ExpSyntax val="InStr(Trim({0,8}),'@')=0"/>
             <ExpAttribute val="B"/>
           </Expression>
-          <Expression id="33">
-            <ExpSyntax val="InStr(Right(Trim({0,8}),InStr(Trim({0,8}),'@')),'.')=0"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="34">
             <ExpSyntax val="'. should be present in Email'"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="35">
             <ExpSyntax val="'Login'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="36">
-            <ExpSyntax val="Str(InStr(Right(Trim({0,8}),InStr(Trim({0,8}),'@')),'.'),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="37">
-            <ExpSyntax val="Str(InStr(Trim({0,8}),'@'),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="39">
-            <ExpSyntax val="Right(Trim({0,8}),InStr(Trim({0,8}),'@'))"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="41">
-            <ExpSyntax val="Str(Len(Trim({0,8}))-InStr(Trim({0,8}),'@'),'')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="42">
-            <ExpSyntax val="Str(InStr(Right(Trim({0,8}),Len(Trim({0,8}))-InStr(Trim({0,8}),'@')),'.'),'')"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="43">
