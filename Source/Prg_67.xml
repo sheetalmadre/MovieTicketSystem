@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736990" _time="51900" date="23/10/2018" time="14:25:00"/>
+          <LastModified _date="736996" _time="40085" date="29/10/2018" time="11:08:05"/>
         </Header>
         <ItemIsn val="24"/>
         <Resource>
@@ -914,7 +914,7 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="3"/>
                 </Model>
-                <X id="21" val="76"/>
+                <X id="21" val="146"/>
                 <Y id="22" val="187"/>
                 <Width id="23" val="36"/>
                 <Height id="24" val="20"/>
@@ -924,10 +924,10 @@
             </Control>
             <Control ISN_FATHER="1" _test_id="29" id="3">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="L_Id"/>
+                <Text id="19" valUnicode="Language Id"/>
                 <X id="21" val="25"/>
                 <Y id="22" val="192"/>
-                <Width id="23" val="23"/>
+                <Width id="23" val="70"/>
                 <Height id="24" val="15"/>
                 <ControlName id="46" val="Label29"/>
                 <Font id="50" val="1"/>
@@ -935,11 +935,11 @@
             </Control>
             <Control ISN_FATHER="1" _test_id="31" id="4">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="L_Name"/>
+                <Text id="19" valUnicode="Language"/>
                 <X id="21" val="25"/>
                 <Y id="22" val="235"/>
-                <Width id="23" val="42"/>
-                <Height id="24" val="15"/>
+                <Width id="23" val="70"/>
+                <Height id="24" val="20"/>
                 <ControlName id="46" val="Label31"/>
                 <Font id="50" val="1"/>
               </PropertyList>
@@ -949,7 +949,7 @@
                 <Model ID="MODEL_WEB_CLIENT" id="1">
                   <Var FieldID="4"/>
                 </Model>
-                <X id="21" val="76"/>
+                <X id="21" val="146"/>
                 <Y id="22" val="235"/>
                 <Width id="23" val="146"/>
                 <Height id="24" val="20"/>
@@ -959,7 +959,7 @@
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="32" id="6">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="72"/>
+                <X id="21" val="147"/>
                 <Y id="22" val="286"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="31"/>
@@ -975,7 +975,7 @@
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="33" id="7">
               <PropertyList model="CTRL_WEB_CLIENT_BUTTON">
-                <X id="21" val="164"/>
+                <X id="21" val="239"/>
                 <Y id="22" val="286"/>
                 <Width id="23" val="61"/>
                 <Height id="24" val="31"/>
