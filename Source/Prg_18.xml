@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14010.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -28,9 +28,9 @@
           <RoutePath val="SignUp"/>
           <External val="Y"/>
           <Offline val="N"/>
-          <FormType val="N"/>
+          <FormType val="M"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736941" _time="53043" date="04/09/2018" time="14:44:03"/>
+          <LastModified _date="736996" _time="43732" date="29/10/2018" time="12:08:52"/>
         </Header>
         <ItemIsn val="22"/>
         <Resource>
@@ -924,7 +924,7 @@
               <FormUnits id="33" val="4"/>
               <_Comment id="218"/>
               <FormName id="311" valUnicode="SingUp"/>
-              <WindowType id="358" val="1"/>
+              <WindowType id="358" val="12"/>
             </PropertyList>
             <Control _test_id="12" id="1">
               <PropertyList model="CTRL_WEB_CLIENT_LABEL">
