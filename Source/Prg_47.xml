@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14000.00"/>
+    <Version val="14020.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -29,7 +29,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="736866" _time="50751" date="21/06/2018" time="14:05:51"/>
+          <LastModified _date="736996" _time="57950" date="29/10/2018" time="16:05:50"/>
         </Header>
         <ItemIsn val="15"/>
         <Resource>
@@ -285,38 +285,12 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <Select FieldID="12" FlowIsn="14" id="12">
-                  <Column val="10"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="26"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
-                <Select FieldID="13" FlowIsn="15" id="13">
-                  <Column val="14"/>
-                  <Type val="R"/>
-                  <ExposedToRoute val="N"/>
-                  <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="28"/>
-                  <DIFF_UPDATE val="T"/>
-                  <Condition val="Y"/>
-                  <Modifier val="S"/>
-                  <Direction val="C"/>
-                </Select>
-              </LogicLine>
-              <LogicLine>
                 <Select FieldID="14" FlowIsn="16" id="14">
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="N"/>
-                  <_DitIndexForToolkit val="29"/>
+                  <_DitIndexForToolkit val="25"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -700,54 +674,6 @@
                 <Height id="24" val="20"/>
                 <Data FieldID="11" id="43"/>
                 <ControlName id="46" val="MSLanguageID"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="54" id="25">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="MSMovieDate"/>
-                <X id="21" val="66"/>
-                <Y id="22" val="589"/>
-                <Width id="23" val="70"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label54"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="53" id="26">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="12"/>
-                </Model>
-                <X id="21" val="171"/>
-                <Y id="22" val="589"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <Data FieldID="12" id="43"/>
-                <ControlName id="46" val="MSMovieDate"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" _test_id="56" id="27">
-              <PropertyList model="CTRL_WEB_CLIENT_LABEL">
-                <Text id="19" valUnicode="MSEndDate"/>
-                <X id="21" val="66"/>
-                <Y id="22" val="634"/>
-                <Width id="23" val="60"/>
-                <Height id="24" val="15"/>
-                <ControlName id="46" val="Label56"/>
-                <Font id="50" val="1"/>
-              </PropertyList>
-            </Control>
-            <Control ISN_FATHER="1" PDOD="128" _test_id="55" id="28">
-              <PropertyList model="CTRL_WEB_CLIENT_EDIT">
-                <Model ID="MODEL_WEB_CLIENT" id="1">
-                  <Var FieldID="13"/>
-                </Model>
-                <X id="21" val="171"/>
-                <Y id="22" val="634"/>
-                <Width id="23" val="78"/>
-                <Height id="24" val="20"/>
-                <Data FieldID="13" id="43"/>
-                <ControlName id="46" val="MSEndDate"/>
               </PropertyList>
             </Control>
             <Control ISN_FATHER="1" PDOD="128" _test_id="29" id="29">
